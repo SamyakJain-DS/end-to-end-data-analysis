@@ -1,0 +1,1 @@
+“Overcame advanced anti-bot defenses using stealth browser automation (undetected-chromedriver), enabling full-page dynamic scraping of a JavaScript-rendered, interaction-blocked e-commerce platform.”
