@@ -1,0 +1,1404 @@
+2025-05-19 16:44:28,538 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-19 16:44:32,440 - INFO - Extracted The Brands List For laptops
+2025-05-19 16:44:33,817 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-19 16:44:37,604 - INFO - Loaded The hp Page (laptops)
+2025-05-19 16:47:55,132 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-19 16:47:59,213 - INFO - Extracted The Brands List For laptops
+2025-05-19 16:48:00,380 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-19 16:48:04,963 - INFO - Loaded The hp Page (laptops)
+2025-05-19 16:55:46,183 - ERROR - Failed To Fetch The hp HTML Page (laptops)
+2025-05-19 16:55:46,183 - WARNING - Added hp (laptops) To Failed Cases.
+2025-05-19 16:55:47,496 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-19 16:55:52,816 - INFO - Loaded The lenovo Page (laptops)
+2025-05-19 16:56:01,892 - ERROR - Failed To Fetch The lenovo HTML Page (laptops)
+2025-05-19 16:56:01,892 - WARNING - Added lenovo (laptops) To Failed Cases.
+2025-05-19 16:56:03,068 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 13:58:33,819 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 13:58:38,009 - INFO - Extracted The Brands List For laptops
+2025-05-20 13:58:39,210 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 13:58:43,544 - INFO - Loaded The hp Page (laptops)
+2025-05-20 14:06:38,803 - WARNING - Fetched Results For hp (laptops) : 1020/1020 
+2025-05-20 14:06:38,942 - INFO - Fetched hp (laptops) Successfully
+2025-05-20 14:06:40,229 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 14:07:28,398 - INFO - Loaded The lenovo Page (laptops)
+2025-05-20 14:14:57,372 - WARNING - Fetched Results For lenovo (laptops) : 1020/1020 
+2025-05-20 14:14:57,512 - INFO - Fetched lenovo (laptops) Successfully
+2025-05-20 14:14:58,792 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 14:15:03,228 - INFO - Loaded The asus Page (laptops)
+2025-05-20 14:22:56,504 - WARNING - Fetched Results For asus (laptops) : 1020/1020 
+2025-05-20 14:22:56,644 - INFO - Fetched asus (laptops) Successfully
+2025-05-20 14:22:57,928 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 14:23:03,600 - INFO - Loaded The dell Page (laptops)
+2025-05-20 14:30:52,751 - WARNING - Fetched Results For dell (laptops) : 1020/1020 
+2025-05-20 14:30:52,891 - INFO - Fetched dell (laptops) Successfully
+2025-05-20 14:30:54,178 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 14:31:01,127 - INFO - Loaded The acer Page (laptops)
+2025-05-20 14:38:43,626 - WARNING - Fetched Results For acer (laptops) : 1020/1020 
+2025-05-20 14:38:43,764 - INFO - Fetched acer (laptops) Successfully
+2025-05-20 14:38:45,051 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 14:38:50,558 - INFO - Loaded The msi Page (laptops)
+2025-05-20 14:44:17,463 - WARNING - Fetched Results For msi (laptops) : 731/732 
+2025-05-20 14:44:17,463 - WARNING - Added msi (laptops) To Failed Cases.
+2025-05-20 14:44:18,938 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 14:44:22,595 - INFO - Loaded The apple Page (laptops)
+2025-05-20 14:46:20,360 - WARNING - Fetched Results For apple (laptops) : 241/241 
+2025-05-20 14:46:20,425 - INFO - Fetched apple (laptops) Successfully
+2025-05-20 14:46:21,701 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 14:46:27,175 - INFO - Loaded The samsung Page (laptops)
+2025-05-20 14:47:46,721 - WARNING - Fetched Results For samsung (laptops) : 175/175 
+2025-05-20 14:47:46,753 - INFO - Fetched samsung (laptops) Successfully
+2025-05-20 14:47:48,110 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 14:47:54,317 - INFO - Loaded The infinix Page (laptops)
+2025-05-20 14:48:28,492 - WARNING - Fetched Results For infinix (laptops) : 63/63 
+2025-05-20 14:48:28,509 - INFO - Fetched infinix (laptops) Successfully
+2025-05-20 14:48:29,699 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 14:48:35,047 - INFO - Loaded The gigabyte Page (laptops)
+2025-05-20 14:49:00,549 - WARNING - Fetched Results For gigabyte (laptops) : 44/44 
+2025-05-20 14:49:00,563 - INFO - Fetched gigabyte (laptops) Successfully
+2025-05-20 14:49:01,727 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 14:49:07,034 - INFO - Loaded The microsoft Page (laptops)
+2025-05-20 14:50:00,722 - WARNING - Fetched Results For microsoft (laptops) : 110/110 
+2025-05-20 14:50:00,745 - INFO - Fetched microsoft (laptops) Successfully
+2025-05-20 14:50:01,931 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 14:50:08,073 - INFO - Loaded The xiaomi Page (laptops)
+2025-05-20 14:50:17,040 - WARNING - Fetched Results For xiaomi (laptops) : 20/72 
+2025-05-20 14:50:17,040 - WARNING - Added xiaomi (laptops) To Failed Cases.
+2025-05-20 14:50:18,214 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 14:50:21,456 - INFO - Loaded The alienware Page (laptops)
+2025-05-20 14:50:31,891 - WARNING - Fetched Results For alienware (laptops) : 20/79 
+2025-05-20 14:50:31,892 - WARNING - Added alienware (laptops) To Failed Cases.
+2025-05-20 14:50:33,056 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 14:50:37,755 - INFO - Loaded The huawei Page (laptops)
+2025-05-20 14:50:54,743 - WARNING - Fetched Results For huawei (laptops) : 35/35 
+2025-05-20 14:50:54,756 - INFO - Fetched huawei (laptops) Successfully
+2025-05-20 14:50:56,000 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 14:51:00,254 - INFO - Loaded The colorful Page (laptops)
+2025-05-20 14:51:07,773 - WARNING - Fetched Results For colorful (laptops) : 5/5 
+2025-05-20 14:51:07,782 - INFO - Fetched colorful (laptops) Successfully
+2025-05-20 14:51:09,049 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 14:51:12,886 - INFO - Loaded The honor Page (laptops)
+2025-05-20 14:51:30,902 - WARNING - Fetched Results For honor (laptops) : 34/34 
+2025-05-20 14:51:30,915 - INFO - Fetched honor (laptops) Successfully
+2025-05-20 14:51:32,081 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 14:51:36,932 - INFO - Loaded The motorola Page (laptops)
+2025-05-20 14:51:45,406 - WARNING - Fetched Results For motorola (laptops) : 3/3 
+2025-05-20 14:51:45,414 - INFO - Fetched motorola (laptops) Successfully
+2025-05-20 14:51:46,567 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 14:51:50,814 - INFO - Loaded The thomson Page (laptops)
+2025-05-20 14:51:59,599 - WARNING - Fetched Results For thomson (laptops) : 8/8 
+2025-05-20 14:51:59,610 - INFO - Fetched thomson (laptops) Successfully
+2025-05-20 14:52:01,052 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 14:52:04,619 - INFO - Loaded The toshiba Page (laptops)
+2025-05-20 14:53:34,999 - WARNING - Fetched Results For toshiba (laptops) : 190/190 
+2025-05-20 14:53:35,030 - INFO - Fetched toshiba (laptops) Successfully
+2025-05-20 14:53:36,223 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 14:53:41,379 - INFO - Loaded The ultimus Page (laptops)
+2025-05-20 14:53:48,919 - WARNING - Fetched Results For ultimus (laptops) : 14/14 
+2025-05-20 14:53:48,928 - INFO - Fetched ultimus (laptops) Successfully
+2025-05-20 14:53:50,208 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 14:53:53,945 - INFO - Loaded The chuwi Page (laptops)
+2025-05-20 14:54:08,985 - WARNING - Fetched Results For chuwi (laptops) : 22/22 
+2025-05-20 14:54:08,996 - INFO - Fetched chuwi (laptops) Successfully
+2025-05-20 14:54:10,256 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 14:54:14,018 - INFO - Loaded The zebronics Page (laptops)
+2025-05-20 14:54:21,639 - WARNING - Fetched Results For zebronics (laptops) : 8/8 
+2025-05-20 14:54:21,650 - INFO - Fetched zebronics (laptops) Successfully
+2025-05-20 14:54:22,894 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 14:54:26,896 - INFO - Loaded The fujitsu Page (laptops)
+2025-05-20 14:54:52,111 - WARNING - Fetched Results For fujitsu (laptops) : 44/44 
+2025-05-20 14:54:52,124 - INFO - Fetched fujitsu (laptops) Successfully
+2025-05-20 14:54:53,388 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 14:54:56,210 - INFO - Loaded The avita Page (laptops)
+2025-05-20 14:55:22,288 - WARNING - Fetched Results For avita (laptops) : 53/53 
+2025-05-20 14:55:22,303 - INFO - Fetched avita (laptops) Successfully
+2025-05-20 14:55:23,542 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 14:55:28,146 - INFO - Loaded The nokia Page (laptops)
+2025-05-20 14:55:36,382 - WARNING - Fetched Results For nokia (laptops) : 7/7 
+2025-05-20 14:55:36,390 - INFO - Fetched nokia (laptops) Successfully
+2025-05-20 14:55:37,641 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 14:55:41,322 - INFO - Loaded The primebook Page (laptops)
+2025-05-20 14:55:50,887 - WARNING - Fetched Results For primebook (laptops) : 4/4 
+2025-05-20 14:55:50,895 - INFO - Fetched primebook (laptops) Successfully
+2025-05-20 14:55:52,135 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 14:55:55,937 - INFO - Loaded The tecno Page (laptops)
+2025-05-20 14:56:04,025 - WARNING - Fetched Results For tecno (laptops) : 4/4 
+2025-05-20 14:56:04,033 - INFO - Fetched tecno (laptops) Successfully
+2025-05-20 14:56:05,288 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 14:56:09,948 - INFO - Loaded The hcl Page (laptops)
+2025-05-20 14:56:28,238 - WARNING - Fetched Results For hcl (laptops) : 34/34 
+2025-05-20 14:56:28,250 - INFO - Fetched hcl (laptops) Successfully
+2025-05-20 14:56:29,517 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 14:56:34,486 - INFO - Loaded The jio Page (laptops)
+2025-05-20 14:56:42,221 - WARNING - Fetched Results For jio (laptops) : 4/4 
+2025-05-20 14:56:42,230 - INFO - Fetched jio (laptops) Successfully
+2025-05-20 14:56:43,878 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 14:56:47,927 - INFO - Loaded The sony Page (laptops)
+2025-05-20 14:57:31,739 - WARNING - Fetched Results For sony (laptops) : 80/80 
+2025-05-20 14:57:31,756 - INFO - Fetched sony (laptops) Successfully
+2025-05-20 14:57:33,011 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 14:57:37,332 - INFO - Loaded The coconics Page (laptops)
+2025-05-20 14:57:44,333 - WARNING - Fetched Results For coconics (laptops) : 11/11 
+2025-05-20 14:57:44,345 - INFO - Fetched coconics (laptops) Successfully
+2025-05-20 14:57:45,991 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 14:57:50,028 - INFO - Loaded The google Page (laptops)
+2025-05-20 14:57:58,638 - WARNING - Fetched Results For google (laptops) : 5/5 
+2025-05-20 14:57:58,646 - INFO - Fetched google (laptops) Successfully
+2025-05-20 14:57:59,900 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 14:58:03,916 - INFO - Loaded The lg Page (laptops)
+2025-05-20 14:58:30,021 - WARNING - Fetched Results For lg (laptops) : 42/42 
+2025-05-20 14:58:30,035 - INFO - Fetched lg (laptops) Successfully
+2025-05-20 14:58:31,329 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 14:58:35,469 - INFO - Loaded The lifedigital Page (laptops)
+2025-05-20 14:58:42,320 - WARNING - Fetched Results For lifedigital (laptops) : 14/14 
+2025-05-20 14:58:42,330 - INFO - Fetched lifedigital (laptops) Successfully
+2025-05-20 14:58:43,569 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 14:58:48,851 - INFO - Loaded The razer Page (laptops)
+2025-05-20 14:58:55,336 - WARNING - Fetched Results For razer (laptops) : 8/8 
+2025-05-20 14:58:55,345 - INFO - Fetched razer (laptops) Successfully
+2025-05-20 14:58:56,984 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 14:59:00,626 - INFO - Loaded The rdp Page (laptops)
+2025-05-20 14:59:08,508 - WARNING - Fetched Results For rdp (laptops) : 16/16 
+2025-05-20 14:59:08,519 - INFO - Fetched rdp (laptops) Successfully
+2025-05-20 14:59:10,274 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 14:59:13,905 - INFO - Loaded The realme Page (laptops)
+2025-05-20 14:59:22,932 - WARNING - Fetched Results For realme (laptops) : 6/6 
+2025-05-20 14:59:22,940 - INFO - Fetched realme (laptops) Successfully
+2025-05-20 14:59:24,228 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 14:59:28,403 - INFO - Loaded The redmagic Page (laptops)
+2025-05-20 14:59:35,977 - WARNING - Fetched Results For redmagic (laptops) : 1/1 
+2025-05-20 14:59:35,984 - INFO - Fetched redmagic (laptops) Successfully
+2025-05-20 14:59:37,164 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 14:59:40,989 - INFO - Loaded The wipro Page (laptops)
+2025-05-20 14:59:48,911 - WARNING - Fetched Results For wipro (laptops) : 4/4 
+2025-05-20 14:59:48,920 - INFO - Fetched wipro (laptops) Successfully
+2025-05-20 14:59:50,173 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 14:59:53,670 - INFO - Loaded The agb Page (laptops)
+2025-05-20 15:00:02,512 - WARNING - Fetched Results For agb (laptops) : 17/17 
+2025-05-20 15:00:02,523 - INFO - Fetched agb (laptops) Successfully
+2025-05-20 15:00:03,791 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 15:00:07,454 - INFO - Loaded The air Page (laptops)
+2025-05-20 15:00:15,150 - WARNING - Fetched Results For air (laptops) : 2/2 
+2025-05-20 15:00:15,158 - INFO - Fetched air (laptops) Successfully
+2025-05-20 15:00:16,405 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 15:00:19,930 - INFO - Loaded The axl Page (laptops)
+2025-05-20 15:00:28,007 - WARNING - Fetched Results For axl (laptops) : 3/3 
+2025-05-20 15:00:28,021 - INFO - Fetched axl (laptops) Successfully
+2025-05-20 15:00:29,782 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 15:00:35,234 - INFO - Loaded The dynabook Page (laptops)
+2025-05-20 15:00:42,886 - WARNING - Fetched Results For dynabook (laptops) : 4/4 
+2025-05-20 15:00:42,894 - INFO - Fetched dynabook (laptops) Successfully
+2025-05-20 15:00:44,146 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 15:00:47,777 - INFO - Loaded The i-life Page (laptops)
+2025-05-20 15:00:55,899 - ERROR - Failed To Fetch The i-life HTML Page (laptops)
+2025-05-20 15:00:55,899 - WARNING - Added i-life (laptops) To Failed Cases.
+2025-05-20 15:00:57,155 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 15:01:00,971 - INFO - Loaded The iball Page (laptops)
+2025-05-20 15:01:08,432 - WARNING - Fetched Results For iball (laptops) : 15/15 
+2025-05-20 15:01:08,442 - INFO - Fetched iball (laptops) Successfully
+2025-05-20 15:01:09,672 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 15:01:27,435 - INFO - Loaded The jumper Page (laptops)
+2025-05-20 15:01:34,774 - WARNING - Fetched Results For jumper (laptops) : 14/14 
+2025-05-20 15:01:34,784 - INFO - Fetched jumper (laptops) Successfully
+2025-05-20 15:01:36,034 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 15:01:41,165 - INFO - Loaded The micromax Page (laptops)
+2025-05-20 15:01:49,149 - WARNING - Fetched Results For micromax (laptops) : 9/9 
+2025-05-20 15:01:49,158 - INFO - Fetched micromax (laptops) Successfully
+2025-05-20 15:01:50,418 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 15:01:53,885 - INFO - Loaded The ninkear Page (laptops)
+2025-05-20 15:02:02,680 - WARNING - Fetched Results For ninkear (laptops) : 1/1 
+2025-05-20 15:02:02,687 - INFO - Fetched ninkear (laptops) Successfully
+2025-05-20 15:02:03,913 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 15:02:07,903 - INFO - Loaded The notion_ink Page (laptops)
+2025-05-20 15:02:16,332 - WARNING - Fetched Results For notion_ink (laptops) : 5/5 
+2025-05-20 15:02:16,341 - INFO - Fetched notion_ink (laptops) Successfully
+2025-05-20 15:02:17,740 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 15:02:21,169 - INFO - Loaded The reach Page (laptops)
+2025-05-20 15:02:29,134 - WARNING - Fetched Results For reach (laptops) : 5/5 
+2025-05-20 15:02:29,143 - INFO - Fetched reach (laptops) Successfully
+2025-05-20 15:02:29,317 - INFO - Fetched laptops Successfully
+2025-05-20 15:02:30,315 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 15:02:35,029 - INFO - Extracted The Brands List For mobiles
+2025-05-20 15:02:36,195 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 15:02:39,740 - INFO - Loaded The samsung Page (mobiles)
+2025-05-20 15:09:33,322 - WARNING - Fetched Results For samsung (mobiles) : 913/913 
+2025-05-20 15:09:33,445 - INFO - Fetched samsung (mobiles) Successfully
+2025-05-20 15:09:34,723 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 15:09:39,215 - INFO - Loaded The vivo Page (mobiles)
+2025-05-20 15:14:29,800 - WARNING - Fetched Results For vivo (mobiles) : 628/632 
+2025-05-20 15:14:29,800 - WARNING - Added vivo (mobiles) To Failed Cases.
+2025-05-20 15:14:31,085 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 15:14:35,261 - INFO - Loaded The realme Page (mobiles)
+2025-05-20 15:18:36,726 - WARNING - Fetched Results For realme (mobiles) : 530/530 
+2025-05-20 15:18:36,807 - INFO - Fetched realme (mobiles) Successfully
+2025-05-20 15:18:38,130 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 15:18:42,104 - INFO - Loaded The oneplus Page (mobiles)
+2025-05-20 15:20:03,994 - WARNING - Fetched Results For oneplus (mobiles) : 173/173 
+2025-05-20 15:20:04,030 - INFO - Fetched oneplus (mobiles) Successfully
+2025-05-20 15:20:05,363 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 15:20:09,862 - INFO - Loaded The motorola Page (mobiles)
+2025-05-20 15:23:28,963 - WARNING - Fetched Results For motorola (mobiles) : 422/422 
+2025-05-20 15:23:29,044 - INFO - Fetched motorola (mobiles) Successfully
+2025-05-20 15:23:30,738 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 15:23:33,878 - INFO - Loaded The xiaomi Page (mobiles)
+2025-05-20 15:28:05,850 - WARNING - Fetched Results For xiaomi (mobiles) : 614/615 
+2025-05-20 15:28:05,850 - WARNING - Added xiaomi (mobiles) To Failed Cases.
+2025-05-20 15:28:07,171 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 15:28:12,131 - INFO - Loaded The oppo Page (mobiles)
+2025-05-20 15:28:21,378 - WARNING - Fetched Results For oppo (mobiles) : 20/463 
+2025-05-20 15:28:21,378 - WARNING - Added oppo (mobiles) To Failed Cases.
+2025-05-20 15:28:22,599 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 15:28:27,083 - INFO - Loaded The iqoo Page (mobiles)
+2025-05-20 15:29:49,423 - WARNING - Fetched Results For iqoo (mobiles) : 175/175 
+2025-05-20 15:29:49,457 - INFO - Fetched iqoo (mobiles) Successfully
+2025-05-20 15:29:50,936 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 15:29:54,669 - INFO - Loaded The poco Page (mobiles)
+2025-05-20 15:31:09,858 - WARNING - Fetched Results For poco (mobiles) : 144/144 
+2025-05-20 15:31:09,884 - INFO - Fetched poco (mobiles) Successfully
+2025-05-20 15:31:11,093 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 15:31:14,709 - INFO - Loaded The infinix Page (mobiles)
+2025-05-20 15:32:43,538 - WARNING - Fetched Results For infinix (mobiles) : 181/181 
+2025-05-20 15:32:43,573 - INFO - Fetched infinix (mobiles) Successfully
+2025-05-20 15:32:44,803 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 15:32:50,354 - INFO - Loaded The apple Page (mobiles)
+2025-05-20 15:34:09,970 - WARNING - Fetched Results For apple (mobiles) : 173/173 
+2025-05-20 15:34:10,005 - INFO - Fetched apple (mobiles) Successfully
+2025-05-20 15:34:11,232 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 15:34:16,562 - INFO - Loaded The nothing Page (mobiles)
+2025-05-20 15:34:32,933 - WARNING - Fetched Results For nothing (mobiles) : 24/24 
+2025-05-20 15:34:32,947 - INFO - Fetched nothing (mobiles) Successfully
+2025-05-20 15:34:34,191 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 15:34:38,224 - INFO - Loaded The honor Page (mobiles)
+2025-05-20 15:36:57,279 - WARNING - Fetched Results For honor (mobiles) : 312/312 
+2025-05-20 15:36:57,330 - INFO - Fetched honor (mobiles) Successfully
+2025-05-20 15:36:58,570 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 15:37:02,630 - INFO - Loaded The tecno Page (mobiles)
+2025-05-20 15:38:45,257 - WARNING - Fetched Results For tecno (mobiles) : 222/222 
+2025-05-20 15:38:45,293 - INFO - Fetched tecno (mobiles) Successfully
+2025-05-20 15:38:46,516 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 15:39:05,351 - INFO - Loaded The nokia Page (mobiles)
+2025-05-20 15:42:14,766 - WARNING - Fetched Results For nokia (mobiles) : 406/406 
+2025-05-20 15:42:14,827 - INFO - Fetched nokia (mobiles) Successfully
+2025-05-20 15:42:16,141 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 15:42:20,556 - INFO - Loaded The google Page (mobiles)
+2025-05-20 15:42:55,867 - WARNING - Fetched Results For google (mobiles) : 63/63 
+2025-05-20 15:42:55,885 - INFO - Fetched google (mobiles) Successfully
+2025-05-20 15:42:57,108 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 15:43:02,012 - INFO - Loaded The itel Page (mobiles)
+2025-05-20 15:44:52,564 - WARNING - Fetched Results For itel (mobiles) : 220/220 
+2025-05-20 15:44:52,601 - INFO - Fetched itel (mobiles) Successfully
+2025-05-20 15:44:53,827 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 15:44:57,436 - INFO - Loaded The cmf Page (mobiles)
+2025-05-20 15:45:05,597 - WARNING - Fetched Results For cmf (mobiles) : 6/6 
+2025-05-20 15:45:05,607 - INFO - Fetched cmf (mobiles) Successfully
+2025-05-20 15:45:06,823 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 15:45:10,137 - INFO - Loaded The lava Page (mobiles)
+2025-05-20 15:49:05,912 - WARNING - Fetched Results For lava (mobiles) : 499/499 
+2025-05-20 15:49:05,985 - INFO - Fetched lava (mobiles) Successfully
+2025-05-20 15:49:07,638 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 15:49:12,097 - INFO - Loaded The sony Page (mobiles)
+2025-05-20 15:50:28,198 - WARNING - Fetched Results For sony (mobiles) : 174/174 
+2025-05-20 15:50:28,233 - INFO - Fetched sony (mobiles) Successfully
+2025-05-20 15:50:29,596 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 15:50:34,034 - INFO - Loaded The nubia Page (mobiles)
+2025-05-20 15:51:08,882 - WARNING - Fetched Results For nubia (mobiles) : 68/68 
+2025-05-20 15:51:08,901 - INFO - Fetched nubia (mobiles) Successfully
+2025-05-20 15:51:10,123 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 15:51:14,749 - INFO - Loaded The huawei Page (mobiles)
+2025-05-20 15:53:54,876 - WARNING - Fetched Results For huawei (mobiles) : 343/345 
+2025-05-20 15:53:54,876 - WARNING - Added huawei (mobiles) To Failed Cases.
+2025-05-20 15:53:56,360 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 15:54:01,193 - INFO - Loaded The redmagic Page (mobiles)
+2025-05-20 15:54:21,085 - WARNING - Fetched Results For redmagic (mobiles) : 31/31 
+2025-05-20 15:54:21,098 - INFO - Fetched redmagic (mobiles) Successfully
+2025-05-20 15:54:22,335 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 15:54:26,881 - INFO - Loaded The alcatel Page (mobiles)
+2025-05-20 15:55:50,234 - WARNING - Fetched Results For alcatel (mobiles) : 160/161 
+2025-05-20 15:55:50,234 - WARNING - Added alcatel (mobiles) To Failed Cases.
+2025-05-20 15:55:51,467 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 15:55:55,244 - INFO - Loaded The ikall Page (mobiles)
+2025-05-20 15:58:31,425 - WARNING - Fetched Results For ikall (mobiles) : 347/347 
+2025-05-20 15:58:31,475 - INFO - Fetched ikall (mobiles) Successfully
+2025-05-20 15:58:32,719 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 15:58:37,074 - INFO - Loaded The jio Page (mobiles)
+2025-05-20 15:58:45,200 - WARNING - Fetched Results For jio (mobiles) : 17/17 
+2025-05-20 15:58:45,211 - INFO - Fetched jio (mobiles) Successfully
+2025-05-20 15:58:46,519 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 15:58:50,541 - INFO - Loaded The micromax Page (mobiles)
+2025-05-20 16:03:58,740 - WARNING - Fetched Results For micromax (mobiles) : 663/663 
+2025-05-20 16:03:58,827 - INFO - Fetched micromax (mobiles) Successfully
+2025-05-20 16:04:00,157 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:04:04,659 - INFO - Loaded The asus Page (mobiles)
+2025-05-20 16:05:23,677 - WARNING - Fetched Results For asus (mobiles) : 160/162 
+2025-05-20 16:05:23,677 - WARNING - Added asus (mobiles) To Failed Cases.
+2025-05-20 16:05:24,910 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:05:29,126 - INFO - Loaded The hmd Page (mobiles)
+2025-05-20 16:05:45,239 - WARNING - Fetched Results For hmd (mobiles) : 36/36 
+2025-05-20 16:05:45,253 - INFO - Fetched hmd (mobiles) Successfully
+2025-05-20 16:05:46,477 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:05:51,292 - INFO - Loaded The ulefone Page (mobiles)
+2025-05-20 16:06:34,347 - WARNING - Fetched Results For ulefone (mobiles) : 85/85 
+2025-05-20 16:06:34,366 - INFO - Fetched ulefone (mobiles) Successfully
+2025-05-20 16:06:35,647 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:06:40,214 - INFO - Loaded The lg Page (mobiles)
+2025-05-20 16:09:05,965 - WARNING - Fetched Results For lg (mobiles) : 306/306 
+2025-05-20 16:09:06,009 - INFO - Fetched lg (mobiles) Successfully
+2025-05-20 16:09:07,323 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:09:10,802 - INFO - Loaded The karbonn Page (mobiles)
+2025-05-20 16:13:56,271 - WARNING - Fetched Results For karbonn (mobiles) : 638/638 
+2025-05-20 16:13:56,357 - INFO - Fetched karbonn (mobiles) Successfully
+2025-05-20 16:13:57,690 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:14:02,460 - INFO - Loaded The doogee Page (mobiles)
+2025-05-20 16:14:45,125 - WARNING - Fetched Results For doogee (mobiles) : 87/87 
+2025-05-20 16:14:45,143 - INFO - Fetched doogee (mobiles) Successfully
+2025-05-20 16:14:46,436 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:14:50,741 - INFO - Loaded The snexian Page (mobiles)
+2025-05-20 16:16:14,285 - WARNING - Fetched Results For snexian (mobiles) : 165/165 
+2025-05-20 16:16:14,314 - INFO - Fetched snexian (mobiles) Successfully
+2025-05-20 16:16:15,633 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:16:19,960 - INFO - Loaded The acer Page (mobiles)
+2025-05-20 16:16:45,769 - WARNING - Fetched Results For acer (mobiles) : 47/47 
+2025-05-20 16:16:45,782 - INFO - Fetched acer (mobiles) Successfully
+2025-05-20 16:16:47,102 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:16:52,273 - INFO - Loaded The lenovo Page (mobiles)
+2025-05-20 16:18:23,024 - WARNING - Fetched Results For lenovo (mobiles) : 198/198 
+2025-05-20 16:18:23,060 - INFO - Fetched lenovo (mobiles) Successfully
+2025-05-20 16:18:24,385 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:18:28,020 - INFO - Loaded The htc Page (mobiles)
+2025-05-20 16:19:27,399 - WARNING - Fetched Results For htc (mobiles) : 140/190 
+2025-05-20 16:19:27,399 - WARNING - Added htc (mobiles) To Failed Cases.
+2025-05-20 16:19:28,696 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:19:32,828 - INFO - Loaded The zte Page (mobiles)
+2025-05-20 16:21:02,489 - WARNING - Fetched Results For zte (mobiles) : 192/192 
+2025-05-20 16:21:02,521 - INFO - Fetched zte (mobiles) Successfully
+2025-05-20 16:21:03,847 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:21:07,939 - INFO - Loaded The meizu Page (mobiles)
+2025-05-20 16:21:52,781 - WARNING - Fetched Results For meizu (mobiles) : 92/92 
+2025-05-20 16:21:52,800 - INFO - Fetched meizu (mobiles) Successfully
+2025-05-20 16:21:54,083 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:22:00,201 - INFO - Loaded The jmax Page (mobiles)
+2025-05-20 16:22:44,200 - WARNING - Fetched Results For jmax (mobiles) : 98/98 
+2025-05-20 16:22:44,219 - INFO - Fetched jmax (mobiles) Successfully
+2025-05-20 16:22:45,537 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:22:49,779 - INFO - Loaded The light Page (mobiles)
+2025-05-20 16:22:59,522 - WARNING - Fetched Results For light (mobiles) : 2/2 
+2025-05-20 16:22:59,530 - INFO - Fetched light (mobiles) Successfully
+2025-05-20 16:23:00,816 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:23:04,352 - INFO - Loaded The tcl Page (mobiles)
+2025-05-20 16:23:39,193 - WARNING - Fetched Results For tcl (mobiles) : 67/67 
+2025-05-20 16:23:39,209 - INFO - Fetched tcl (mobiles) Successfully
+2025-05-20 16:23:40,503 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:23:45,009 - INFO - Loaded The kechaoda Page (mobiles)
+2025-05-20 16:24:41,367 - WARNING - Fetched Results For kechaoda (mobiles) : 113/113 
+2025-05-20 16:24:41,389 - INFO - Fetched kechaoda (mobiles) Successfully
+2025-05-20 16:24:42,713 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:24:47,326 - INFO - Loaded The gfive Page (mobiles)
+2025-05-20 16:25:47,382 - WARNING - Fetched Results For gfive (mobiles) : 134/134 
+2025-05-20 16:25:47,405 - INFO - Fetched gfive (mobiles) Successfully
+2025-05-20 16:25:48,706 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:25:53,204 - INFO - Loaded The spice Page (mobiles)
+2025-05-20 16:28:41,543 - WARNING - Fetched Results For spice (mobiles) : 376/376 
+2025-05-20 16:28:41,596 - INFO - Fetched spice (mobiles) Successfully
+2025-05-20 16:28:42,930 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:28:47,090 - INFO - Loaded The blackzone Page (mobiles)
+2025-05-20 16:30:06,824 - WARNING - Fetched Results For blackzone (mobiles) : 161/161 
+2025-05-20 16:30:06,851 - INFO - Fetched blackzone (mobiles) Successfully
+2025-05-20 16:30:08,160 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:30:11,695 - INFO - Loaded The gionee Page (mobiles)
+2025-05-20 16:31:02,675 - WARNING - Fetched Results For gionee (mobiles) : 117/117 
+2025-05-20 16:31:02,699 - INFO - Fetched gionee (mobiles) Successfully
+2025-05-20 16:31:03,939 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:31:08,847 - INFO - Loaded The intex Page (mobiles)
+2025-05-20 16:35:54,213 - WARNING - Fetched Results For intex (mobiles) : 608/608 
+2025-05-20 16:35:54,314 - INFO - Fetched intex (mobiles) Successfully
+2025-05-20 16:35:55,649 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:36:00,837 - INFO - Loaded The blackberry Page (mobiles)
+2025-05-20 16:36:08,634 - WARNING - Fetched Results For blackberry (mobiles) : 20/58 
+2025-05-20 16:36:08,634 - WARNING - Added blackberry (mobiles) To Failed Cases.
+2025-05-20 16:36:09,848 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:36:12,916 - INFO - Loaded The panasonic Page (mobiles)
+2025-05-20 16:37:05,336 - WARNING - Fetched Results For panasonic (mobiles) : 114/114 
+2025-05-20 16:37:05,358 - INFO - Fetched panasonic (mobiles) Successfully
+2025-05-20 16:37:05,526 - INFO - Fetched mobiles Successfully
+2025-05-20 16:37:06,557 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:37:10,767 - INFO - Extracted The Brands List For tablets
+2025-05-20 16:37:11,975 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:37:15,688 - INFO - Loaded The samsung Page (tablets)
+2025-05-20 16:38:36,545 - WARNING - Fetched Results For samsung (tablets) : 164/164 
+2025-05-20 16:38:36,574 - INFO - Fetched samsung (tablets) Successfully
+2025-05-20 16:38:37,873 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:38:42,814 - INFO - Loaded The xiaomi Page (tablets)
+2025-05-20 16:38:50,355 - WARNING - Fetched Results For xiaomi (tablets) : 20/41 
+2025-05-20 16:38:50,355 - WARNING - Added xiaomi (tablets) To Failed Cases.
+2025-05-20 16:38:51,577 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:38:55,332 - INFO - Loaded The lenovo Page (tablets)
+2025-05-20 16:40:31,983 - WARNING - Fetched Results For lenovo (tablets) : 214/214 
+2025-05-20 16:40:32,018 - INFO - Fetched lenovo (tablets) Successfully
+2025-05-20 16:40:33,297 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:40:38,738 - INFO - Loaded The apple Page (tablets)
+2025-05-20 16:42:49,881 - WARNING - Fetched Results For apple (tablets) : 280/280 
+2025-05-20 16:42:49,925 - INFO - Fetched apple (tablets) Successfully
+2025-05-20 16:42:51,154 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:42:56,266 - INFO - Loaded The oneplus Page (tablets)
+2025-05-20 16:43:02,880 - WARNING - Fetched Results For oneplus (tablets) : 12/12 
+2025-05-20 16:43:02,889 - INFO - Fetched oneplus (tablets) Successfully
+2025-05-20 16:43:04,340 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:43:08,298 - INFO - Loaded The motorola Page (tablets)
+2025-05-20 16:43:17,150 - WARNING - Fetched Results For motorola (tablets) : 12/12 
+2025-05-20 16:43:17,160 - INFO - Fetched motorola (tablets) Successfully
+2025-05-20 16:43:18,587 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:43:22,349 - INFO - Loaded The realme Page (tablets)
+2025-05-20 16:43:39,710 - WARNING - Fetched Results For realme (tablets) : 21/21 
+2025-05-20 16:43:39,721 - INFO - Fetched realme (tablets) Successfully
+2025-05-20 16:43:40,922 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:43:45,403 - INFO - Loaded The honor Page (tablets)
+2025-05-20 16:44:00,062 - WARNING - Fetched Results For honor (tablets) : 35/35 
+2025-05-20 16:44:00,074 - INFO - Fetched honor (tablets) Successfully
+2025-05-20 16:44:01,298 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:44:05,401 - INFO - Loaded The huawei Page (tablets)
+2025-05-20 16:44:42,301 - WARNING - Fetched Results For huawei (tablets) : 69/69 
+2025-05-20 16:44:42,317 - INFO - Fetched huawei (tablets) Successfully
+2025-05-20 16:44:43,537 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:44:47,166 - INFO - Loaded The oppo Page (tablets)
+2025-05-20 16:44:55,526 - WARNING - Fetched Results For oppo (tablets) : 12/12 
+2025-05-20 16:44:55,537 - INFO - Fetched oppo (tablets) Successfully
+2025-05-20 16:44:56,782 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:44:59,889 - INFO - Loaded The acer Page (tablets)
+2025-05-20 16:45:28,981 - WARNING - Fetched Results For acer (tablets) : 44/44 
+2025-05-20 16:45:28,995 - INFO - Fetched acer (tablets) Successfully
+2025-05-20 16:45:30,335 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:45:35,415 - INFO - Loaded The vivo Page (tablets)
+2025-05-20 16:45:43,387 - WARNING - Fetched Results For vivo (tablets) : 8/8 
+2025-05-20 16:45:43,396 - INFO - Fetched vivo (tablets) Successfully
+2025-05-20 16:45:45,780 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:45:49,562 - INFO - Loaded The poco Page (tablets)
+2025-05-20 16:45:56,576 - WARNING - Fetched Results For poco (tablets) : 4/4 
+2025-05-20 16:45:56,584 - INFO - Fetched poco (tablets) Successfully
+2025-05-20 16:45:57,817 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:46:01,604 - INFO - Loaded The domo Page (tablets)
+2025-05-20 16:46:27,060 - WARNING - Fetched Results For domo (tablets) : 46/46 
+2025-05-20 16:46:27,074 - INFO - Fetched domo (tablets) Successfully
+2025-05-20 16:46:28,296 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:46:32,551 - INFO - Loaded The ikall Page (tablets)
+2025-05-20 16:47:14,885 - WARNING - Fetched Results For ikall (tablets) : 81/81 
+2025-05-20 16:47:14,903 - INFO - Fetched ikall (tablets) Successfully
+2025-05-20 16:47:16,197 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:47:21,827 - INFO - Loaded The infinix Page (tablets)
+2025-05-20 16:47:30,665 - WARNING - Fetched Results For infinix (tablets) : 3/3 
+2025-05-20 16:47:30,673 - INFO - Fetched infinix (tablets) Successfully
+2025-05-20 16:47:31,892 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:47:36,034 - INFO - Loaded The iball Page (tablets)
+2025-05-20 16:48:34,395 - WARNING - Fetched Results For iball (tablets) : 115/115 
+2025-05-20 16:48:34,417 - INFO - Fetched iball (tablets) Successfully
+2025-05-20 16:48:35,635 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:48:40,697 - INFO - Loaded The nokia Page (tablets)
+2025-05-20 16:48:47,996 - WARNING - Fetched Results For nokia (tablets) : 11/11 
+2025-05-20 16:48:48,005 - INFO - Fetched nokia (tablets) Successfully
+2025-05-20 16:48:49,211 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:48:53,306 - INFO - Loaded The amazon Page (tablets)
+2025-05-20 16:49:10,346 - WARNING - Fetched Results For amazon (tablets) : 36/36 
+2025-05-20 16:49:10,358 - INFO - Fetched amazon (tablets) Successfully
+2025-05-20 16:49:11,598 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:49:15,420 - INFO - Loaded The iqoo Page (tablets)
+2025-05-20 16:49:23,282 - WARNING - Fetched Results For iqoo (tablets) : 6/6 
+2025-05-20 16:49:23,291 - INFO - Fetched iqoo (tablets) Successfully
+2025-05-20 16:49:24,529 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:49:27,675 - INFO - Loaded The lava Page (tablets)
+2025-05-20 16:49:44,757 - WARNING - Fetched Results For lava (tablets) : 30/30 
+2025-05-20 16:49:44,770 - INFO - Fetched lava (tablets) Successfully
+2025-05-20 16:49:45,971 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:49:50,012 - INFO - Loaded The redmagic Page (tablets)
+2025-05-20 16:49:57,341 - WARNING - Fetched Results For redmagic (tablets) : 1/1 
+2025-05-20 16:49:57,348 - INFO - Fetched redmagic (tablets) Successfully
+2025-05-20 16:49:58,559 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:50:01,711 - INFO - Loaded The teclast Page (tablets)
+2025-05-20 16:50:11,305 - WARNING - Fetched Results For teclast (tablets) : 16/16 
+2025-05-20 16:50:11,316 - INFO - Fetched teclast (tablets) Successfully
+2025-05-20 16:50:12,555 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:50:16,501 - INFO - Loaded The blackview Page (tablets)
+2025-05-20 16:50:24,650 - WARNING - Fetched Results For blackview (tablets) : 8/8 
+2025-05-20 16:50:24,659 - INFO - Fetched blackview (tablets) Successfully
+2025-05-20 16:50:25,877 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:50:29,905 - INFO - Loaded The cubot Page (tablets)
+2025-05-20 16:50:37,910 - WARNING - Fetched Results For cubot (tablets) : 3/3 
+2025-05-20 16:50:37,918 - INFO - Fetched cubot (tablets) Successfully
+2025-05-20 16:50:39,141 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:50:42,289 - INFO - Loaded The itel Page (tablets)
+2025-05-20 16:50:50,161 - WARNING - Fetched Results For itel (tablets) : 3/3 
+2025-05-20 16:50:50,169 - INFO - Fetched itel (tablets) Successfully
+2025-05-20 16:50:51,371 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:50:55,801 - INFO - Loaded The tcl Page (tablets)
+2025-05-20 16:51:04,014 - WARNING - Fetched Results For tcl (tablets) : 19/19 
+2025-05-20 16:51:04,025 - INFO - Fetched tcl (tablets) Successfully
+2025-05-20 16:51:05,249 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:51:07,925 - INFO - Loaded The wishtel Page (tablets)
+2025-05-20 16:51:25,116 - WARNING - Fetched Results For wishtel (tablets) : 28/28 
+2025-05-20 16:51:25,129 - INFO - Fetched wishtel (tablets) Successfully
+2025-05-20 16:51:26,342 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:51:32,010 - INFO - Loaded The asus Page (tablets)
+2025-05-20 16:51:41,179 - WARNING - Fetched Results For asus (tablets) : 20/47 
+2025-05-20 16:51:41,179 - WARNING - Added asus (tablets) To Failed Cases.
+2025-05-20 16:51:42,601 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:51:47,004 - INFO - Loaded The doogee Page (tablets)
+2025-05-20 16:51:55,609 - WARNING - Fetched Results For doogee (tablets) : 15/15 
+2025-05-20 16:51:55,621 - INFO - Fetched doogee (tablets) Successfully
+2025-05-20 16:51:56,934 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:52:00,436 - INFO - Loaded The google Page (tablets)
+2025-05-20 16:52:08,641 - WARNING - Fetched Results For google (tablets) : 6/6 
+2025-05-20 16:52:08,651 - INFO - Fetched google (tablets) Successfully
+2025-05-20 16:52:09,876 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:52:13,954 - INFO - Loaded The bsnl_penta Page (tablets)
+2025-05-20 16:52:30,698 - WARNING - Fetched Results For bsnl_penta (tablets) : 23/23 
+2025-05-20 16:52:30,710 - INFO - Fetched bsnl_penta (tablets) Successfully
+2025-05-20 16:52:31,933 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:52:36,185 - INFO - Loaded The hcl Page (tablets)
+2025-05-20 16:52:53,585 - WARNING - Fetched Results For hcl (tablets) : 22/22 
+2025-05-20 16:52:53,597 - INFO - Fetched hcl (tablets) Successfully
+2025-05-20 16:52:54,822 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:52:59,011 - INFO - Loaded The nothing Page (tablets)
+2025-05-20 16:53:07,141 - WARNING - Fetched Results For nothing (tablets) : 1/1 
+2025-05-20 16:53:07,148 - INFO - Fetched nothing (tablets) Successfully
+2025-05-20 16:53:08,360 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:53:12,271 - INFO - Loaded The tecno Page (tablets)
+2025-05-20 16:53:20,572 - WARNING - Fetched Results For tecno (tablets) : 2/2 
+2025-05-20 16:53:20,580 - INFO - Fetched tecno (tablets) Successfully
+2025-05-20 16:53:22,108 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:53:26,781 - INFO - Loaded The ubislate Page (tablets)
+2025-05-20 16:53:35,450 - WARNING - Fetched Results For ubislate (tablets) : 17/17 
+2025-05-20 16:53:35,463 - INFO - Fetched ubislate (tablets) Successfully
+2025-05-20 16:53:36,701 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:53:39,936 - INFO - Loaded The ambrane Page (tablets)
+2025-05-20 16:53:47,126 - WARNING - Fetched Results For ambrane (tablets) : 10/10 
+2025-05-20 16:53:47,135 - INFO - Fetched ambrane (tablets) Successfully
+2025-05-20 16:53:48,410 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:53:52,092 - INFO - Loaded The blackberry Page (tablets)
+2025-05-20 16:54:00,214 - WARNING - Fetched Results For blackberry (tablets) : 3/3 
+2025-05-20 16:54:00,223 - INFO - Fetched blackberry (tablets) Successfully
+2025-05-20 16:54:01,516 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:54:05,381 - INFO - Loaded The boox Page (tablets)
+2025-05-20 16:54:14,487 - WARNING - Fetched Results For boox (tablets) : 4/4 
+2025-05-20 16:54:14,494 - INFO - Fetched boox (tablets) Successfully
+2025-05-20 16:54:15,699 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:54:18,828 - INFO - Loaded The chuwi Page (tablets)
+2025-05-20 16:54:27,994 - WARNING - Fetched Results For chuwi (tablets) : 2/2 
+2025-05-20 16:54:28,002 - INFO - Fetched chuwi (tablets) Successfully
+2025-05-20 16:54:29,276 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:54:31,996 - INFO - Loaded The croma Page (tablets)
+2025-05-20 16:54:38,776 - WARNING - Fetched Results For croma (tablets) : 6/6 
+2025-05-20 16:54:38,785 - INFO - Fetched croma (tablets) Successfully
+2025-05-20 16:54:40,008 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:54:42,705 - INFO - Loaded The dell Page (tablets)
+2025-05-20 16:55:01,148 - WARNING - Fetched Results For dell (tablets) : 21/21 
+2025-05-20 16:55:01,160 - INFO - Fetched dell (tablets) Successfully
+2025-05-20 16:55:02,481 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:55:07,025 - INFO - Loaded The gionee Page (tablets)
+2025-05-20 16:55:14,996 - WARNING - Fetched Results For gionee (tablets) : 1/1 
+2025-05-20 16:55:15,004 - INFO - Fetched gionee (tablets) Successfully
+2025-05-20 16:55:16,223 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:55:18,845 - INFO - Loaded The intex Page (tablets)
+2025-05-20 16:55:25,657 - WARNING - Fetched Results For intex (tablets) : 8/8 
+2025-05-20 16:55:25,666 - INFO - Fetched intex (tablets) Successfully
+2025-05-20 16:55:26,868 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:55:29,601 - INFO - Loaded The jio Page (tablets)
+2025-05-20 16:55:38,122 - WARNING - Fetched Results For jio (tablets) : 1/1 
+2025-05-20 16:55:38,129 - INFO - Fetched jio (tablets) Successfully
+2025-05-20 16:55:39,458 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:55:43,983 - INFO - Loaded The micromax Page (tablets)
+2025-05-20 16:56:03,239 - WARNING - Fetched Results For micromax (tablets) : 38/38 
+2025-05-20 16:56:03,254 - INFO - Fetched micromax (tablets) Successfully
+2025-05-20 16:56:04,547 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:56:08,622 - INFO - Loaded The microsoft Page (tablets)
+2025-05-20 16:56:17,720 - WARNING - Fetched Results For microsoft (tablets) : 12/12 
+2025-05-20 16:56:17,728 - INFO - Fetched microsoft (tablets) Successfully
+2025-05-20 16:56:18,928 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:56:22,491 - INFO - Loaded The nubia Page (tablets)
+2025-05-20 16:56:30,094 - WARNING - Fetched Results For nubia (tablets) : 3/3 
+2025-05-20 16:56:30,101 - INFO - Fetched nubia (tablets) Successfully
+2025-05-20 16:56:31,403 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:56:35,012 - INFO - Loaded The panasonic Page (tablets)
+2025-05-20 16:56:42,803 - WARNING - Fetched Results For panasonic (tablets) : 3/3 
+2025-05-20 16:56:42,810 - INFO - Fetched panasonic (tablets) Successfully
+2025-05-20 16:56:44,050 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:56:47,297 - INFO - Loaded The royole Page (tablets)
+2025-05-20 16:56:55,547 - WARNING - Fetched Results For royole (tablets) : 1/1 
+2025-05-20 16:56:55,556 - INFO - Fetched royole (tablets) Successfully
+2025-05-20 16:56:55,747 - INFO - Fetched tablets Successfully
+2025-05-20 16:56:56,941 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 16:56:59,504 - INFO - Loaded The msi Page (laptops)
+2025-05-20 17:02:29,235 - WARNING - Fetched Results For msi (laptops) : 732/732 
+2025-05-20 17:02:29,346 - INFO - Fetched msi (laptops) Successfully
+2025-05-20 17:02:30,702 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 17:02:33,469 - INFO - Loaded The xiaomi Page (laptops)
+2025-05-20 17:03:09,291 - WARNING - Fetched Results For xiaomi (laptops) : 72/72 
+2025-05-20 17:03:09,309 - INFO - Fetched xiaomi (laptops) Successfully
+2025-05-20 17:03:10,544 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 17:03:15,238 - INFO - Loaded The alienware Page (laptops)
+2025-05-20 17:03:25,458 - WARNING - Fetched Results For alienware (laptops) : 20/79 
+2025-05-20 17:03:25,458 - WARNING - Added alienware (laptops) To Failed Cases.
+2025-05-20 17:03:26,975 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 17:03:30,231 - INFO - Loaded The i-life Page (laptops)
+2025-05-20 17:03:38,814 - ERROR - Failed To Fetch The i-life HTML Page (laptops)
+2025-05-20 17:03:38,814 - WARNING - Added i-life (laptops) To Failed Cases.
+2025-05-20 17:03:38,989 - INFO - Fetched laptops Successfully
+2025-05-20 17:03:40,041 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 17:03:42,879 - INFO - Loaded The vivo Page (mobiles)
+2025-05-20 17:08:36,211 - WARNING - Fetched Results For vivo (mobiles) : 632/632 
+2025-05-20 17:08:36,311 - INFO - Fetched vivo (mobiles) Successfully
+2025-05-20 17:08:37,807 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 17:08:40,411 - INFO - Loaded The xiaomi Page (mobiles)
+2025-05-20 17:13:20,577 - WARNING - Fetched Results For xiaomi (mobiles) : 615/615 
+2025-05-20 17:13:20,673 - INFO - Fetched xiaomi (mobiles) Successfully
+2025-05-20 17:13:21,995 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 17:13:26,556 - INFO - Loaded The oppo Page (mobiles)
+2025-05-20 17:17:04,665 - WARNING - Fetched Results For oppo (mobiles) : 463/463 
+2025-05-20 17:17:04,733 - INFO - Fetched oppo (mobiles) Successfully
+2025-05-20 17:17:06,064 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 17:17:11,179 - INFO - Loaded The huawei Page (mobiles)
+2025-05-20 17:19:55,150 - WARNING - Fetched Results For huawei (mobiles) : 345/345 
+2025-05-20 17:19:55,200 - INFO - Fetched huawei (mobiles) Successfully
+2025-05-20 17:19:56,524 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 17:20:01,711 - INFO - Loaded The alcatel Page (mobiles)
+2025-05-20 17:21:20,980 - WARNING - Fetched Results For alcatel (mobiles) : 162/162 
+2025-05-20 17:21:21,009 - INFO - Fetched alcatel (mobiles) Successfully
+2025-05-20 17:21:22,427 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 17:21:25,711 - INFO - Loaded The asus Page (mobiles)
+2025-05-20 17:22:42,979 - WARNING - Fetched Results For asus (mobiles) : 162/162 
+2025-05-20 17:22:43,011 - INFO - Fetched asus (mobiles) Successfully
+2025-05-20 17:22:44,272 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 17:22:48,135 - INFO - Loaded The htc Page (mobiles)
+2025-05-20 17:24:18,965 - WARNING - Fetched Results For htc (mobiles) : 190/190 
+2025-05-20 17:24:19,000 - INFO - Fetched htc (mobiles) Successfully
+2025-05-20 17:24:20,226 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 17:24:24,311 - INFO - Loaded The blackberry Page (mobiles)
+2025-05-20 17:24:47,906 - WARNING - Fetched Results For blackberry (mobiles) : 58/58 
+2025-05-20 17:24:47,922 - INFO - Fetched blackberry (mobiles) Successfully
+2025-05-20 17:24:48,100 - INFO - Fetched mobiles Successfully
+2025-05-20 17:24:49,154 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 17:24:53,123 - INFO - Loaded The xiaomi Page (tablets)
+2025-05-20 17:25:21,510 - WARNING - Fetched Results For xiaomi (tablets) : 41/41 
+2025-05-20 17:25:21,525 - INFO - Fetched xiaomi (tablets) Successfully
+2025-05-20 17:25:22,738 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 17:25:27,134 - INFO - Loaded The asus Page (tablets)
+2025-05-20 17:25:52,237 - WARNING - Fetched Results For asus (tablets) : 47/47 
+2025-05-20 17:25:52,257 - INFO - Fetched asus (tablets) Successfully
+2025-05-20 17:25:52,431 - INFO - Fetched tablets Successfully
+2025-05-20 17:25:53,489 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 17:25:56,643 - INFO - Loaded The alienware Page (laptops)
+2025-05-20 17:26:31,981 - WARNING - Fetched Results For alienware (laptops) : 79/79 
+2025-05-20 17:26:31,999 - INFO - Fetched alienware (laptops) Successfully
+2025-05-20 17:26:33,257 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 17:26:36,902 - INFO - Loaded The i-life Page (laptops)
+2025-05-20 17:26:44,944 - ERROR - Failed To Fetch The i-life HTML Page (laptops)
+2025-05-20 17:26:44,944 - WARNING - Added i-life (laptops) To Failed Cases.
+2025-05-20 17:26:45,117 - INFO - Fetched laptops Successfully
+2025-05-20 17:26:45,117 - INFO - Fetched mobiles Successfully
+2025-05-20 17:26:45,117 - INFO - Fetched tablets Successfully
+2025-05-20 17:26:46,178 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 17:26:49,705 - INFO - Loaded The i-life Page (laptops)
+2025-05-20 17:26:58,817 - ERROR - Failed To Fetch The i-life HTML Page (laptops)
+2025-05-20 17:26:58,817 - WARNING - Added i-life (laptops) To Failed Cases.
+2025-05-20 17:26:58,991 - INFO - Fetched laptops Successfully
+2025-05-20 17:26:58,992 - INFO - Fetched mobiles Successfully
+2025-05-20 17:26:58,992 - INFO - Fetched tablets Successfully
+2025-05-20 17:27:00,017 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 17:27:03,703 - INFO - Loaded The i-life Page (laptops)
+2025-05-20 17:27:11,763 - ERROR - Failed To Fetch The i-life HTML Page (laptops)
+2025-05-20 17:27:11,764 - WARNING - Added i-life (laptops) To Failed Cases.
+2025-05-20 17:27:11,940 - INFO - Fetched laptops Successfully
+2025-05-20 17:27:11,940 - INFO - Fetched mobiles Successfully
+2025-05-20 17:27:11,940 - INFO - Fetched tablets Successfully
+2025-05-20 17:27:12,998 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-20 17:27:16,115 - INFO - Loaded The i-life Page (laptops)
+2025-05-20 17:27:23,076 - ERROR - Failed To Fetch The i-life HTML Page (laptops)
+2025-05-20 17:27:23,076 - WARNING - Added i-life (laptops) To Failed Cases.
+2025-05-20 17:27:23,249 - INFO - Fetched laptops Successfully
+2025-05-20 17:27:23,249 - INFO - Fetched mobiles Successfully
+2025-05-20 17:27:23,249 - INFO - Fetched tablets Successfully
+2025-05-22 15:11:45,018 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 15:11:52,542 - INFO - Extracted The Brands List For laptops
+2025-05-22 15:11:53,786 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 15:11:57,533 - INFO - Loaded The hp Page (laptops)
+2025-05-22 15:19:54,945 - WARNING - Fetched Results For hp (laptops) : 1020/1020 
+2025-05-22 15:19:55,081 - INFO - Fetched hp (laptops) Successfully
+2025-05-22 15:19:56,529 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 15:20:02,151 - INFO - Loaded The lenovo Page (laptops)
+2025-05-22 15:27:44,896 - WARNING - Fetched Results For lenovo (laptops) : 1020/1020 
+2025-05-22 15:27:45,043 - INFO - Fetched lenovo (laptops) Successfully
+2025-05-22 15:27:46,370 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 15:27:51,399 - INFO - Loaded The asus Page (laptops)
+2025-05-22 15:35:39,593 - WARNING - Fetched Results For asus (laptops) : 1020/1020 
+2025-05-22 15:35:39,733 - INFO - Fetched asus (laptops) Successfully
+2025-05-22 15:35:41,130 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 15:35:46,028 - INFO - Loaded The dell Page (laptops)
+2025-05-22 15:36:14,649 - ERROR - Failed To Fetch The dell HTML Page (laptops) : Message: invalid session id: session deleted as the browser has closed the connection
+from disconnected: not connected to DevTools
+  (Session info: chrome=136.0.7103.114)
+Stacktrace:
+	GetHandleVerifier [0x00D1FC03+61635]
+	GetHandleVerifier [0x00D1FC44+61700]
+	(No symbol) [0x00B405D3]
+	(No symbol) [0x00B2FE20]
+	(No symbol) [0x00B4DD1F]
+	(No symbol) [0x00BB3E8C]
+	(No symbol) [0x00BCDF19]
+	(No symbol) [0x00BAD096]
+	(No symbol) [0x00B7C840]
+	(No symbol) [0x00B7D6A4]
+	GetHandleVerifier [0x00FA4523+2701795]
+	GetHandleVerifier [0x00F9FCA6+2683238]
+	GetHandleVerifier [0x00FBA9EE+2793134]
+	GetHandleVerifier [0x00D368C5+155013]
+	GetHandleVerifier [0x00D3CFAD+181357]
+	GetHandleVerifier [0x00D27458+92440]
+	GetHandleVerifier [0x00D27600+92864]
+	GetHandleVerifier [0x00D11FF0+5296]
+	BaseThreadInitThunk [0x7511FCC9+25]
+	RtlGetAppContainerNamedObjectPath [0x76FD82AE+286]
+	RtlGetAppContainerNamedObjectPath [0x76FD827E+238]
+
+2025-05-22 15:36:14,649 - WARNING - Added dell (laptops) To Failed Cases.
+2025-05-22 15:36:15,846 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 15:36:22,444 - INFO - Loaded The acer Page (laptops)
+2025-05-22 19:03:27,933 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 19:03:33,983 - INFO - Extracted The Brands List For laptops
+2025-05-22 19:03:35,404 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 19:03:40,639 - INFO - Loaded The hp Page (laptops)
+2025-05-22 19:11:27,658 - WARNING - Fetched Results For hp (laptops) : 1020/1020 
+2025-05-22 19:11:27,798 - INFO - Fetched hp (laptops) Successfully
+2025-05-22 19:11:29,166 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 19:11:33,566 - INFO - Loaded The lenovo Page (laptops)
+2025-05-22 19:19:17,559 - WARNING - Fetched Results For lenovo (laptops) : 1020/1020 
+2025-05-22 19:19:17,701 - INFO - Fetched lenovo (laptops) Successfully
+2025-05-22 19:19:18,996 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 19:19:25,717 - INFO - Loaded The asus Page (laptops)
+2025-05-22 19:27:13,018 - WARNING - Fetched Results For asus (laptops) : 1020/1020 
+2025-05-22 19:27:13,178 - INFO - Fetched asus (laptops) Successfully
+2025-05-22 19:27:14,540 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 19:27:20,186 - INFO - Loaded The dell Page (laptops)
+2025-05-22 19:35:10,721 - WARNING - Fetched Results For dell (laptops) : 1020/1020 
+2025-05-22 19:35:10,866 - INFO - Fetched dell (laptops) Successfully
+2025-05-22 19:35:12,214 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 19:35:18,930 - INFO - Loaded The acer Page (laptops)
+2025-05-22 19:43:02,945 - WARNING - Fetched Results For acer (laptops) : 1020/1020 
+2025-05-22 19:43:03,083 - INFO - Fetched acer (laptops) Successfully
+2025-05-22 19:43:04,413 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 19:43:08,221 - INFO - Loaded The msi Page (laptops)
+2025-05-22 19:48:34,475 - WARNING - Fetched Results For msi (laptops) : 732/732 
+2025-05-22 19:48:34,576 - INFO - Fetched msi (laptops) Successfully
+2025-05-22 19:48:35,892 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 19:48:40,337 - INFO - Loaded The apple Page (laptops)
+2025-05-22 19:50:36,268 - WARNING - Fetched Results For apple (laptops) : 241/241 
+2025-05-22 19:50:36,306 - INFO - Fetched apple (laptops) Successfully
+2025-05-22 19:50:37,536 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 19:50:43,856 - INFO - Loaded The huawei Page (laptops)
+2025-05-22 19:51:02,365 - WARNING - Fetched Results For huawei (laptops) : 35/35 
+2025-05-22 19:51:02,378 - INFO - Fetched huawei (laptops) Successfully
+2025-05-22 19:51:03,689 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 19:51:07,546 - INFO - Loaded The samsung Page (laptops)
+2025-05-22 19:52:28,928 - WARNING - Fetched Results For samsung (laptops) : 175/175 
+2025-05-22 19:52:28,958 - INFO - Fetched samsung (laptops) Successfully
+2025-05-22 19:52:30,178 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 19:52:34,676 - INFO - Loaded The infinix Page (laptops)
+2025-05-22 19:53:10,936 - WARNING - Fetched Results For infinix (laptops) : 63/63 
+2025-05-22 19:53:10,953 - INFO - Fetched infinix (laptops) Successfully
+2025-05-22 19:53:12,153 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 19:53:15,999 - INFO - Loaded The gigabyte Page (laptops)
+2025-05-22 19:53:42,887 - WARNING - Fetched Results For gigabyte (laptops) : 44/44 
+2025-05-22 19:53:42,902 - INFO - Fetched gigabyte (laptops) Successfully
+2025-05-22 19:53:44,330 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 19:53:50,353 - INFO - Loaded The microsoft Page (laptops)
+2025-05-22 19:54:44,871 - WARNING - Fetched Results For microsoft (laptops) : 110/110 
+2025-05-22 19:54:44,893 - INFO - Fetched microsoft (laptops) Successfully
+2025-05-22 19:54:46,136 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 19:54:50,920 - INFO - Loaded The xiaomi Page (laptops)
+2025-05-22 19:55:26,599 - WARNING - Fetched Results For xiaomi (laptops) : 72/72 
+2025-05-22 19:55:26,616 - INFO - Fetched xiaomi (laptops) Successfully
+2025-05-22 19:55:27,810 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 19:55:30,819 - INFO - Loaded The alienware Page (laptops)
+2025-05-22 19:56:03,855 - WARNING - Fetched Results For alienware (laptops) : 79/79 
+2025-05-22 19:56:03,873 - INFO - Fetched alienware (laptops) Successfully
+2025-05-22 19:56:05,080 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 19:56:08,963 - INFO - Loaded The colorful Page (laptops)
+2025-05-22 19:56:17,212 - WARNING - Fetched Results For colorful (laptops) : 5/5 
+2025-05-22 19:56:17,220 - INFO - Fetched colorful (laptops) Successfully
+2025-05-22 19:56:18,434 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 19:56:23,312 - INFO - Loaded The honor Page (laptops)
+2025-05-22 19:56:39,620 - WARNING - Fetched Results For honor (laptops) : 34/34 
+2025-05-22 19:56:39,632 - INFO - Fetched honor (laptops) Successfully
+2025-05-22 19:56:40,886 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 19:56:44,377 - INFO - Loaded The avita Page (laptops)
+2025-05-22 19:57:12,667 - WARNING - Fetched Results For avita (laptops) : 53/53 
+2025-05-22 19:57:12,683 - INFO - Fetched avita (laptops) Successfully
+2025-05-22 19:57:13,864 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 19:57:18,613 - INFO - Loaded The chuwi Page (laptops)
+2025-05-22 19:57:35,899 - WARNING - Fetched Results For chuwi (laptops) : 22/22 
+2025-05-22 19:57:35,911 - INFO - Fetched chuwi (laptops) Successfully
+2025-05-22 19:57:37,122 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 19:57:41,542 - INFO - Loaded The thomson Page (laptops)
+2025-05-22 19:57:48,483 - WARNING - Fetched Results For thomson (laptops) : 8/8 
+2025-05-22 19:57:48,492 - INFO - Fetched thomson (laptops) Successfully
+2025-05-22 19:57:49,765 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 19:57:52,755 - INFO - Loaded The toshiba Page (laptops)
+2025-05-22 19:59:22,467 - WARNING - Fetched Results For toshiba (laptops) : 190/190 
+2025-05-22 19:59:22,501 - INFO - Fetched toshiba (laptops) Successfully
+2025-05-22 19:59:24,359 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 19:59:28,721 - INFO - Loaded The motorola Page (laptops)
+2025-05-22 19:59:36,939 - WARNING - Fetched Results For motorola (laptops) : 3/3 
+2025-05-22 19:59:36,947 - INFO - Fetched motorola (laptops) Successfully
+2025-05-22 19:59:38,159 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 19:59:41,995 - INFO - Loaded The sony Page (laptops)
+2025-05-22 20:00:28,170 - WARNING - Fetched Results For sony (laptops) : 80/80 
+2025-05-22 20:00:28,188 - INFO - Fetched sony (laptops) Successfully
+2025-05-22 20:00:29,403 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 20:00:33,351 - INFO - Loaded The ultimus Page (laptops)
+2025-05-22 20:00:41,306 - WARNING - Fetched Results For ultimus (laptops) : 14/14 
+2025-05-22 20:00:41,315 - INFO - Fetched ultimus (laptops) Successfully
+2025-05-22 20:00:42,500 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 20:00:45,505 - INFO - Loaded The razer Page (laptops)
+2025-05-22 20:00:54,199 - WARNING - Fetched Results For razer (laptops) : 8/8 
+2025-05-22 20:00:54,208 - INFO - Fetched razer (laptops) Successfully
+2025-05-22 20:00:55,434 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 20:00:58,349 - INFO - Loaded The tecno Page (laptops)
+2025-05-22 20:01:07,692 - WARNING - Fetched Results For tecno (laptops) : 5/5 
+2025-05-22 20:01:07,700 - INFO - Fetched tecno (laptops) Successfully
+2025-05-22 20:01:08,893 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 20:01:12,630 - INFO - Loaded The zebronics Page (laptops)
+2025-05-22 20:01:20,473 - WARNING - Fetched Results For zebronics (laptops) : 8/8 
+2025-05-22 20:01:20,482 - INFO - Fetched zebronics (laptops) Successfully
+2025-05-22 20:01:21,686 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 20:01:25,634 - INFO - Loaded The iball Page (laptops)
+2025-05-22 20:01:33,526 - WARNING - Fetched Results For iball (laptops) : 15/15 
+2025-05-22 20:01:33,536 - INFO - Fetched iball (laptops) Successfully
+2025-05-22 20:01:34,745 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 20:01:38,503 - INFO - Loaded The primebook Page (laptops)
+2025-05-22 20:01:46,761 - WARNING - Fetched Results For primebook (laptops) : 4/4 
+2025-05-22 20:01:46,768 - INFO - Fetched primebook (laptops) Successfully
+2025-05-22 20:01:47,952 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 20:01:50,882 - INFO - Loaded The air Page (laptops)
+2025-05-22 20:01:59,824 - WARNING - Fetched Results For air (laptops) : 2/2 
+2025-05-22 20:01:59,832 - INFO - Fetched air (laptops) Successfully
+2025-05-22 20:02:01,030 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 20:02:06,278 - INFO - Loaded The hcl Page (laptops)
+2025-05-22 20:02:24,380 - WARNING - Fetched Results For hcl (laptops) : 34/34 
+2025-05-22 20:02:24,392 - INFO - Fetched hcl (laptops) Successfully
+2025-05-22 20:02:25,668 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 20:02:30,577 - INFO - Loaded The micromax Page (laptops)
+2025-05-22 20:02:38,692 - WARNING - Fetched Results For micromax (laptops) : 9/9 
+2025-05-22 20:02:38,702 - INFO - Fetched micromax (laptops) Successfully
+2025-05-22 20:02:39,978 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 20:02:44,349 - INFO - Loaded The nokia Page (laptops)
+2025-05-22 20:02:52,115 - WARNING - Fetched Results For nokia (laptops) : 7/7 
+2025-05-22 20:02:52,124 - INFO - Fetched nokia (laptops) Successfully
+2025-05-22 20:02:53,408 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 20:02:57,045 - INFO - Loaded The realme Page (laptops)
+2025-05-22 20:03:04,065 - WARNING - Fetched Results For realme (laptops) : 6/6 
+2025-05-22 20:03:04,074 - INFO - Fetched realme (laptops) Successfully
+2025-05-22 20:03:05,284 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 20:03:10,329 - INFO - Loaded The redmagic Page (laptops)
+2025-05-22 20:03:18,314 - WARNING - Fetched Results For redmagic (laptops) : 1/1 
+2025-05-22 20:03:18,321 - INFO - Fetched redmagic (laptops) Successfully
+2025-05-22 20:03:19,614 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 20:03:24,023 - INFO - Loaded The wings Page (laptops)
+2025-05-22 20:03:32,916 - WARNING - Fetched Results For wings (laptops) : 4/4 
+2025-05-22 20:03:32,924 - INFO - Fetched wings (laptops) Successfully
+2025-05-22 20:03:34,252 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 20:03:37,952 - INFO - Loaded The datamini Page (laptops)
+2025-05-22 20:03:46,201 - WARNING - Fetched Results For datamini (laptops) : 1/1 
+2025-05-22 20:03:46,209 - INFO - Fetched datamini (laptops) Successfully
+2025-05-22 20:03:47,626 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 20:03:53,323 - INFO - Loaded The google Page (laptops)
+2025-05-22 20:04:00,533 - WARNING - Fetched Results For google (laptops) : 5/5 
+2025-05-22 20:04:00,542 - INFO - Fetched google (laptops) Successfully
+2025-05-22 20:04:01,733 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 20:04:05,293 - INFO - Loaded The i_life Page (laptops)
+2025-05-22 20:04:12,482 - WARNING - Fetched Results For i_life (laptops) : 1/1 
+2025-05-22 20:04:12,490 - INFO - Fetched i_life (laptops) Successfully
+2025-05-22 20:04:13,701 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 20:04:17,301 - INFO - Loaded The jio Page (laptops)
+2025-05-22 20:04:25,175 - WARNING - Fetched Results For jio (laptops) : 4/4 
+2025-05-22 20:04:25,183 - INFO - Fetched jio (laptops) Successfully
+2025-05-22 20:04:26,381 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 20:04:29,808 - INFO - Loaded The lg Page (laptops)
+2025-05-22 20:04:54,286 - WARNING - Fetched Results For lg (laptops) : 42/42 
+2025-05-22 20:04:54,300 - INFO - Fetched lg (laptops) Successfully
+2025-05-22 20:04:55,493 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 20:04:59,943 - INFO - Loaded The lifedigital Page (laptops)
+2025-05-22 20:05:06,408 - WARNING - Fetched Results For lifedigital (laptops) : 14/14 
+2025-05-22 20:05:06,418 - INFO - Fetched lifedigital (laptops) Successfully
+2025-05-22 20:05:07,614 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 20:05:11,032 - INFO - Loaded The ninkear Page (laptops)
+2025-05-22 20:05:18,910 - WARNING - Fetched Results For ninkear (laptops) : 1/1 
+2025-05-22 20:05:18,918 - INFO - Fetched ninkear (laptops) Successfully
+2025-05-22 20:05:20,116 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 20:05:23,082 - INFO - Loaded The reach Page (laptops)
+2025-05-22 20:05:31,773 - WARNING - Fetched Results For reach (laptops) : 5/5 
+2025-05-22 20:05:31,781 - INFO - Fetched reach (laptops) Successfully
+2025-05-22 20:05:32,977 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 20:05:36,323 - INFO - Loaded The yepo Page (laptops)
+2025-05-22 20:05:42,935 - WARNING - Fetched Results For yepo (laptops) : 10/10 
+2025-05-22 20:05:42,944 - INFO - Fetched yepo (laptops) Successfully
+2025-05-22 20:05:44,146 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 20:05:48,501 - INFO - Loaded The agb Page (laptops)
+2025-05-22 20:05:56,755 - WARNING - Fetched Results For agb (laptops) : 17/17 
+2025-05-22 20:05:56,767 - INFO - Fetched agb (laptops) Successfully
+2025-05-22 20:05:58,032 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 20:06:01,908 - INFO - Loaded The axl Page (laptops)
+2025-05-22 20:06:10,064 - WARNING - Fetched Results For axl (laptops) : 3/3 
+2025-05-22 20:06:10,072 - INFO - Fetched axl (laptops) Successfully
+2025-05-22 20:06:11,279 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 20:06:16,291 - INFO - Loaded The binai Page (laptops)
+2025-05-22 20:06:24,447 - WARNING - Fetched Results For binai (laptops) : 1/1 
+2025-05-22 20:06:24,454 - INFO - Fetched binai (laptops) Successfully
+2025-05-22 20:06:25,650 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 20:06:29,445 - INFO - Loaded The cenava Page (laptops)
+2025-05-22 20:06:37,720 - WARNING - Fetched Results For cenava (laptops) : 18/18 
+2025-05-22 20:06:37,730 - INFO - Fetched cenava (laptops) Successfully
+2025-05-22 20:06:38,925 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 20:06:43,302 - INFO - Loaded The champion Page (laptops)
+2025-05-22 20:06:51,860 - WARNING - Fetched Results For champion (laptops) : 1/1 
+2025-05-22 20:06:51,867 - INFO - Fetched champion (laptops) Successfully
+2025-05-22 20:06:53,134 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 20:06:56,816 - INFO - Loaded The coconics Page (laptops)
+2025-05-22 20:07:05,828 - WARNING - Fetched Results For coconics (laptops) : 11/11 
+2025-05-22 20:07:05,837 - INFO - Fetched coconics (laptops) Successfully
+2025-05-22 20:07:06,089 - INFO - Fetched laptops Successfully
+2025-05-22 20:07:07,120 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 20:07:10,141 - INFO - Extracted The Brands List For mobiles
+2025-05-22 20:07:11,337 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 20:07:15,190 - INFO - Loaded The samsung Page (mobiles)
+2025-05-22 20:14:13,551 - WARNING - Fetched Results For samsung (mobiles) : 913/913 
+2025-05-22 20:14:13,675 - INFO - Fetched samsung (mobiles) Successfully
+2025-05-22 20:14:14,971 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 20:14:18,621 - INFO - Loaded The vivo Page (mobiles)
+2025-05-22 20:19:05,540 - WARNING - Fetched Results For vivo (mobiles) : 632/634 
+2025-05-22 20:19:05,540 - WARNING - Added vivo (mobiles) To Failed Cases.
+2025-05-22 20:19:06,840 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 20:19:11,470 - INFO - Loaded The realme Page (mobiles)
+2025-05-22 20:23:10,421 - WARNING - Fetched Results For realme (mobiles) : 530/530 
+2025-05-22 20:23:10,500 - INFO - Fetched realme (mobiles) Successfully
+2025-05-22 20:23:11,794 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 20:23:16,279 - INFO - Loaded The oneplus Page (mobiles)
+2025-05-22 20:24:37,150 - WARNING - Fetched Results For oneplus (mobiles) : 174/174 
+2025-05-22 20:24:37,183 - INFO - Fetched oneplus (mobiles) Successfully
+2025-05-22 20:24:38,465 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 20:24:41,713 - INFO - Loaded The oppo Page (mobiles)
+2025-05-22 20:28:15,457 - WARNING - Fetched Results For oppo (mobiles) : 463/463 
+2025-05-22 20:28:15,526 - INFO - Fetched oppo (mobiles) Successfully
+2025-05-22 20:28:16,827 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 20:28:21,425 - INFO - Loaded The motorola Page (mobiles)
+2025-05-22 20:31:46,164 - WARNING - Fetched Results For motorola (mobiles) : 422/422 
+2025-05-22 20:31:46,227 - INFO - Fetched motorola (mobiles) Successfully
+2025-05-22 20:31:47,511 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 20:31:52,105 - INFO - Loaded The xiaomi Page (mobiles)
+2025-05-22 20:36:31,962 - WARNING - Fetched Results For xiaomi (mobiles) : 615/615 
+2025-05-22 20:36:32,055 - INFO - Fetched xiaomi (mobiles) Successfully
+2025-05-22 20:36:33,368 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 20:36:38,034 - INFO - Loaded The iqoo Page (mobiles)
+2025-05-22 20:38:00,284 - WARNING - Fetched Results For iqoo (mobiles) : 175/176 
+2025-05-22 20:38:00,284 - WARNING - Added iqoo (mobiles) To Failed Cases.
+2025-05-22 20:38:01,571 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 20:38:06,541 - INFO - Loaded The poco Page (mobiles)
+2025-05-22 20:39:16,783 - WARNING - Fetched Results For poco (mobiles) : 144/144 
+2025-05-22 20:39:16,809 - INFO - Fetched poco (mobiles) Successfully
+2025-05-22 20:39:18,092 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 20:39:22,646 - INFO - Loaded The infinix Page (mobiles)
+2025-05-22 20:40:46,210 - WARNING - Fetched Results For infinix (mobiles) : 181/181 
+2025-05-22 20:40:46,244 - INFO - Fetched infinix (mobiles) Successfully
+2025-05-22 20:40:47,580 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 20:40:54,001 - INFO - Loaded The apple Page (mobiles)
+2025-05-22 20:42:17,269 - WARNING - Fetched Results For apple (mobiles) : 173/173 
+2025-05-22 20:42:17,301 - INFO - Fetched apple (mobiles) Successfully
+2025-05-22 20:42:18,600 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 20:42:22,505 - INFO - Loaded The nothing Page (mobiles)
+2025-05-22 20:42:38,190 - WARNING - Fetched Results For nothing (mobiles) : 24/24 
+2025-05-22 20:42:38,203 - INFO - Fetched nothing (mobiles) Successfully
+2025-05-22 20:42:39,480 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 20:42:43,426 - INFO - Loaded The tecno Page (mobiles)
+2025-05-22 20:44:28,768 - WARNING - Fetched Results For tecno (mobiles) : 222/222 
+2025-05-22 20:44:28,802 - INFO - Fetched tecno (mobiles) Successfully
+2025-05-22 20:44:30,104 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 20:44:33,919 - INFO - Loaded The honor Page (mobiles)
+2025-05-22 20:47:05,733 - WARNING - Fetched Results For honor (mobiles) : 312/312 
+2025-05-22 20:47:05,780 - INFO - Fetched honor (mobiles) Successfully
+2025-05-22 20:47:07,057 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 20:47:11,951 - INFO - Loaded The nokia Page (mobiles)
+2025-05-22 20:50:13,767 - WARNING - Fetched Results For nokia (mobiles) : 406/406 
+2025-05-22 20:50:13,824 - INFO - Fetched nokia (mobiles) Successfully
+2025-05-22 20:50:15,164 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 20:50:19,988 - INFO - Loaded The itel Page (mobiles)
+2025-05-22 20:52:07,616 - WARNING - Fetched Results For itel (mobiles) : 220/221 
+2025-05-22 20:52:07,617 - WARNING - Added itel (mobiles) To Failed Cases.
+2025-05-22 20:52:08,865 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 20:52:13,580 - INFO - Loaded The google Page (mobiles)
+2025-05-22 20:52:48,513 - WARNING - Fetched Results For google (mobiles) : 63/63 
+2025-05-22 20:52:48,531 - INFO - Fetched google (mobiles) Successfully
+2025-05-22 20:52:49,831 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 20:52:53,267 - INFO - Loaded The cmf Page (mobiles)
+2025-05-22 20:53:02,859 - WARNING - Fetched Results For cmf (mobiles) : 6/6 
+2025-05-22 20:53:02,867 - INFO - Fetched cmf (mobiles) Successfully
+2025-05-22 20:53:04,062 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 20:53:07,913 - INFO - Loaded The lava Page (mobiles)
+2025-05-22 20:56:58,713 - WARNING - Fetched Results For lava (mobiles) : 499/499 
+2025-05-22 20:56:58,781 - INFO - Fetched lava (mobiles) Successfully
+2025-05-22 20:57:00,090 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 20:57:04,406 - INFO - Loaded The alcatel Page (mobiles)
+2025-05-22 20:58:23,227 - WARNING - Fetched Results For alcatel (mobiles) : 162/163 
+2025-05-22 20:58:23,227 - WARNING - Added alcatel (mobiles) To Failed Cases.
+2025-05-22 20:58:24,554 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 20:58:29,317 - INFO - Loaded The huawei Page (mobiles)
+2025-05-22 21:01:06,023 - WARNING - Fetched Results For huawei (mobiles) : 345/345 
+2025-05-22 21:01:06,081 - INFO - Fetched huawei (mobiles) Successfully
+2025-05-22 21:01:07,286 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:01:12,104 - INFO - Loaded The sony Page (mobiles)
+2025-05-22 21:02:35,545 - WARNING - Fetched Results For sony (mobiles) : 174/174 
+2025-05-22 21:02:35,579 - INFO - Fetched sony (mobiles) Successfully
+2025-05-22 21:02:36,784 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:02:40,610 - INFO - Loaded The nubia Page (mobiles)
+2025-05-22 21:03:17,236 - WARNING - Fetched Results For nubia (mobiles) : 68/68 
+2025-05-22 21:03:17,252 - INFO - Fetched nubia (mobiles) Successfully
+2025-05-22 21:03:18,449 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:03:21,864 - INFO - Loaded The micromax Page (mobiles)
+2025-05-22 21:08:17,160 - WARNING - Fetched Results For micromax (mobiles) : 663/663 
+2025-05-22 21:08:17,244 - INFO - Fetched micromax (mobiles) Successfully
+2025-05-22 21:08:18,649 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:08:23,910 - INFO - Loaded The redmagic Page (mobiles)
+2025-05-22 21:08:39,867 - WARNING - Fetched Results For redmagic (mobiles) : 32/32 
+2025-05-22 21:08:39,881 - INFO - Fetched redmagic (mobiles) Successfully
+2025-05-22 21:08:41,076 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:08:44,459 - INFO - Loaded The jio Page (mobiles)
+2025-05-22 21:08:53,676 - WARNING - Fetched Results For jio (mobiles) : 17/17 
+2025-05-22 21:08:53,687 - INFO - Fetched jio (mobiles) Successfully
+2025-05-22 21:08:54,972 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:08:58,949 - INFO - Loaded The asus Page (mobiles)
+2025-05-22 21:10:22,264 - WARNING - Fetched Results For asus (mobiles) : 162/162 
+2025-05-22 21:10:22,293 - INFO - Fetched asus (mobiles) Successfully
+2025-05-22 21:10:23,579 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:10:28,064 - INFO - Loaded The acer Page (mobiles)
+2025-05-22 21:10:56,304 - WARNING - Fetched Results For acer (mobiles) : 47/47 
+2025-05-22 21:10:56,318 - INFO - Fetched acer (mobiles) Successfully
+2025-05-22 21:10:57,594 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:11:03,244 - INFO - Loaded The ikall Page (mobiles)
+2025-05-22 21:13:40,415 - WARNING - Fetched Results For ikall (mobiles) : 347/347 
+2025-05-22 21:13:40,464 - INFO - Fetched ikall (mobiles) Successfully
+2025-05-22 21:13:41,673 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:13:46,632 - INFO - Loaded The hmd Page (mobiles)
+2025-05-22 21:14:03,414 - WARNING - Fetched Results For hmd (mobiles) : 36/36 
+2025-05-22 21:14:03,427 - INFO - Fetched hmd (mobiles) Successfully
+2025-05-22 21:14:04,701 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:14:08,254 - INFO - Loaded The htc Page (mobiles)
+2025-05-22 21:15:33,205 - WARNING - Fetched Results For htc (mobiles) : 190/190 
+2025-05-22 21:15:33,240 - INFO - Fetched htc (mobiles) Successfully
+2025-05-22 21:15:34,454 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:15:38,558 - INFO - Loaded The ulefone Page (mobiles)
+2025-05-22 21:16:23,350 - WARNING - Fetched Results For ulefone (mobiles) : 85/85 
+2025-05-22 21:16:23,368 - INFO - Fetched ulefone (mobiles) Successfully
+2025-05-22 21:16:24,567 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:16:27,894 - INFO - Loaded The lg Page (mobiles)
+2025-05-22 21:18:29,568 - WARNING - Fetched Results For lg (mobiles) : 260/306 
+2025-05-22 21:18:29,568 - WARNING - Added lg (mobiles) To Failed Cases.
+2025-05-22 21:18:30,789 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:18:35,420 - INFO - Loaded The lenovo Page (mobiles)
+2025-05-22 21:20:10,876 - WARNING - Fetched Results For lenovo (mobiles) : 198/198 
+2025-05-22 21:20:10,911 - INFO - Fetched lenovo (mobiles) Successfully
+2025-05-22 21:20:12,105 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:20:15,550 - INFO - Loaded The karbonn Page (mobiles)
+2025-05-22 21:21:52,924 - WARNING - Fetched Results For karbonn (mobiles) : 220/638 
+2025-05-22 21:21:52,924 - WARNING - Added karbonn (mobiles) To Failed Cases.
+2025-05-22 21:21:54,168 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:21:57,974 - INFO - Loaded The doogee Page (mobiles)
+2025-05-22 21:22:44,196 - WARNING - Fetched Results For doogee (mobiles) : 87/87 
+2025-05-22 21:22:44,215 - INFO - Fetched doogee (mobiles) Successfully
+2025-05-22 21:22:45,399 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:22:49,944 - INFO - Loaded The kechaoda Page (mobiles)
+2025-05-22 21:23:41,968 - WARNING - Fetched Results For kechaoda (mobiles) : 113/113 
+2025-05-22 21:23:41,990 - INFO - Fetched kechaoda (mobiles) Successfully
+2025-05-22 21:23:43,656 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:23:47,560 - INFO - Loaded The intex Page (mobiles)
+2025-05-22 21:23:57,523 - WARNING - Fetched Results For intex (mobiles) : 20/608 
+2025-05-22 21:23:57,523 - WARNING - Added intex (mobiles) To Failed Cases.
+2025-05-22 21:23:58,709 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:24:02,491 - INFO - Loaded The zte Page (mobiles)
+2025-05-22 21:25:33,057 - WARNING - Fetched Results For zte (mobiles) : 192/192 
+2025-05-22 21:25:33,090 - INFO - Fetched zte (mobiles) Successfully
+2025-05-22 21:25:34,323 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:25:40,094 - INFO - Loaded The gionee Page (mobiles)
+2025-05-22 21:26:35,188 - WARNING - Fetched Results For gionee (mobiles) : 117/117 
+2025-05-22 21:26:35,211 - INFO - Fetched gionee (mobiles) Successfully
+2025-05-22 21:26:36,428 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:26:41,391 - INFO - Loaded The meizu Page (mobiles)
+2025-05-22 21:27:27,122 - WARNING - Fetched Results For meizu (mobiles) : 92/94 
+2025-05-22 21:27:27,122 - WARNING - Added meizu (mobiles) To Failed Cases.
+2025-05-22 21:27:28,388 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:27:34,399 - INFO - Loaded The tcl Page (mobiles)
+2025-05-22 21:28:08,307 - WARNING - Fetched Results For tcl (mobiles) : 67/67 
+2025-05-22 21:28:08,324 - INFO - Fetched tcl (mobiles) Successfully
+2025-05-22 21:28:09,612 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:28:13,046 - INFO - Loaded The spice Page (mobiles)
+2025-05-22 21:31:07,180 - WARNING - Fetched Results For spice (mobiles) : 376/376 
+2025-05-22 21:31:07,238 - INFO - Fetched spice (mobiles) Successfully
+2025-05-22 21:31:08,565 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:31:13,163 - INFO - Loaded The jmax Page (mobiles)
+2025-05-22 21:31:54,544 - WARNING - Fetched Results For jmax (mobiles) : 98/98 
+2025-05-22 21:31:54,564 - INFO - Fetched jmax (mobiles) Successfully
+2025-05-22 21:31:55,873 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:32:13,337 - INFO - Loaded The snexian Page (mobiles)
+2025-05-22 21:33:34,469 - WARNING - Fetched Results For snexian (mobiles) : 165/165 
+2025-05-22 21:33:34,501 - INFO - Fetched snexian (mobiles) Successfully
+2025-05-22 21:33:35,745 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:33:40,388 - INFO - Loaded The blackberry Page (mobiles)
+2025-05-22 21:34:07,929 - WARNING - Fetched Results For blackberry (mobiles) : 58/58 
+2025-05-22 21:34:07,946 - INFO - Fetched blackberry (mobiles) Successfully
+2025-05-22 21:34:09,195 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:34:13,106 - INFO - Loaded The light Page (mobiles)
+2025-05-22 21:34:21,195 - WARNING - Fetched Results For light (mobiles) : 2/2 
+2025-05-22 21:34:21,204 - INFO - Fetched light (mobiles) Successfully
+2025-05-22 21:34:22,439 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:34:27,247 - INFO - Loaded The panasonic Page (mobiles)
+2025-05-22 21:35:19,969 - WARNING - Fetched Results For panasonic (mobiles) : 114/114 
+2025-05-22 21:35:19,991 - INFO - Fetched panasonic (mobiles) Successfully
+2025-05-22 21:35:21,297 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:35:26,088 - INFO - Loaded The tesla Page (mobiles)
+2025-05-22 21:35:34,221 - WARNING - Fetched Results For tesla (mobiles) : 1/1 
+2025-05-22 21:35:34,230 - INFO - Fetched tesla (mobiles) Successfully
+2025-05-22 21:35:35,519 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:35:39,336 - INFO - Loaded The hotline Page (mobiles)
+2025-05-22 21:36:05,864 - WARNING - Fetched Results For hotline (mobiles) : 45/45 
+2025-05-22 21:36:05,880 - INFO - Fetched hotline (mobiles) Successfully
+2025-05-22 21:36:06,062 - INFO - Fetched mobiles Successfully
+2025-05-22 21:36:07,088 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:36:11,735 - INFO - Extracted The Brands List For tablets
+2025-05-22 21:36:12,921 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:36:18,845 - INFO - Loaded The samsung Page (tablets)
+2025-05-22 21:37:40,945 - WARNING - Fetched Results For samsung (tablets) : 164/164 
+2025-05-22 21:37:40,975 - INFO - Fetched samsung (tablets) Successfully
+2025-05-22 21:37:42,157 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:37:48,256 - INFO - Loaded The xiaomi Page (tablets)
+2025-05-22 21:38:12,903 - WARNING - Fetched Results For xiaomi (tablets) : 41/41 
+2025-05-22 21:38:12,916 - INFO - Fetched xiaomi (tablets) Successfully
+2025-05-22 21:38:14,125 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:38:17,344 - INFO - Loaded The lenovo Page (tablets)
+2025-05-22 21:39:57,092 - WARNING - Fetched Results For lenovo (tablets) : 214/214 
+2025-05-22 21:39:57,129 - INFO - Fetched lenovo (tablets) Successfully
+2025-05-22 21:39:58,336 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:40:04,808 - INFO - Loaded The apple Page (tablets)
+2025-05-22 21:42:19,066 - WARNING - Fetched Results For apple (tablets) : 280/280 
+2025-05-22 21:42:19,111 - INFO - Fetched apple (tablets) Successfully
+2025-05-22 21:42:20,376 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:42:25,300 - INFO - Loaded The oneplus Page (tablets)
+2025-05-22 21:42:31,945 - WARNING - Fetched Results For oneplus (tablets) : 12/12 
+2025-05-22 21:42:31,955 - INFO - Fetched oneplus (tablets) Successfully
+2025-05-22 21:42:33,196 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:42:37,009 - INFO - Loaded The motorola Page (tablets)
+2025-05-22 21:42:43,861 - WARNING - Fetched Results For motorola (tablets) : 12/12 
+2025-05-22 21:42:43,872 - INFO - Fetched motorola (tablets) Successfully
+2025-05-22 21:42:45,334 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:42:48,911 - INFO - Loaded The realme Page (tablets)
+2025-05-22 21:43:07,049 - WARNING - Fetched Results For realme (tablets) : 21/21 
+2025-05-22 21:43:07,061 - INFO - Fetched realme (tablets) Successfully
+2025-05-22 21:43:08,262 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:43:11,751 - INFO - Loaded The honor Page (tablets)
+2025-05-22 21:43:26,775 - WARNING - Fetched Results For honor (tablets) : 35/35 
+2025-05-22 21:43:26,788 - INFO - Fetched honor (tablets) Successfully
+2025-05-22 21:43:28,084 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:43:31,610 - INFO - Loaded The huawei Page (tablets)
+2025-05-22 21:44:07,473 - WARNING - Fetched Results For huawei (tablets) : 69/69 
+2025-05-22 21:44:07,490 - INFO - Fetched huawei (tablets) Successfully
+2025-05-22 21:44:08,926 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:44:12,769 - INFO - Loaded The oppo Page (tablets)
+2025-05-22 21:44:21,963 - WARNING - Fetched Results For oppo (tablets) : 12/12 
+2025-05-22 21:44:21,973 - INFO - Fetched oppo (tablets) Successfully
+2025-05-22 21:44:23,179 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:44:26,965 - INFO - Loaded The infinix Page (tablets)
+2025-05-22 21:44:34,970 - WARNING - Fetched Results For infinix (tablets) : 3/3 
+2025-05-22 21:44:34,979 - INFO - Fetched infinix (tablets) Successfully
+2025-05-22 21:44:36,198 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:44:39,630 - INFO - Loaded The ikall Page (tablets)
+2025-05-22 21:45:24,969 - WARNING - Fetched Results For ikall (tablets) : 81/81 
+2025-05-22 21:45:24,988 - INFO - Fetched ikall (tablets) Successfully
+2025-05-22 21:45:26,195 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:45:30,924 - INFO - Loaded The vivo Page (tablets)
+2025-05-22 21:45:39,265 - WARNING - Fetched Results For vivo (tablets) : 8/8 
+2025-05-22 21:45:39,274 - INFO - Fetched vivo (tablets) Successfully
+2025-05-22 21:45:40,499 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:45:43,918 - INFO - Loaded The poco Page (tablets)
+2025-05-22 21:45:53,201 - WARNING - Fetched Results For poco (tablets) : 4/4 
+2025-05-22 21:45:53,209 - INFO - Fetched poco (tablets) Successfully
+2025-05-22 21:45:54,443 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:45:59,100 - INFO - Loaded The domo Page (tablets)
+2025-05-22 21:46:24,594 - WARNING - Fetched Results For domo (tablets) : 46/46 
+2025-05-22 21:46:24,608 - INFO - Fetched domo (tablets) Successfully
+2025-05-22 21:46:25,802 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:46:30,477 - INFO - Loaded The nokia Page (tablets)
+2025-05-22 21:46:38,545 - WARNING - Fetched Results For nokia (tablets) : 11/11 
+2025-05-22 21:46:38,556 - INFO - Fetched nokia (tablets) Successfully
+2025-05-22 21:46:39,832 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:46:43,381 - INFO - Loaded The acer Page (tablets)
+2025-05-22 21:47:08,063 - WARNING - Fetched Results For acer (tablets) : 44/44 
+2025-05-22 21:47:08,077 - INFO - Fetched acer (tablets) Successfully
+2025-05-22 21:47:09,288 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:47:13,557 - INFO - Loaded The iqoo Page (tablets)
+2025-05-22 21:47:21,368 - WARNING - Fetched Results For iqoo (tablets) : 7/7 
+2025-05-22 21:47:21,376 - INFO - Fetched iqoo (tablets) Successfully
+2025-05-22 21:47:22,565 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:47:26,177 - INFO - Loaded The iball Page (tablets)
+2025-05-22 21:48:15,023 - WARNING - Fetched Results For iball (tablets) : 115/115 
+2025-05-22 21:48:15,046 - INFO - Fetched iball (tablets) Successfully
+2025-05-22 21:48:16,270 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:48:21,275 - INFO - Loaded The amazon Page (tablets)
+2025-05-22 21:48:38,978 - WARNING - Fetched Results For amazon (tablets) : 36/36 
+2025-05-22 21:48:38,991 - INFO - Fetched amazon (tablets) Successfully
+2025-05-22 21:48:40,212 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:48:44,786 - INFO - Loaded The redmagic Page (tablets)
+2025-05-22 21:48:51,798 - WARNING - Fetched Results For redmagic (tablets) : 1/1 
+2025-05-22 21:48:51,806 - INFO - Fetched redmagic (tablets) Successfully
+2025-05-22 21:48:53,009 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:48:56,534 - INFO - Loaded The teclast Page (tablets)
+2025-05-22 21:49:03,806 - WARNING - Fetched Results For teclast (tablets) : 16/16 
+2025-05-22 21:49:03,816 - INFO - Fetched teclast (tablets) Successfully
+2025-05-22 21:49:05,029 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:49:08,547 - INFO - Loaded The tcl Page (tablets)
+2025-05-22 21:49:15,980 - WARNING - Fetched Results For tcl (tablets) : 19/19 
+2025-05-22 21:49:15,992 - INFO - Fetched tcl (tablets) Successfully
+2025-05-22 21:49:17,278 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:49:21,371 - INFO - Loaded The blackview Page (tablets)
+2025-05-22 21:49:28,850 - WARNING - Fetched Results For blackview (tablets) : 8/8 
+2025-05-22 21:49:28,859 - INFO - Fetched blackview (tablets) Successfully
+2025-05-22 21:49:30,148 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:49:33,727 - INFO - Loaded The itel Page (tablets)
+2025-05-22 21:49:40,867 - WARNING - Fetched Results For itel (tablets) : 3/3 
+2025-05-22 21:49:40,875 - INFO - Fetched itel (tablets) Successfully
+2025-05-22 21:49:42,176 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:49:45,907 - INFO - Loaded The lava Page (tablets)
+2025-05-22 21:50:00,929 - WARNING - Fetched Results For lava (tablets) : 30/30 
+2025-05-22 21:50:00,942 - INFO - Fetched lava (tablets) Successfully
+2025-05-22 21:50:02,166 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:50:05,583 - INFO - Loaded The micromax Page (tablets)
+2025-05-22 21:50:23,919 - WARNING - Fetched Results For micromax (tablets) : 38/38 
+2025-05-22 21:50:23,932 - INFO - Fetched micromax (tablets) Successfully
+2025-05-22 21:50:25,122 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:50:29,453 - INFO - Loaded The wishtel Page (tablets)
+2025-05-22 21:50:46,669 - WARNING - Fetched Results For wishtel (tablets) : 28/28 
+2025-05-22 21:50:46,681 - INFO - Fetched wishtel (tablets) Successfully
+2025-05-22 21:50:47,868 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:50:51,245 - INFO - Loaded The asus Page (tablets)
+2025-05-22 21:51:17,376 - WARNING - Fetched Results For asus (tablets) : 47/47 
+2025-05-22 21:51:17,390 - INFO - Fetched asus (tablets) Successfully
+2025-05-22 21:51:18,609 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:51:23,286 - INFO - Loaded The bsnl_penta Page (tablets)
+2025-05-22 21:51:40,531 - WARNING - Fetched Results For bsnl_penta (tablets) : 23/23 
+2025-05-22 21:51:40,542 - INFO - Fetched bsnl_penta (tablets) Successfully
+2025-05-22 21:51:41,827 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:51:46,388 - INFO - Loaded The croma Page (tablets)
+2025-05-22 21:51:54,666 - WARNING - Fetched Results For croma (tablets) : 6/6 
+2025-05-22 21:51:54,675 - INFO - Fetched croma (tablets) Successfully
+2025-05-22 21:51:55,920 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:51:59,589 - INFO - Loaded The cubot Page (tablets)
+2025-05-22 21:52:08,165 - WARNING - Fetched Results For cubot (tablets) : 3/3 
+2025-05-22 21:52:08,173 - INFO - Fetched cubot (tablets) Successfully
+2025-05-22 21:52:09,388 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:52:13,013 - INFO - Loaded The google Page (tablets)
+2025-05-22 21:52:20,696 - WARNING - Fetched Results For google (tablets) : 6/6 
+2025-05-22 21:52:20,704 - INFO - Fetched google (tablets) Successfully
+2025-05-22 21:52:21,935 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:52:25,774 - INFO - Loaded The htc Page (tablets)
+2025-05-22 21:52:32,263 - WARNING - Fetched Results For htc (tablets) : 9/9 
+2025-05-22 21:52:32,272 - INFO - Fetched htc (tablets) Successfully
+2025-05-22 21:52:33,619 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:52:37,355 - INFO - Loaded The microsoft Page (tablets)
+2025-05-22 21:52:43,955 - WARNING - Fetched Results For microsoft (tablets) : 12/12 
+2025-05-22 21:52:43,965 - INFO - Fetched microsoft (tablets) Successfully
+2025-05-22 21:52:45,146 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:52:49,307 - INFO - Loaded The nubia Page (tablets)
+2025-05-22 21:52:57,635 - WARNING - Fetched Results For nubia (tablets) : 3/3 
+2025-05-22 21:52:57,642 - INFO - Fetched nubia (tablets) Successfully
+2025-05-22 21:52:58,857 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:53:03,182 - INFO - Loaded The ubislate Page (tablets)
+2025-05-22 21:53:11,695 - WARNING - Fetched Results For ubislate (tablets) : 17/17 
+2025-05-22 21:53:11,706 - INFO - Fetched ubislate (tablets) Successfully
+2025-05-22 21:53:12,947 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:53:16,577 - INFO - Loaded The blackberry Page (tablets)
+2025-05-22 21:53:24,161 - WARNING - Fetched Results For blackberry (tablets) : 3/3 
+2025-05-22 21:53:24,170 - INFO - Fetched blackberry (tablets) Successfully
+2025-05-22 21:53:25,383 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:53:29,067 - INFO - Loaded The boox Page (tablets)
+2025-05-22 21:53:37,038 - WARNING - Fetched Results For boox (tablets) : 4/4 
+2025-05-22 21:53:37,047 - INFO - Fetched boox (tablets) Successfully
+2025-05-22 21:53:38,342 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:53:41,829 - INFO - Loaded The datawind Page (tablets)
+2025-05-22 21:53:50,355 - WARNING - Fetched Results For datawind (tablets) : 18/18 
+2025-05-22 21:53:50,365 - INFO - Fetched datawind (tablets) Successfully
+2025-05-22 21:53:51,561 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:53:55,084 - INFO - Loaded The doogee Page (tablets)
+2025-05-22 21:54:01,497 - WARNING - Fetched Results For doogee (tablets) : 15/15 
+2025-05-22 21:54:01,508 - INFO - Fetched doogee (tablets) Successfully
+2025-05-22 21:54:02,717 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:54:05,618 - INFO - Loaded The nothing Page (tablets)
+2025-05-22 21:54:14,060 - WARNING - Fetched Results For nothing (tablets) : 1/1 
+2025-05-22 21:54:14,067 - INFO - Fetched nothing (tablets) Successfully
+2025-05-22 21:54:15,496 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:54:19,159 - INFO - Loaded The swipe Page (tablets)
+2025-05-22 21:54:44,459 - WARNING - Fetched Results For swipe (tablets) : 54/54 
+2025-05-22 21:54:44,474 - INFO - Fetched swipe (tablets) Successfully
+2025-05-22 21:54:45,727 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:54:50,439 - INFO - Loaded The tecno Page (tablets)
+2025-05-22 21:54:58,931 - WARNING - Fetched Results For tecno (tablets) : 2/2 
+2025-05-22 21:54:58,939 - INFO - Fetched tecno (tablets) Successfully
+2025-05-22 21:55:00,209 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:55:03,702 - INFO - Loaded The amtrak Page (tablets)
+2025-05-22 21:55:11,009 - WARNING - Fetched Results For amtrak (tablets) : 4/4 
+2025-05-22 21:55:11,016 - INFO - Fetched amtrak (tablets) Successfully
+2025-05-22 21:55:12,257 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:55:16,414 - INFO - Loaded The byond Page (tablets)
+2025-05-22 21:55:26,001 - WARNING - Fetched Results For byond (tablets) : 13/13 
+2025-05-22 21:55:26,010 - INFO - Fetched byond (tablets) Successfully
+2025-05-22 21:55:27,268 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:55:30,965 - INFO - Loaded The dell Page (tablets)
+2025-05-22 21:55:49,695 - WARNING - Fetched Results For dell (tablets) : 21/21 
+2025-05-22 21:55:49,706 - INFO - Fetched dell (tablets) Successfully
+2025-05-22 21:55:50,996 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:55:56,252 - INFO - Loaded The fusion5 Page (tablets)
+2025-05-22 21:56:04,981 - WARNING - Fetched Results For fusion5 (tablets) : 1/1 
+2025-05-22 21:56:04,988 - INFO - Fetched fusion5 (tablets) Successfully
+2025-05-22 21:56:06,246 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:56:09,955 - INFO - Loaded The intex Page (tablets)
+2025-05-22 21:56:18,310 - WARNING - Fetched Results For intex (tablets) : 8/8 
+2025-05-22 21:56:18,319 - INFO - Fetched intex (tablets) Successfully
+2025-05-22 21:56:19,976 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:56:23,422 - INFO - Loaded The jio Page (tablets)
+2025-05-22 21:56:32,722 - WARNING - Fetched Results For jio (tablets) : 1/1 
+2025-05-22 21:56:32,730 - INFO - Fetched jio (tablets) Successfully
+2025-05-22 21:56:32,981 - INFO - Fetched tablets Successfully
+2025-05-22 21:56:32,981 - INFO - Fetched laptops Successfully
+2025-05-22 21:56:33,993 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 21:56:37,439 - INFO - Loaded The vivo Page (mobiles)
+2025-05-22 22:01:39,167 - WARNING - Fetched Results For vivo (mobiles) : 634/634 
+2025-05-22 22:01:39,252 - INFO - Fetched vivo (mobiles) Successfully
+2025-05-22 22:01:40,540 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 22:01:44,591 - INFO - Loaded The iqoo Page (mobiles)
+2025-05-22 22:03:05,915 - WARNING - Fetched Results For iqoo (mobiles) : 176/176 
+2025-05-22 22:03:05,946 - INFO - Fetched iqoo (mobiles) Successfully
+2025-05-22 22:03:07,225 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 22:03:11,706 - INFO - Loaded The itel Page (mobiles)
+2025-05-22 22:05:02,074 - WARNING - Fetched Results For itel (mobiles) : 221/221 
+2025-05-22 22:05:02,108 - INFO - Fetched itel (mobiles) Successfully
+2025-05-22 22:05:03,772 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 22:05:08,504 - INFO - Loaded The alcatel Page (mobiles)
+2025-05-22 22:06:27,214 - WARNING - Fetched Results For alcatel (mobiles) : 163/163 
+2025-05-22 22:06:27,241 - INFO - Fetched alcatel (mobiles) Successfully
+2025-05-22 22:06:28,506 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 22:06:33,300 - INFO - Loaded The lg Page (mobiles)
+2025-05-22 22:08:52,558 - WARNING - Fetched Results For lg (mobiles) : 306/306 
+2025-05-22 22:08:52,603 - INFO - Fetched lg (mobiles) Successfully
+2025-05-22 22:08:53,829 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 22:08:57,694 - INFO - Loaded The karbonn Page (mobiles)
+2025-05-22 22:13:48,657 - WARNING - Fetched Results For karbonn (mobiles) : 638/638 
+2025-05-22 22:13:48,742 - INFO - Fetched karbonn (mobiles) Successfully
+2025-05-22 22:13:50,032 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 22:13:57,384 - INFO - Loaded The intex Page (mobiles)
+2025-05-22 22:18:35,457 - WARNING - Fetched Results For intex (mobiles) : 608/608 
+2025-05-22 22:18:35,537 - INFO - Fetched intex (mobiles) Successfully
+2025-05-22 22:18:36,819 - INFO - patching driver executable C:\Users\ST\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe
+2025-05-22 22:18:41,246 - INFO - Loaded The meizu Page (mobiles)
+2025-05-22 22:19:21,219 - WARNING - Fetched Results For meizu (mobiles) : 94/94 
+2025-05-22 22:19:21,238 - INFO - Fetched meizu (mobiles) Successfully
+2025-05-22 22:19:21,408 - INFO - Fetched mobiles Successfully
+2025-05-22 22:19:21,408 - INFO - Fetched tablets Successfully
