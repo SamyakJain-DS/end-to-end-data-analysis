@@ -2,3 +2,4 @@
 .venv/
 .git/
 pts.txt
+python_files/scraping_logs.log
