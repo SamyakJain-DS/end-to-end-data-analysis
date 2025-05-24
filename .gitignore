@@ -1,5 +1,5 @@
 .idea/
 .venv/
-.git/
 pts.txt
-python_files/scraping_logs.log
+python_files/logs/
+python_files/logs/__pycache__/

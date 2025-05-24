@@ -3,12 +3,14 @@ from bs4 import BeautifulSoup
 import re
 import pandas as pd
 import numpy as np
+from mysqldatabase import Database
+import os
 
 def create_dfs(htmls):
-    '''
+    """
     Generate a dictionary of dfs according to the categories provided in htmls.
     May need to be modified for categories other than "laptops", "mobiles" & "tablets".
-    '''
+    """
 
     df_dict = {}
     dfs = {}
@@ -169,8 +171,17 @@ def create_dfs(htmls):
 
     return dfs
 
-with open("final_htmls.pkl", "rb") as h:
+os.makedirs("pickle_objects", exist_ok=True)
+with open("pickle_objects/final_htmls.pkl", "rb") as h:
     htmls = pickle.load(h)
 
 dfs = create_dfs(htmls)
+
+password = os.environ['SQL_ROOT_PASSWORD']
+dbo = Database(username = 'root', password = password, host = 'localhost', database = 'project' )
+
+for category, df in dfs.items():
+    dbo.create_table(df, table_name = category + '_uncleaned')
+dbo.close()
+
 

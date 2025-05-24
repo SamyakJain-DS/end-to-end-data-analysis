@@ -6,10 +6,12 @@ import pickle
 import logging
 import time
 import random
+import os
 
 # logging setup
+os.makedirs("logs", exist_ok=True)
 logging.basicConfig(
-    filename='scraping_logs.log',
+    filename='logs/scraping_logs.log',
     filemode='a',
     format='%(asctime)s - %(levelname)s - %(message)s',
     level=logging.INFO
@@ -17,23 +19,23 @@ logging.basicConfig(
 
 
 def delay(min_sec=3, max_sec=5):
-    '''
+    """
     Adds a random delay of minimum min_sec seconds and maximum max_sec seconds.
-    min_sec should be a positive number less tahn max_sec.
-    '''
+    min_sec should be a positive number less than max_sec.
+    """
 
     time.sleep(random.uniform(min_sec, max_sec))
 
 
 def scrape(categories, retry=False):
-    '''
+    """
     This function scrapes all devices of the categories provided in the "categories" tuple.
     The input should be a TUPLE of categories or category.
     Scraping is done on the basis of brands to bypass a maximum limit of page length imposed by the website.
     Failed cases are logged and returned as a separate object.
     This function can also be used to retry scraping for the failed cases.
     Set the retry to True while trying to scrape the failed cases.
-    '''
+    """
 
     categories_htmls = dict()
     failed_cases = dict()
@@ -125,11 +127,11 @@ def scrape(categories, retry=False):
 
 
 def exhaustive_scrape(categories_htmls, failed_cases, max_attempts=5):
-    '''
+    """
     This function's purpose is to scrape in a loop, until either:
     1. we have exhausted the entire failed_cases dictionary, and have no more failed_cases
     2. loop has already been run "max_attempt" times. This is to prevent infinite loops in case of unforeseen problems.
-    '''
+    """
 
     for attempt in range(max_attempts):
         total_failed_cases = 0
@@ -151,5 +153,6 @@ categories = ("laptops", "mobiles", "tablets")
 htmls, failed = scrape(categories)
 final_htmls = exhaustive_scrape(htmls, failed)
 
-with open("final_htmls.pkl", "wb") as file:
+os.makedirs("pickle_objects", exist_ok=True)
+with open("pickle_objects/final_htmls.pkl", "wb") as file:
     pickle.dump(final_htmls, file)
