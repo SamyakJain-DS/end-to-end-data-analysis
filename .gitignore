@@ -2,4 +2,4 @@
 .venv/
 pts.txt
 python_files/logs/
-python_files/logs/__pycache__/
+python_files/__pycache__/
