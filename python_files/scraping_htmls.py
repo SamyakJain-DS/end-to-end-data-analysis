@@ -21,7 +21,8 @@ logging.basicConfig(
 def delay(min_sec=3, max_sec=5):
     """
     Adds a random delay of minimum min_sec seconds and maximum max_sec seconds.
-    min_sec should be a positive number less than max_sec.
+    :param min_sec: minimum delay
+    :param max_sec: maximum delay
     """
 
     time.sleep(random.uniform(min_sec, max_sec))
@@ -35,6 +36,9 @@ def scrape(categories, retry=False):
     Failed cases are logged and returned as a separate object.
     This function can also be used to retry scraping for the failed cases.
     Set the retry to True while trying to scrape the failed cases.
+    :param categories: the categories on smartprix.com to be scraped/failed cases if retry is True
+    :param retry: boolean: True value will make the function work the same way but with a input of dictionary (meant to re-scrape the failed cases)
+    :return: a dictionary of all htmls successfully scraped and a dictionary of failed cases
     """
 
     categories_htmls = dict()
@@ -131,6 +135,10 @@ def exhaustive_scrape(categories_htmls, failed_cases, max_attempts=5):
     This function's purpose is to scrape in a loop, until either:
     1. we have exhausted the entire failed_cases dictionary, and have no more failed_cases
     2. loop has already been run "max_attempt" times. This is to prevent infinite loops in case of unforeseen problems.
+    :param categories_htmls: the categories_htmls dictionary returned by the scrape method
+    :param failed_cases: the failed_cases dictionary returned by the scrape method
+    :param max_attempts: max number of attempts to try before ending the loop
+    :return: all the required htmls if successful (completed withing maximum attempts)
     """
 
     for attempt in range(max_attempts):

@@ -10,6 +10,8 @@ def create_dfs(htmls):
     """
     Generate a dictionary of dfs according to the categories provided in htmls.
     May need to be modified for categories other than "laptops", "mobiles" & "tablets".
+    :param htmls: the htmls dict previously obtained from scraping
+    :return: a dictionary of dfs
     """
 
     df_dict = {}
@@ -94,11 +96,12 @@ def create_dfs(htmls):
                     if (product.find('ul', class_='sm-feat specs')):
                         camera_flag = True
                         ram_flag = True
+                        cpu_subs = ['processor', 'core', 'helio', 'exynos', 'snapdragon', 'dimensity', 'intel', 'apple', 'bionic', 'kirin', 'tiger', 'cortex', 'tensor', 'xring']
                         for li in product.find('ul', class_='sm-feat specs').find_all(
                                 'li'):  # loop through all list items
                             if 'sim' in li.text.lower():
                                 df_dict[category]['connectivity'].append(li.text)
-                            elif 'processor' in li.text.lower():
+                            elif any(sub.lower() in li.text.lower() for sub in cpu_subs):
                                 df_dict[category]['cpu'].append(li.text)
                             elif (('ram' in li.text.lower()) or ('inbuilt' in li.text.lower()) or (
                                     'rom' in li.text.lower())) and (ram_flag):
@@ -109,7 +112,7 @@ def create_dfs(htmls):
                                 df_dict[category]['ram'][-1] = (df_dict[category]['ram'][-1] + ', ' + li.text)
                             elif 'mah' in li.text.lower():
                                 df_dict[category]['battery'].append(li.text)
-                            elif ('inches' in li.text.lower()) or ('px' in li.text.lower()):
+                            elif ('inch' in li.text.lower()) or ('px' in li.text.lower()):
                                 df_dict[category]['display'].append(li.text)
                             elif (('mp' in li.text.lower()) or ('camera' in li.text.lower())) and (camera_flag):
                                 camera_flag = False
@@ -171,14 +174,17 @@ def create_dfs(htmls):
 
     return dfs
 
+# import the object
 os.makedirs("pickle_objects", exist_ok=True)
 with open("pickle_objects/final_htmls.pkl", "rb") as h:
     htmls = pickle.load(h)
 
+# run it through the function
 dfs = create_dfs(htmls)
 
+# upload the created datasets to database
 password = os.environ['SQL_ROOT_PASSWORD']
-dbo = Database(username = 'root', password = password, host = 'localhost', database = 'project' )
+dbo = Database(database = 'project' )
 
 for category, df in dfs.items():
     dbo.create_table(df, table_name = category + '_uncleaned')
