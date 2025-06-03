@@ -41,7 +41,7 @@ class Database:
 
     def import_table(self, table_name):
         """
-        This method will import a table into the database.
+        This method will import a table from the database.
         :param table_name: the table to be imported
         :return: the imported table
         """
