@@ -2,6 +2,9 @@ import numpy as np
 import pandas as pd
 import requests
 import statsmodels.api as sm
+from numpy.f2py.capi_maps import f2cmap_all
+from sklearn.metrics import f1_score
+from statsmodels.stats.outliers_influence import variance_inflation_factor
 import streamlit as st
 import plotly.express as px
 
@@ -50,7 +53,10 @@ category_page_config = """
         </style>
         """
 
-
+f1 = "Market Analysis"
+f2 = "Know Your Brand"
+f3 = "Interesting Price Dynamics"
+f4 = "Worth Your Money?"
 
 btn_str = """
         <form action="/" method="get">
@@ -112,8 +118,8 @@ def preprocess_laptops_ols(brand=None):
             st.text('Server not responding. Please initiate the server before continuing.')
 
     # Extract X and y for OLS
-    X = sm.add_constant(df.copy().iloc[:,:-1])
-    y = df.copy().iloc[:,-1]
+    y = df.copy()['spec_score']
+    X = sm.add_constant(df.copy().drop(columns=['spec_score']))
 
     # Handle missing values
     X['gpu_vram'] = X['gpu_vram'].fillna(0)
@@ -124,62 +130,94 @@ def preprocess_laptops_ols(brand=None):
     idx = X.dropna().index
     X = X.dropna().reset_index(drop=True)
     y = y[idx].reset_index(drop=True)
+
+    # Check for multi-collinearity
+    vif_data = pd.DataFrame()
+    vif_data["feature"] = X.columns
+    vif_data["VIF"] = [variance_inflation_factor(X.values, i) for i in range(X.shape[1])]
+
+    columns_to_drop = list(vif_data[vif_data['VIF'] > 5]['feature'].values)
+    if 'const' in columns_to_drop:
+        columns_to_drop.remove('const')
+    X.drop(columns=columns_to_drop, inplace=True)
 
     return y, X
 
 def preprocess_mobiles_ols(brand=None):
     if brand is None:
         try:
-            df = pd.DataFrame(hit_api('http://127.0.0.1:5000/prep-laptop'))
+            df = pd.DataFrame(hit_api('http://127.0.0.1:5000/prep-smartphones'))
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     else:
         try:
-            df = pd.DataFrame(hit_api(f'http://127.0.0.1:5000/prep-laptop-brand?brand={brand}'))
+            df = pd.DataFrame(hit_api(f'http://127.0.0.1:5000/prep-smartphones-brand?brand={brand}'))
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
 
     # Extract X and y for OLS
-    X = sm.add_constant(df.copy().iloc[:,:-1])
-    y = df.copy().iloc[:,-1]
+    y = df.copy()['spec_score']
+    X = sm.add_constant(df.copy().drop(columns=['spec_score']))
 
     # Handle missing values
-    X['gpu_vram'] = X['gpu_vram'].fillna(0)
-    X['ppi'] = X['ppi'].fillna(X['ppi'].mean())
-    X['ram_capacity'] = X['ram_capacity'].fillna(X['ram_capacity'].mean())
+    X['ram'] = X['ram'].fillna(X['ram'].median())
+    X['storage'] = X['storage'].fillna(X['storage'].median())
+    X['battery'] = X['battery'].fillna(X['battery'].median())
+    X['screen_size'] = X['screen_size'].fillna(X['screen_size'].median())
+    X['ppi'] = X['ppi'].fillna(X['ppi'].median())
+    X['rear_primary'] = X['rear_primary'].fillna(X['rear_primary'].median())
+    X['front_primary'] = X['front_primary'].fillna(X['front_primary'].median())
+    X['cpu'] = X['cpu'].fillna(X['cpu'].median())
 
-    # Fix indices
-    idx = X.dropna().index
-    X = X.dropna().reset_index(drop=True)
-    y = y[idx].reset_index(drop=True)
+    # Check for multi-collinearity
+    vif_data = pd.DataFrame()
+    vif_data["feature"] = X.columns
+    vif_data["VIF"] = [variance_inflation_factor(X.values, i) for i in range(X.shape[1])]
+
+    columns_to_drop = list(vif_data[vif_data['VIF'] > 5]['feature'].values)
+    if 'const' in columns_to_drop:
+        columns_to_drop.remove('const')
+    X.drop(columns=columns_to_drop, inplace=True)
 
     return y, X
 
 def preprocess_tablets_ols(brand=None):
     if brand is None:
         try:
-            df = pd.DataFrame(hit_api('http://127.0.0.1:5000/prep-laptop'))
+            df = pd.DataFrame(hit_api('http://127.0.0.1:5000/prep-tablets'))
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     else:
         try:
-            df = pd.DataFrame(hit_api(f'http://127.0.0.1:5000/prep-laptop-brand?brand={brand}'))
+            df = pd.DataFrame(hit_api(f'http://127.0.0.1:5000/prep-tablets-brand?brand={brand}'))
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
 
     # Extract X and y for OLS
-    X = sm.add_constant(df.copy().iloc[:,:-1])
-    y = df.copy().iloc[:,-1]
+    y = df.copy()['spec_score']
+    X = sm.add_constant(df.copy().drop(columns=['spec_score']))
 
     # Handle missing values
-    X['gpu_vram'] = X['gpu_vram'].fillna(0)
-    X['ppi'] = X['ppi'].fillna(X['ppi'].mean())
-    X['ram_capacity'] = X['ram_capacity'].fillna(X['ram_capacity'].mean())
+    X['ram'] = X['ram'].fillna(X['ram'].median())
+    X['inbuilt_storage'] = X['inbuilt_storage'].fillna(X['inbuilt_storage'].median())
+    X['battery_capacity'] = X['battery_capacity'].fillna(X['battery_capacity'].median())
+    X['fast_charging'] = X['fast_charging'].fillna(X['fast_charging'].median())
+    X['screen_size'] = X['screen_size'].fillna(X['screen_size'].median())
+    X['ppi'] = X['ppi'].fillna(X['ppi'].median())
+    X['rear_primary'] = X['rear_primary'].fillna(X['rear_primary'].median())
+    X['front_primary'] = X['front_primary'].fillna(X['front_primary'].median())
+    X['expandable'] = X['expandable'].fillna(X['expandable'].median())
+    X['cpu'] = X['cpu'].fillna(X['cpu'].median())
 
-    # Fix indices
-    idx = X.dropna().index
-    X = X.dropna().reset_index(drop=True)
-    y = y[idx].reset_index(drop=True)
+    # Check for multi-collinearity
+    vif_data = pd.DataFrame()
+    vif_data["feature"] = X.columns
+    vif_data["VIF"] = [variance_inflation_factor(X.values, i) for i in range(X.shape[1])]
+
+    columns_to_drop = list(vif_data[vif_data['VIF'] > 5]['feature'].values)
+    if 'const' in columns_to_drop:
+        columns_to_drop.remove('const')
+    X.drop(columns=columns_to_drop, inplace=True)
 
     return y, X
 
@@ -189,7 +227,7 @@ def ols_chart(category, brand=None):
             y, X = preprocess_laptops_ols()
         else:
             y, X = preprocess_laptops_ols(brand)
-    elif category == 'mobiles':
+    elif category == 'smartphones':
         if brand is None:
             y, X = preprocess_mobiles_ols()
         else:
@@ -224,7 +262,10 @@ def plot_bar(data, title, h=False):
     st.plotly_chart(chart)
 
 def plot_pie(data, title):
-    chart = px.pie(data, names=data.index.str.upper(), values=data.values, color_discrete_sequence=red_palette)
+    if isinstance(data.index,str):
+        chart = px.pie(data, names=data.index.str.upper(), values=data.values, color_discrete_sequence=red_palette)
+    else:
+        chart = px.pie(data, names=data.index, values=data.values, color_discrete_sequence=red_palette)
     chart.update_traces(textinfo='percent+label')
     update_layout(chart, title)
     st.plotly_chart(chart, use_container_width=True)
@@ -233,3 +274,7 @@ def plot_box(data, title):
     chart = px.box(data, color_discrete_sequence=[bar_color])
     update_layout(chart, title)
     st.plotly_chart(chart)
+
+def leave_lines(lines):
+    for i in range(lines):
+        st.text('')
