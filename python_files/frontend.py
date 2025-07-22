@@ -4,7 +4,6 @@ import requests
 import streamlit as st
 from frontend_helper import *
 import plotly.express as px
-from scipy.cluster.hierarchy import leaves_list
 
 st.set_page_config(layout='wide',page_title='Electronics Analysis')
 
@@ -136,7 +135,7 @@ def laptops_f1():
     screen1, screen2, screen3 = st.columns(3, gap='small')
     with screen1:
         try:
-            data = get_data('http://127.0.0.1:5000/column?category=laptops&col=touchscreen')
+            data = get_data('http://127.0.0.1:5000/data?category=laptops&col=touchscreen')
             data.index = data.index.map({0:'Does not have', 1:'Has'})
             plot_bar(
                 data.sort_values(ascending=True),
@@ -146,12 +145,12 @@ def laptops_f1():
             st.text('Server not responding. Please initiate the server before continuing.')
     with screen2:
         try:
-            plot_box(get_data('http://127.0.0.1:5000/column?category=laptops&col=ppi', group_by=False), "PPI Distribution")
+            plot_box(get_data('http://127.0.0.1:5000/data?category=laptops&col=ppi', group_by=False), "PPI Distribution")
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     with screen3:
         try:
-            plot_box(get_data('http://127.0.0.1:5000/column?category=laptops&col=screen_size', group_by=False), "Distribution for Size of the Screen (Inches)")
+            plot_box(get_data('http://127.0.0.1:5000/data?category=laptops&col=screen_size', group_by=False), "Distribution for Size of the Screen (Inches)")
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
 
@@ -159,26 +158,26 @@ def laptops_f1():
     with brand1:
         try:
             st.text('Brands with the most laptops with their GPU in the market. "Intel" GPU are all integrated GPUs. Among Dedicated GPUs, "Nvidia" leads.')
-            plot_bar(get_data('http://127.0.0.1:5000/column?category=laptops&col=gpu_brand'), "Dominant GPU Brands")
+            plot_bar(get_data('http://127.0.0.1:5000/data?category=laptops&col=gpu_brand'), "Dominant GPU Brands")
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     with brand2:
         try:
             st.text('Brands with the most laptop models in the market. The top 5 brands cover about 70% laptops in the market according to our data.')
-            plot_bar(get_data('http://127.0.0.1:5000/column?category=laptops&col=brand',n=20), "Dominant Laptop Brands")
+            plot_bar(get_data('http://127.0.0.1:5000/data?category=laptops&col=brand',n=20), "Dominant Laptop Brands")
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
 
     cpu1, cpu2 = st.columns([1,1.25], gap='small')
     with cpu1:
         try:
-            plot_pie(get_data('http://127.0.0.1:5000/column?category=laptops&col=cpu_type',n=7), "CPU Types")
+            plot_pie(get_data('http://127.0.0.1:5000/data?category=laptops&col=cpu_type',n=7), "CPU Types")
             st.text('Distribution of CPU types in the market. The low-end "H" and "U" are more available in the market, whereas the high-end "HX" and "HS" make up for only 10% of the laptops.')
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     with cpu2:
         try:
-            plot_bar(get_data('http://127.0.0.1:5000/column?category=laptops&col=cpu_brand'), "Dominant CPU Brands")
+            plot_bar(get_data('http://127.0.0.1:5000/data?category=laptops&col=cpu_brand'), "Dominant CPU Brands")
             st.text('Brands with the most laptops with their CPU in the market. "Intel" is clearly the most dominant brand for CPUs.')
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
@@ -186,7 +185,7 @@ def laptops_f1():
     ram, _, mt1, mt2, mt3 = st.columns([3,0.2,0.8,0.8,1], gap='small')
     with ram:
         try:
-            plot_pie(get_data('http://127.0.0.1:5000/column?category=laptops&col=ram_ddr_type', n=7), "RAM DDR Types")
+            plot_pie(get_data('http://127.0.0.1:5000/data?category=laptops&col=ram_ddr_type', n=7), "RAM DDR Types")
             st.text('Distribution of RAM DDR types in the market. The newer version "DDR5" is still not much adapted, but slowly gaining pace. As of now, the old "DDR4" remains dominant with 65% laptops.')
 
         except:
@@ -195,30 +194,30 @@ def laptops_f1():
         leave_lines(3)
         try:
             st.metric(label="Average Number of CPU Cores",
-                      value=np.round(np.mean(get_data('http://127.0.0.1:5000/column?category=laptops&col=cpu_cores', False))))
+                      value=np.round(np.mean(get_data('http://127.0.0.1:5000/data?category=laptops&col=cpu_cores', False))))
             leave_lines(4)
             st.metric(label="Average RAM Capacity (GB)",
-                      value=np.round(np.mean(get_data('http://127.0.0.1:5000/column?category=laptops&col=ram_capacity', False))))
+                      value=np.round(np.mean(get_data('http://127.0.0.1:5000/data?category=laptops&col=ram_capacity', False))))
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     with mt2:
         leave_lines(3)
         try:
             st.metric(label="Average Number of CPU Threads",
-                      value=np.round(np.mean(get_data('http://127.0.0.1:5000/column?category=laptops&col=cpu_threads', False))))
+                      value=np.round(np.mean(get_data('http://127.0.0.1:5000/data?category=laptops&col=cpu_threads', False))))
             leave_lines(4)
             st.metric(label="Average Display Pixel Per Inch (PPI)",
-                      value=np.round(np.mean(get_data('http://127.0.0.1:5000/column?category=laptops&col=ppi', False))))
+                      value=np.round(np.mean(get_data('http://127.0.0.1:5000/data?category=laptops&col=ppi', False))))
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     with mt3:
         leave_lines(3)
         try:
             st.metric(label="Average GPU VRAM (GB)",
-                      value=np.round(np.mean(get_data('http://127.0.0.1:5000/column?category=laptops&col=gpu_vram', False))))
+                      value=np.round(np.mean(get_data('http://127.0.0.1:5000/data?category=laptops&col=gpu_vram', False))))
             leave_lines(4)
             st.metric(label="Most Common Aspect Ratio",
-                      value=get_data('http://127.0.0.1:5000/column?category=laptops&col=aspect_ratio_category').sort_values(ascending=False).index[0])
+                      value=get_data('http://127.0.0.1:5000/data?category=laptops&col=aspect_ratio_category').sort_values(ascending=False).index[0])
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
 
@@ -227,14 +226,13 @@ def laptops_f2():
     create_analysis_header("Laptops")
 
     try:
-        brands = get_data('http://127.0.0.1:5000/column?category=laptops&col=brand')
+        brands = get_data('http://127.0.0.1:5000/data?category=laptops&col=brand')
     except:
         st.text('Server not responding. Please initiate the server before continuing.')
 
-    brands_list = brands.sort_values(ascending=False)[:12].index.str.capitalize().tolist()
+    brands_list = sorted(brands.sort_values(ascending=False)[:12].index.str.capitalize().tolist())
 
     leave_lines(2)
-
     dropbox, _ = st.columns([1,2])
     with dropbox:
         brand = st.selectbox(
@@ -244,7 +242,6 @@ def laptops_f2():
         )
 
     leave_lines(2)
-
     ols_col1, ols_col2 = st.columns([2,1], gap='large')
     with ols_col1:
         try:
@@ -253,11 +250,64 @@ def laptops_f2():
             st.text('Server not responding. Please initiate the server before continuing.')
 
     with ols_col2:
-        st.header("Feature Importance")
         st.text(f"""
         This bar chart highlights the relative importance of various specifications in determining a laptop's overall spec score.
         '{ft_imp.sort_values(by = 'Feature Importance (%)', ascending=False).index[0].capitalize()}' functionality stands out as the most influential factor, contributing approximately {ft_imp.sort_values(by = 'Feature Importance (%)', ascending=False).values[0][0]}% to the score. In contrast, '{ft_imp.sort_values(by = 'Feature Importance (%)', ascending=False).index[-1].capitalize()}' has minimal impact, accounting for just {ft_imp.sort_values(by = 'Feature Importance (%)', ascending=False).values[-1][0]}% of the overall importance.
         """)
+
+    leave_lines(1)
+    try:
+        laptops = get_data(f'http://127.0.0.1:5000/data?category=laptops', group_by=False)
+    except:
+        st.text('Server not responding. Please initiate the server before continuing.')
+
+    create_section_heading("Price, Spec Score and User Rating Comparison")
+    pr, ss, ur = st.columns(3, gap='small')
+    with pr:
+        plot_merged_hist(laptops, brand, 'price', f"Price (INR) Histogram: All vs {brand} Laptops")
+        plot_merged_box(laptops, brand, 'price', f"Price (INR) Boxplot: All vs {brand} Laptops")
+    with ss:
+        plot_merged_hist(laptops, brand, 'spec_score', f"Spec Score Histogram: All vs {brand} Laptops")
+        plot_merged_box(laptops, brand, 'spec_score', f"Spec Score Boxplot: All vs {brand} Laptops")
+    with ur:
+        plot_merged_hist(laptops, brand, 'user_rating', f"User Rating Histogram: All vs {brand} Laptops")
+        plot_merged_box(laptops, brand, 'user_rating', f"User Rating Boxplot: All vs {brand} Laptops")
+
+    leave_lines(2)
+    create_section_heading("Screen and GPU Analysis")
+    sc1, sc2 = st.columns([1.25,1], gap='medium')
+    with sc1:
+        plot_two_pies(laptops, brand, 'touchscreen', "Touchscreen Proportion Comparison")
+    with sc2:
+        plot_merged_box(laptops, brand, 'screen_size', f"Screen Size (Inches) Boxplot: All vs {brand} Laptops")
+
+    leave_lines(2)
+    sc3, gpu1, gpu2 = st.columns([1,1,1.5], gap='small')
+    with sc3:
+        plot_merged_box(laptops, brand, 'ppi', f"PPI Boxplot: All vs {brand} Laptops")
+    with gpu1:
+        plot_merged_box(laptops, brand, 'gpu_vram', f"GPU VRAM (GB) Boxplot: All vs {brand} Laptops")
+    with gpu2:
+        plot_two_pies(laptops, brand, 'gpu_brand', "GPU Brand Proportions Comparison")
+        st.caption("Intel GPUs should be considered as integrated GPUs.")
+
+    leave_lines(1)
+    create_section_heading("RAM Analysis")
+    ram1, ram2 = st.columns([1.5,1], gap='small')
+    with ram1:
+        plot_two_pies(laptops, brand, 'ram_ddr_type', 'RAM DDR Types Proportion Comparison')
+    with ram2:
+        plot_merged_box(laptops, brand, 'ram_capacity', f"RAM Capacity (GB) Boxplot: All vs {brand} Laptops")
+
+    leave_lines(2)
+    create_section_heading("CPU Analysis")
+    cpu1, cpu2, cpu3 = st.columns([1,2,1], gap='small')
+    with cpu1:
+        plot_merged_box(laptops, brand, 'cpu_cores', f"CPU Cores: All vs {brand} Laptops")
+    with cpu2:
+        plot_two_pies(laptops, brand, 'cpu_brand', "CPU Brand Proportions Comparison", n=4)
+    with cpu3:
+        plot_merged_box(laptops, brand, 'cpu_threads', f"CPU Threads: All vs {brand} Laptops")
 
 def laptops_f3():
     st.title(f"Laptops - :red[{f3}]")
@@ -305,7 +355,7 @@ def smartphones_f1():
     with sc1:
         try:
             st.text('Different Screen Resolutions. Majority phones have "HD+" or "FHD+" (60%+)')
-            plot_pie(get_data('http://127.0.0.1:5000/column?category=mobiles&col=screen_res'), "Screen Resolutions")
+            plot_pie(get_data('http://127.0.0.1:5000/data?category=mobiles&col=screen_res'), "Screen Resolutions")
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
 
@@ -313,16 +363,16 @@ def smartphones_f1():
         try:
             leave_lines(6)
             st.metric(label='Most Common Aspect Ratio',
-                      value=get_data('http://127.0.0.1:5000/column?category=mobiles&col=aspect_ratio_category').sort_values(ascending=False).index[0])
+                      value=get_data('http://127.0.0.1:5000/data?category=mobiles&col=aspect_ratio_category').sort_values(ascending=False).index[0])
             leave_lines(10)
             st.metric(label='Expected Front Cameras',
-                      value=np.round(np.mean(get_data('http://127.0.0.1:5000/column?category=mobiles&col=front_cameras', group_by=False))))
+                      value=np.round(np.mean(get_data('http://127.0.0.1:5000/data?category=mobiles&col=front_cameras', group_by=False))))
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     with sc2:
         try:
             st.text('Screen Size Distribution. Most phones have a screen of size between 5.5 and 7 inches.')
-            plot_box(get_data('http://127.0.0.1:5000/column?category=mobiles&col=screen_size', group_by=False), "Distribution for Screen Size (Inches)")
+            plot_box(get_data('http://127.0.0.1:5000/data?category=mobiles&col=screen_size', group_by=False), "Distribution for Screen Size (Inches)")
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
 
@@ -330,23 +380,23 @@ def smartphones_f1():
     with sc3:
         try:
             st.text('PPI Distribution. Most phones have PPI between 250 and 450.')
-            plot_box(get_data('http://127.0.0.1:5000/column?category=mobiles&col=ppi', group_by=False), "Distribution for Pixels Per Inch (PPI)")
+            plot_box(get_data('http://127.0.0.1:5000/data?category=mobiles&col=ppi', group_by=False), "Distribution for Pixels Per Inch (PPI)")
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     with card2:
         try:
             leave_lines(6)
             st.metric(label='Expected Rear Cameras',
-                      value=np.round(np.mean(get_data('http://127.0.0.1:5000/column?category=mobiles&col=rear_cameras', group_by=False))))
+                      value=np.round(np.mean(get_data('http://127.0.0.1:5000/data?category=mobiles&col=rear_cameras', group_by=False))))
             leave_lines(10)
             st.metric(label='Expected MP for Front Cameras',
-                      value=np.round(np.mean(get_data('http://127.0.0.1:5000/column?category=mobiles&col=front_primary', group_by=False))))
+                      value=np.round(np.mean(get_data('http://127.0.0.1:5000/data?category=mobiles&col=front_primary', group_by=False))))
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     with sc4:
         try:
             st.text('Screen Refresh Rates. Most phones still have a 60 Hz screen (60%).')
-            plot_pie(get_data('http://127.0.0.1:5000/column?category=mobiles&col=refresh_rate'), "Screen Refresh Rates")
+            plot_pie(get_data('http://127.0.0.1:5000/data?category=mobiles&col=refresh_rate'), "Screen Refresh Rates")
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
 
@@ -355,38 +405,38 @@ def smartphones_f1():
     with card1:
         try:
             st.metric(label='Expected MP for Rear Cameras',
-                    value=np.round(np.mean(get_data('http://127.0.0.1:5000/column?category=mobiles&col=front_primary', group_by=False))))
+                    value=np.round(np.mean(get_data('http://127.0.0.1:5000/data?category=mobiles&col=front_primary', group_by=False))))
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     with card2:
         try:
             st.metric(label='Expected CPU Cores',
-                      value=np.round(np.mean(get_data('http://127.0.0.1:5000/column?category=mobiles&col=cpu_cores', group_by=False))))
+                      value=np.round(np.mean(get_data('http://127.0.0.1:5000/data?category=mobiles&col=cpu_cores', group_by=False))))
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     with card3:
         try:
             st.metric(label='Expected CPU Speed (GHz)',
-                      value=np.round(np.mean(get_data('http://127.0.0.1:5000/column?category=mobiles&col=cpu_speed', group_by=False))))
+                      value=np.round(np.mean(get_data('http://127.0.0.1:5000/data?category=mobiles&col=cpu_speed', group_by=False))))
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     with card4:
         try:
             st.metric(label='Expected RAM (GB)',
-                      value=np.round(np.mean(get_data('http://127.0.0.1:5000/column?category=mobiles&col=ram', group_by=False))))
+                      value=np.round(np.mean(get_data('http://127.0.0.1:5000/data?category=mobiles&col=ram', group_by=False))))
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     with card5:
         try:
             st.metric(label='Expected Storage (GB)',
-                      value=np.round(np.mean(get_data('http://127.0.0.1:5000/column?category=mobiles&col=storage', group_by=False))))
+                      value=np.round(np.mean(get_data('http://127.0.0.1:5000/data?category=mobiles&col=storage', group_by=False))))
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
 
     horz1, horz2, horz3 = st.columns(3, gap='large')
     with horz1:
         try:
-            data = get_data('http://127.0.0.1:5000/column?category=mobiles&col=5g')
+            data = get_data('http://127.0.0.1:5000/data?category=mobiles&col=5g')
             data.index = data.index.map({0: 'Does not have', 1: 'Has'})
             plot_bar(
                 data.sort_values(ascending=True),
@@ -397,7 +447,7 @@ def smartphones_f1():
             st.text('Server not responding. Please initiate the server before continuing.')
     with horz2:
         try:
-            data = get_data('http://127.0.0.1:5000/column?category=mobiles&col=nfc')
+            data = get_data('http://127.0.0.1:5000/data?category=mobiles&col=nfc')
             data.index = data.index.map({0: 'Does not have', 1: 'Has'})
             plot_bar(
                 data.sort_values(ascending=True),
@@ -408,7 +458,7 @@ def smartphones_f1():
             st.text('Server not responding. Please initiate the server before continuing.')
     with horz3:
         try:
-            data = get_data('http://127.0.0.1:5000/column?category=mobiles&col=ir_blaster')
+            data = get_data('http://127.0.0.1:5000/data?category=mobiles&col=ir_blaster')
             data.index = data.index.map({0: 'Does not have', 1: 'Has'})
             plot_bar(
                 data.sort_values(ascending=True),
@@ -422,13 +472,13 @@ def smartphones_f1():
     with bar1:
         try:
             st.text('Mobile brands in the market. One-Third of the smartphones in the market belong the only the first seven brands.')
-            plot_bar(get_data('http://127.0.0.1:5000/column?category=mobiles&col=brand',n=20), "Dominant Mobiles Brands")
+            plot_bar(get_data('http://127.0.0.1:5000/data?category=mobiles&col=brand',n=20), "Dominant Mobiles Brands")
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     with bar2:
         try:
             st.text('Almost all mobiles in the data have android OS.')
-            plot_bar(get_data('http://127.0.0.1:5000/column?category=mobiles&col=os'), "Operating System")
+            plot_bar(get_data('http://127.0.0.1:5000/data?category=mobiles&col=os'), "Operating System")
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
 
@@ -437,13 +487,13 @@ def smartphones_f1():
     bar3, bar4 = st.columns([1,1.5])
     with bar3:
         try:
-            plot_box(get_data('http://127.0.0.1:5000/column?category=mobiles&col=battery', group_by=False), "Battery Capacity (mAh)")
+            plot_box(get_data('http://127.0.0.1:5000/data?category=mobiles&col=battery', group_by=False), "Battery Capacity (mAh)")
             st.text('There are extreme outliers. Usually, battery capacity lies between 2000 and 6000 mAh.')
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     with bar4:
         try:
-            plot_bar(get_data('http://127.0.0.1:5000/column?category=mobiles&col=cpu_brand'), "CPU Brands")
+            plot_bar(get_data('http://127.0.0.1:5000/data?category=mobiles&col=cpu_brand'), "CPU Brands")
             st.text('Dominant CPU brands in the market. Most phones have CPU of "Snapdragon", "Helio" or "Mediatek".')
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
@@ -451,6 +501,108 @@ def smartphones_f1():
 def smartphones_f2():
     st.title(f"Smartphones - :red[{f2}]")
     create_analysis_header("Smartphones")
+
+    try:
+        brands = get_data('http://127.0.0.1:5000/data?category=mobiles&col=brand')
+    except:
+        st.text('Server not responding. Please initiate the server before continuing.')
+
+    brands_list = sorted(brands.sort_values(ascending=False)[:21].index.str.capitalize().tolist())
+
+    leave_lines(2)
+    dropbox, _ = st.columns([1,2])
+    with dropbox:
+        brand = st.selectbox(
+            "Choose the Brand you want to analyze! (These are only the top few brands)",
+            brands_list,
+            placeholder="Select Brand To Analyze"
+        )
+
+    leave_lines(2)
+    create_section_heading("Feature Importance")
+    ols_col1, ols_col2 = st.columns([2,1], gap='large')
+    with ols_col1:
+        try:
+            ft_imp = ols_chart('smartphones', brand=brand)
+        except:
+            st.text('Server not responding. Please initiate the server before continuing.')
+
+    with ols_col2:
+        st.text(f"""
+        This bar chart highlights the relative importance of various specifications in determining a laptop's overall spec score.
+        '{ft_imp.sort_values(by = 'Feature Importance (%)', ascending=False).index[0].capitalize()}' functionality stands out as the most influential factor, contributing approximately {ft_imp.sort_values(by = 'Feature Importance (%)', ascending=False).values[0][0]}% to the score. In contrast, '{ft_imp.sort_values(by = 'Feature Importance (%)', ascending=False).index[-1].capitalize()}' has minimal impact, accounting for just {ft_imp.sort_values(by = 'Feature Importance (%)', ascending=False).values[-1][0]}% of the overall importance.
+        """)
+
+    leave_lines(1)
+    try:
+        mobiles = get_data(f'http://127.0.0.1:5000/data?category=mobiles', group_by=False)
+    except:
+        st.text('Server not responding. Please initiate the server before continuing.')
+
+
+    create_section_heading("Price, Spec Score and User Rating Comparison")
+    pr, ss, ur = st.columns(3, gap='small')
+    with pr:
+        plot_merged_hist(mobiles, brand, 'price', f"Price (INR) Histogram: All vs {brand} Smartphones")
+        plot_merged_box(mobiles, brand, 'price', f"Price (INR) Boxplot: All vs {brand} Smartphones")
+    with ss:
+        plot_merged_hist(mobiles, brand, 'spec_score', f"Spec Score Histogram: All vs {brand} Smartphones")
+        plot_merged_box(mobiles, brand, 'spec_score', f"Spec Score Boxplot: All vs {brand} Smartphones")
+    with ur:
+        plot_merged_hist(mobiles, brand, 'user_rating', f"User Rating Histogram: All vs {brand} Smartphones")
+        plot_merged_box(mobiles, brand, 'user_rating', f"User Rating Boxplot: All vs {brand} Smartphones")
+
+    leave_lines(2)
+    create_section_heading("5G and NFC Analysis")
+    fiveg, nfc = st.columns([1.25,1], gap='large')
+    with fiveg:
+        plot_two_pies(mobiles, brand, '5g', "5G SIM Availability Proportion Comparison")
+    with nfc:
+        plot_two_pies(mobiles, brand, 'nfc', "NFC Availability Proportion Comparison")
+
+    leave_lines(2)
+    create_section_heading("Camera Analysis")
+    cam1, cam2 = st.columns(2, gap='large')
+    with cam1:
+        plot_two_pies(mobiles, brand, 'rear_cameras', "Number of Rear Cameras Available")
+        leave_lines(1)
+        plot_merged_box(mobiles, brand, 'front_primary', f"Front Cameras MP Boxplot: All vs {brand} Smartphones")
+    with cam2:
+        plot_merged_box(mobiles, brand, 'rear_primary', f"Rear Cameras MP Boxplot: All vs {brand} Smartphones")
+        leave_lines(1)
+        plot_two_pies(mobiles, brand, 'front_cameras', "Number of Front Cameras Available")
+
+    leave_lines(2)
+    create_section_heading("CPU Analysis")
+    cpu1, cpu2 = st.columns([1.5,1], gap='small')
+    with cpu1:
+        plot_two_pies(mobiles, brand, 'cpu_brand', "CPU Brand Proportion Comparison", n=7)
+    with cpu2:
+        plot_merged_box(mobiles, brand, 'cpu_speed', f"CPU Speed (Ghz) Boxplot: All vs {brand} Smartphones")
+
+    leave_lines(2)
+    create_section_heading("RAM & Battery Analysis")
+    ram, battery = st.columns(2, gap='large')
+    with ram:
+        plot_merged_box(mobiles, brand, 'ram', f"RAM Capacity (GB) Boxplot: All vs {brand} Smartphones")
+    with battery:
+        plot_merged_box(mobiles, brand, 'battery', f"Battery Capacity (mAh) Boxplot: All vs {brand} Smartphones")
+
+    leave_lines(2)
+    create_section_heading("Screen Analysis")
+    size, refresh = st.columns([1,1.5], gap='small')
+    with size:
+        plot_merged_box(mobiles, brand, 'screen_size', f"Screen Size (Inches) Boxplot: All vs {brand} Smartphones")
+    with refresh:
+        plot_two_pies(mobiles, brand, 'refresh_rate', "Refresh Rate (Hz) Proportion Comparison")
+
+    res, aspect, ppi = st.columns(3, gap='small')
+    with res:
+        plot_two_pies(mobiles, brand, 'screen_res', "Screen Resolution Proportion Comparison", n=7)
+    with aspect:
+        plot_two_pies(mobiles, brand, 'aspect_ratio_category', "Aspect Ratio Proportion Comparison")
+    with ppi:
+        plot_merged_box(mobiles, brand, 'ppi', f"PPI Boxplot: All vs {brand} Smartphones")
 
 def smartphones_f3():
     st.title(f"Smartphones - :red[{f3}]")
@@ -499,42 +651,42 @@ def tablets_f1():
         try:
             st.metric(label='Expected Front Cameras',
                       value=np.round(np.mean(
-                          get_data('http://127.0.0.1:5000/column?category=tablets&col=front_cameras', group_by=False))))
+                          get_data('http://127.0.0.1:5000/data?category=tablets&col=front_cameras', group_by=False))))
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     with card2:
         try:
             st.metric(label='Expected Rear Cameras',
                       value=np.round(
-                          np.mean(get_data('http://127.0.0.1:5000/column?category=tablets&col=rear_cameras', group_by=False))))
+                          np.mean(get_data('http://127.0.0.1:5000/data?category=tablets&col=rear_cameras', group_by=False))))
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     with card3:
         try:
             st.metric(label='Expected MP for Front Cameras',
                       value=np.round(
-                          np.mean(get_data('http://127.0.0.1:5000/column?category=tablets&col=front_primary', group_by=False))))
+                          np.mean(get_data('http://127.0.0.1:5000/data?category=tablets&col=front_primary', group_by=False))))
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     with card4:
         try:
             st.metric(label='Expected MP for Rear Cameras',
                       value=np.round(
-                          np.mean(get_data('http://127.0.0.1:5000/column?category=tablets&col=rear_primary', group_by=False))))
+                          np.mean(get_data('http://127.0.0.1:5000/data?category=tablets&col=rear_primary', group_by=False))))
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     with card5:
         try:
             st.metric(label='Expected CPU Cores',
                       value=np.round(
-                          np.mean(get_data('http://127.0.0.1:5000/column?category=tablets&col=cpu_cores', group_by=False))))
+                          np.mean(get_data('http://127.0.0.1:5000/data?category=tablets&col=cpu_cores', group_by=False))))
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
 
     hz1, _, txt, __, hz2 = st.columns([2, 0.1, 1, 0.1, 2], gap='small')
     with hz1:
         try:
-            data = get_data('http://127.0.0.1:5000/column?category=tablets&col=has_5g')
+            data = get_data('http://127.0.0.1:5000/data?category=tablets&col=has_5g')
             data.index = data.index.map({0: 'Does not have', 1: 'Has'})
             plot_bar(
                 data.sort_values(ascending=True),
@@ -549,7 +701,7 @@ def tablets_f1():
         st.text('A good 65% of the tablets have a Sim holder.')
     with hz2:
         try:
-            data = get_data('http://127.0.0.1:5000/column?category=tablets&col=has_sim')
+            data = get_data('http://127.0.0.1:5000/data?category=tablets&col=has_sim')
             data.index = data.index.map({0: 'Does not have', 1: 'Has'})
             plot_bar(
                 data.sort_values(ascending=True),
@@ -563,34 +715,34 @@ def tablets_f1():
         try:
             st.metric(label='Expected CPU Speed (GHz)',
                       value=np.round(
-                          np.mean(get_data('http://127.0.0.1:5000/column?category=tablets&col=cpu_speed', group_by=False))))
+                          np.mean(get_data('http://127.0.0.1:5000/data?category=tablets&col=cpu_speed', group_by=False))))
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     with card7:
         try:
             st.metric(label='Common Aspect Ratio',
-                      value=get_data('http://127.0.0.1:5000/column?category=mobiles&col=aspect_ratio_category').sort_values(ascending=False).index[0])
+                      value=get_data('http://127.0.0.1:5000/data?category=mobiles&col=aspect_ratio_category').sort_values(ascending=False).index[0])
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     with card8:
         try:
             st.metric(label='Expected RAM (GB)',
                       value=np.round(
-                          np.mean(get_data('http://127.0.0.1:5000/column?category=tablets&col=ram', group_by=False))))
+                          np.mean(get_data('http://127.0.0.1:5000/data?category=tablets&col=ram', group_by=False))))
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     with card9:
         try:
             st.metric(label='Expected Storage (GB)',
                       value=np.round(
-                          np.mean(get_data('http://127.0.0.1:5000/column?category=tablets&col=inbuilt_storage', group_by=False))))
+                          np.mean(get_data('http://127.0.0.1:5000/data?category=tablets&col=inbuilt_storage', group_by=False))))
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
 
     hz3, _, txt2, __, hz4 = st.columns([2, 0.1, 1, 0.1, 2], gap='small')
     with hz3:
         try:
-            data = get_data('http://127.0.0.1:5000/column?category=tablets&col=has_nfc')
+            data = get_data('http://127.0.0.1:5000/data?category=tablets&col=has_nfc')
             data.index = data.index.map({0: 'Does not have', 1: 'Has'})
             plot_bar(
                 data.sort_values(ascending=True),
@@ -605,7 +757,7 @@ def tablets_f1():
         st.text('Only 0.5% of tablets here have an IR Blaster.')
     with hz4:
         try:
-            data = get_data('http://127.0.0.1:5000/column?category=tablets&col=has_irblaster')
+            data = get_data('http://127.0.0.1:5000/data?category=tablets&col=has_irblaster')
             data.index = data.index.map({0: 'Does not have', 1: 'Has'})
             plot_bar(
                 data.sort_values(ascending=True),
@@ -625,17 +777,17 @@ def tablets_f1():
     cpu_b, box1, box2 = st.columns(3, gap='medium')
     with cpu_b:
         try:
-            plot_bar(get_data('http://127.0.0.1:5000/column?category=tablets&col=cpu_brand'), "CPU Brands")
+            plot_bar(get_data('http://127.0.0.1:5000/data?category=tablets&col=cpu_brand'), "CPU Brands")
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     with box1:
         try:
-            plot_box(get_data('http://127.0.0.1:5000/column?category=tablets&col=screen_size', group_by=False), "Distribution for Size of the Screen (Inches)")
+            plot_box(get_data('http://127.0.0.1:5000/data?category=tablets&col=screen_size', group_by=False), "Distribution for Size of the Screen (Inches)")
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     with box2:
         try:
-            plot_box(get_data('http://127.0.0.1:5000/column?category=tablets&col=ppi', group_by=False), "Distribution for Pixels Per Inch (PPI)")
+            plot_box(get_data('http://127.0.0.1:5000/data?category=tablets&col=ppi', group_by=False), "Distribution for Pixels Per Inch (PPI)")
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
 
@@ -643,13 +795,13 @@ def tablets_f1():
     with brd:
         try:
             st.text('Most devices have Android for Operating System.')
-            plot_bar(get_data('http://127.0.0.1:5000/column?category=tablets&col=os'), "Operating Systems")
+            plot_bar(get_data('http://127.0.0.1:5000/data?category=tablets&col=os'), "Operating Systems")
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     with os:
         try:
             st.text('About 45% of tablets in the market are from the first 4 brands: "Apple","Lenovo","Samsung","iBall"')
-            plot_bar(get_data('http://127.0.0.1:5000/column?category=tablets&col=brand', n=20), "Dominant Brands")
+            plot_bar(get_data('http://127.0.0.1:5000/data?category=tablets&col=brand', n=20), "Dominant Brands")
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
 
@@ -657,19 +809,119 @@ def tablets_f1():
     with btry:
         try:
             st.text('Distribution for Battery Capacity. Most tablets have capacity in the range of 3,000 mAh and 9,000 mAh. There are a couple of tablets with capacity more than 20,000 mAh.')
-            plot_box(get_data('http://127.0.0.1:5000/column?category=tablets&col=battery_capacity', group_by=False), "Battery Capacity (mAh)")
+            plot_box(get_data('http://127.0.0.1:5000/data?category=tablets&col=battery_capacity', group_by=False), "Battery Capacity (mAh)")
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     with chrg:
         try:
             st.text('Distribution for Fast Charging Capacity. Most tablets do not have fast charging. Usually within 10Ws of Fast Charging. A few models have extremely fast charging capacity.')
-            plot_box(get_data('http://127.0.0.1:5000/column?category=tablets&col=fast_charging', group_by=False), "Fast Charging (W)")
+            plot_box(get_data('http://127.0.0.1:5000/data?category=tablets&col=fast_charging', group_by=False), "Fast Charging (W)")
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
 
 def tablets_f2():
     st.title(f"Tablets - :red[{f2}]")
     create_analysis_header("Tablets")
+
+    try:
+        brands = get_data('http://127.0.0.1:5000/data?category=tablets&col=brand')
+    except:
+        st.text('Server not responding. Please initiate the server before continuing.')
+
+    brands_list = sorted(brands.sort_values(ascending=False)[:21].index.str.capitalize().tolist())
+
+    leave_lines(2)
+    dropbox, _ = st.columns([1,2])
+    with dropbox:
+        brand = st.selectbox(
+            "Choose the Brand you want to analyze! (These are only the top few brands)",
+            brands_list,
+            placeholder="Select Brand To Analyze"
+        )
+
+    leave_lines(2)
+    create_section_heading("Feature Importance")
+    ols_col1, ols_col2 = st.columns([2,1], gap='large')
+    with ols_col1:
+        try:
+            ft_imp = ols_chart('tablets', brand=brand)
+        except:
+            st.text('Server not responding. Please initiate the server before continuing.')
+
+    with ols_col2:
+        st.text(f"""
+        This bar chart highlights the relative importance of various specifications in determining a laptop's overall spec score.
+        '{ft_imp.sort_values(by = 'Feature Importance (%)', ascending=False).index[0].capitalize()}' functionality stands out as the most influential factor, contributing approximately {ft_imp.sort_values(by = 'Feature Importance (%)', ascending=False).values[0][0]}% to the score. In contrast, '{ft_imp.sort_values(by = 'Feature Importance (%)', ascending=False).index[-1].capitalize()}' has minimal impact, accounting for just {ft_imp.sort_values(by = 'Feature Importance (%)', ascending=False).values[-1][0]}% of the overall importance.
+        """)
+
+    leave_lines(1)
+    try:
+        tablets = get_data(f'http://127.0.0.1:5000/data?category=tablets', group_by=False)
+    except:
+        st.text('Server not responding. Please initiate the server before continuing.')
+
+    create_section_heading("Price, Spec Score and User Rating Comparison")
+    pr, ss, ur = st.columns(3, gap='small')
+    with pr:
+        plot_merged_hist(tablets, brand, 'price', f"Price (INR) Histogram: All vs {brand} Tablets")
+        plot_merged_box(tablets, brand, 'price', f"Price (INR) Boxplot: All vs {brand} Tablets")
+    with ss:
+        plot_merged_hist(tablets, brand, 'spec_score', f"Spec Score Histogram: All vs {brand} Tablets")
+        plot_merged_box(tablets, brand, 'spec_score', f"Spec Score Boxplot: All vs {brand} Tablets")
+    with ur:
+        plot_merged_hist(tablets, brand, 'user_rating', f"User Rating Histogram: All vs {brand} Tablets")
+        plot_merged_box(tablets, brand, 'user_rating', f"User Rating Boxplot: All vs {brand} Tablets")
+
+    leave_lines(2)
+    create_section_heading("Camera Analysis")
+    cam1, cam2 = st.columns(2, gap='large')
+    with cam1:
+        plot_two_pies(tablets, brand, 'rear_cameras', "Number of Rear Cameras Available")
+        leave_lines(1)
+        plot_merged_box(tablets, brand, 'front_primary', f"Front Cameras MP Boxplot: All vs {brand} Tablets")
+    with cam2:
+        plot_merged_box(tablets, brand, 'rear_primary', f"Rear Cameras MP Boxplot: All vs {brand} Tablets")
+        leave_lines(1)
+        plot_two_pies(tablets, brand, 'front_cameras', "Number of Front Cameras Available")
+
+    leave_lines(2)
+    create_section_heading("SIM & Storage Analysis")
+    sim, ram, storage = st.columns(3, gap='medium')
+    with sim:
+        plot_two_pies(tablets, brand, 'has_sim', "SIM Feature Proportion Comparison")
+    with ram:
+        plot_merged_box(tablets, brand, 'ram', f"RAM Capacity (GB) Boxplot: All vs {brand} Tablets")
+    with storage:
+        plot_merged_box(tablets, brand, 'inbuilt_storage', f"Inbuilt Storage (GB) Boxplot: All vs {brand} Tablets")
+
+    leave_lines(2)
+    create_section_heading("Screen Analysis")
+    size, res = st.columns([1,2], gap='small')
+    with size:
+        plot_merged_box(tablets, brand, 'screen_size', f"Screen Size (Inches) Boxplot: All vs {brand} Tablets")
+    with res:
+        plot_two_pies(tablets, brand, 'screen_res', "Screen Resolution Proportion Comparison")
+    refresh, ppi = st.columns([2,1], gap='small')
+    with refresh:
+        plot_two_pies(tablets, brand, 'screen_refresh_rate', "Refresh Rate Proportion Comparison")
+    with ppi:
+        plot_merged_box(tablets, brand, 'ppi', f"PPI Boxplot: All vs {brand} Tablets")
+
+    leave_lines(2)
+    create_section_heading("CPU Analysis")
+    cpu_br, cpu_sp = st.columns(2)
+    with cpu_br:
+        plot_two_pies(tablets, brand, 'cpu_brand', "CPU Brands Proportion Comparison")
+    with cpu_sp:
+        plot_merged_box(tablets, brand, 'cpu_speed', f"CPU Speed (Ghz) Boxplot: All vs {brand} Tablets")
+
+    leave_lines(2)
+    create_section_heading("Battery Analysis")
+    battery, fast = st.columns(2)
+    with battery:
+        plot_merged_box(tablets, brand, 'battery_capacity', f"Battery Capacity Boxplot: All vs {brand} Tablets")
+    with fast:
+        plot_two_pies(tablets, brand, 'fast_charging', f"Fast Charging Boxplot: All vs {brand} Tablets", n=7)
 
 def tablets_f3():
     st.title(f"Tablets - :red[{f3}]")

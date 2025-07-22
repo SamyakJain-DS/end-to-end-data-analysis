@@ -9,17 +9,36 @@ app = Flask(__name__)
 def index():
     return "API Dictionary"
 
-@app.route('/column', methods=['GET'])
+@app.route('/data', methods=['GET'])
 def fetch_data():
     category = request.args.get('category', default=None, type=str)
     col = request.args.get('col', default=None, type=str)
+    brand = request.args.get('brand_', default=None, type=str)
 
-    data = dbo.execute_query(
-        f'''
-        SELECT {col}
-        FROM {category}
-        '''
-    ).to_dict(orient='records')
+    if col is None:
+        data = dbo.execute_query(
+            f'''
+            SELECT *
+            FROM {category}
+            '''
+        ).to_dict(orient='records')
+    else:
+        if brand is None:
+            data = dbo.execute_query(
+                f'''
+                SELECT {col}
+                FROM {category}
+                '''
+            ).to_dict(orient='records')
+        else:
+            data = dbo.execute_query(
+                f'''
+                SELECT {col}
+                FROM {category}
+                WHERE brand = '{brand}'
+                '''
+            ).to_dict(orient='records')
+
     return jsonify(data)
 
 @app.route('/prep-laptop')
@@ -72,8 +91,7 @@ def prep_smartphones_brand():
     data = dbo.execute_query(f"""
             SELECT cpu_cores + cpu_speed as 'cpu', 5g, nfc, ir_blaster, ram, storage,
             battery, screen_size, refresh_rate, ppi, rear_cameras,
-            rear_primary, front_cameras, front_primary, expandable_upto,
-            user_rating, price, spec_score
+            rear_primary, front_cameras, front_primary, expandable_upto, spec_score
             FROM mobiles
             WHERE brand = '{brand}'
              """
@@ -88,7 +106,7 @@ def prep_tablets_brand():
             has_irblaster, ram, inbuilt_storage, battery_capacity,
             fast_charging, screen_size, screen_refresh_rate, ppi,
             rear_cameras, rear_primary, front_cameras, front_primary,
-            expandable, user_rating, price, spec_score
+            expandable, spec_score
             FROM tablets
             WHERE brand = '{brand}'
              """

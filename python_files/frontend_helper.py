@@ -2,11 +2,12 @@ import numpy as np
 import pandas as pd
 import requests
 import statsmodels.api as sm
-from numpy.f2py.capi_maps import f2cmap_all
 from sklearn.metrics import f1_score
 from statsmodels.stats.outliers_influence import variance_inflation_factor
 import streamlit as st
 import plotly.express as px
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
 
 bar_color = '#bb3b3b'
 bg_color = '#262730'
@@ -135,6 +136,14 @@ def preprocess_laptops_ols(brand=None):
     vif_data = pd.DataFrame()
     vif_data["feature"] = X.columns
     vif_data["VIF"] = [variance_inflation_factor(X.values, i) for i in range(X.shape[1])]
+    if np.isinf(vif_data['VIF']).sum() + vif_data['VIF'].isna().sum() > 0:
+        X.drop(
+            columns=vif_data[np.isinf(vif_data['VIF'])]['feature'].to_list() + vif_data[np.isnan(vif_data['VIF'])]['feature'].to_list(),
+            inplace=True
+        )
+        vif_data = pd.DataFrame()
+        vif_data["feature"] = X.columns
+        vif_data["VIF"] = [variance_inflation_factor(X.values, i) for i in range(X.shape[1])]
 
     columns_to_drop = list(vif_data[vif_data['VIF'] > 5]['feature'].values)
     if 'const' in columns_to_drop:
@@ -173,6 +182,14 @@ def preprocess_mobiles_ols(brand=None):
     vif_data = pd.DataFrame()
     vif_data["feature"] = X.columns
     vif_data["VIF"] = [variance_inflation_factor(X.values, i) for i in range(X.shape[1])]
+    if np.isinf(vif_data['VIF']).sum() + vif_data['VIF'].isna().sum() > 0:
+        X.drop(
+            columns=vif_data[np.isinf(vif_data['VIF'])]['feature'].to_list() + vif_data[np.isnan(vif_data['VIF'])]['feature'].to_list(),
+            inplace=True
+        )
+        vif_data = pd.DataFrame()
+        vif_data["feature"] = X.columns
+        vif_data["VIF"] = [variance_inflation_factor(X.values, i) for i in range(X.shape[1])]
 
     columns_to_drop = list(vif_data[vif_data['VIF'] > 5]['feature'].values)
     if 'const' in columns_to_drop:
@@ -213,6 +230,14 @@ def preprocess_tablets_ols(brand=None):
     vif_data = pd.DataFrame()
     vif_data["feature"] = X.columns
     vif_data["VIF"] = [variance_inflation_factor(X.values, i) for i in range(X.shape[1])]
+    if np.isinf(vif_data['VIF']).sum() + vif_data['VIF'].isna().sum() > 0:
+        X.drop(
+            columns=vif_data[np.isinf(vif_data['VIF'])]['feature'].to_list() + vif_data[np.isnan(vif_data['VIF'])]['feature'].to_list(),
+            inplace=True
+        )
+        vif_data = pd.DataFrame()
+        vif_data["feature"] = X.columns
+        vif_data["VIF"] = [variance_inflation_factor(X.values, i) for i in range(X.shape[1])]
 
     columns_to_drop = list(vif_data[vif_data['VIF'] > 5]['feature'].values)
     if 'const' in columns_to_drop:
@@ -226,22 +251,22 @@ def ols_chart(category, brand=None):
         if brand is None:
             y, X = preprocess_laptops_ols()
         else:
-            y, X = preprocess_laptops_ols(brand)
+            y, X = preprocess_laptops_ols(brand.lower())
     elif category == 'smartphones':
         if brand is None:
             y, X = preprocess_mobiles_ols()
         else:
-            y, X = preprocess_mobiles_ols(brand)
+            y, X = preprocess_mobiles_ols(brand.lower())
     else:
         if brand is None:
             y, X = preprocess_tablets_ols()
         else:
-            y, X = preprocess_tablets_ols(brand)
+            y, X = preprocess_tablets_ols(brand.lower())
 
     ft_imp = feature_imp(y, X)
     ols_ = px.bar(ft_imp, x=ft_imp.index.str.upper(), y=ft_imp.iloc[:, 0], text_auto=True, color_discrete_sequence=[bar_color])
 
-    update_layout(ols_, "Importance of specs")
+    update_layout(ols_, "Impact on Specs")
     st.plotly_chart(ols_)
 
     return ft_imp
@@ -275,6 +300,123 @@ def plot_box(data, title):
     update_layout(chart, title)
     st.plotly_chart(chart)
 
+def plot_merged_hist(data, brand, metric, title):
+    fig = go.Figure()
+    brand_data = data[data['brand'] == brand.lower()]
+
+    fig.add_trace(go.Histogram(
+        x=data[metric],
+        name="All Brands",
+        opacity=0.5,
+        marker_color='lightgray'
+    ))
+
+    fig.add_trace(go.Histogram(
+        x=brand_data[metric],
+        name=brand.capitalize(),
+        opacity=0.7,
+        marker_color=bar_color
+    ))
+
+    fig.update_layout(
+        barmode='overlay',
+        title=f"Price Distribution: {brand.capitalize()} vs All Brands",
+        xaxis_title='Price',
+        yaxis_title='Count',
+        legend_title='Brand'
+    )
+
+    update_layout(fig, title)
+    st.plotly_chart(fig)
+
+def plot_merged_box(data, brand, metric, title):
+    fig = go.Figure()
+    brand_data = data[data['brand'] == brand.lower()]
+
+    fig.add_trace(go.Box(
+        x=data[metric],
+        name="All Brands",
+        opacity=0.5,
+        marker_color='lightgray'
+    ))
+
+    fig.add_trace(go.Box(
+        x=brand_data[metric],
+        name=brand.capitalize(),
+        opacity=0.7,
+        marker_color=bar_color
+    ))
+
+    fig.update_layout(
+        barmode='overlay',
+        title=f"Price Distribution: {brand.capitalize()} vs All Brands",
+        xaxis_title='Price',
+        yaxis_title='Count',
+        legend_title='Brand'
+    )
+
+    update_layout(fig, title)
+    st.plotly_chart(fig)
+
+def plot_merged_bar(data, brand, metric, title, h=False):
+    brand_data = data[data['brand'] == brand.lower()][metric].value_counts()
+    data = data[metric].value_counts()
+    fig = go.Figure()
+
+    if h:
+        fig.add_trace(go.Bar(x=data.values, y=data.index, name="All Brands", orientation='h', marker_color='lightgray'))
+        fig.add_trace(go.Bar(x=brand_data.values, y=brand_data.index, name=brand.capitalize(), orientation='h', marker_color=bar_color))
+    else:
+        fig.add_trace(go.Bar(y=data.values, x=data.index, name="All Brands", marker_color='lightgray'))
+        fig.add_trace(go.Bar(y=brand_data.values, x=brand_data.index, name=brand.capitalize(), marker_color=bar_color))
+
+    fig.update_layout(
+        xaxis_title=metric.capitalize(),
+        barmode='group'
+    )
+    update_layout(fig, title)
+    st.plotly_chart(fig)
+
+def plot_two_pies(data, brand, metric, title, n=None):
+    brand_data = data[data['brand'].str.lower() == brand.lower()]
+
+    all_counts = data[metric].value_counts().sort_values(ascending=False).head(n)
+    brand_counts = brand_data[metric].value_counts().sort_values(ascending=False).head(n)
+
+    fig = make_subplots(
+        rows=1, cols=2,
+        specs=[[{'type': 'domain'}, {'type': 'domain'}]],
+        subplot_titles=("All Brands", f"{brand.capitalize()} Only")
+    )
+
+    fig.add_trace(go.Pie(
+        labels=all_counts.index,
+        values=all_counts.values,
+        name="All Brands",
+        marker=dict(colors=red_palette)
+    ), row=1, col=1)
+
+    fig.add_trace(go.Pie(
+        labels=brand_counts.index,
+        values=brand_counts.values,
+        name=brand.capitalize(),
+        marker=dict(colors=red_palette)
+    ), row=1, col=2)
+
+    fig.update_layout(
+        legend_title=metric.title()
+    )
+    update_layout(fig, title)
+    st.plotly_chart(fig)
+
 def leave_lines(lines):
     for i in range(lines):
         st.text('')
+
+def filter_data(df,col,value):
+    return df[df[col] == value.lower()]
+
+def create_section_heading(heading):
+    st.divider()
+    st.header(heading)
+    leave_lines(1)
