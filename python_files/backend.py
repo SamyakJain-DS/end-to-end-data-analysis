@@ -44,7 +44,7 @@ def fetch_data():
 @app.route('/prep-laptop')
 def prep_laptop():
     data = dbo.execute_query("""
-            SELECT gpu_vram, ram_capacity, hdd, ssd, ppi, touchscreen, cpu_cores+cpu_threads as 'cpu', spec_score
+            SELECT gpu_vram, ram_capacity, hdd, ssd, ppi, touchscreen, cpu_cores+cpu_threads as 'cpu', spec_score, price
             FROM laptops
              """
     ).to_dict(orient='records')
@@ -55,7 +55,7 @@ def prep_smartphones():
     data = dbo.execute_query("""
             SELECT cpu_cores + cpu_speed as 'cpu', 5g, nfc, ir_blaster, ram, storage,
             battery, screen_size, refresh_rate, ppi, rear_cameras,
-            rear_primary, front_cameras, front_primary, expandable_upto, spec_score
+            rear_primary, front_cameras, front_primary, expandable_upto, spec_score, price
             FROM mobiles
              """
     ).to_dict(orient='records')
@@ -68,7 +68,7 @@ def prep_tablets():
             has_irblaster, ram, inbuilt_storage, battery_capacity,
             fast_charging, screen_size, screen_refresh_rate, ppi,
             rear_cameras, rear_primary, front_cameras, front_primary,
-            expandable, spec_score
+            expandable, spec_score, price
             FROM tablets
              """
     ).to_dict(orient='records')
@@ -78,7 +78,7 @@ def prep_tablets():
 def prep_laptop_brand():
     brand = request.args.get('brand', default=None, type=str)
     data = dbo.execute_query(f"""
-            SELECT gpu_vram, ram_capacity, hdd, ssd, ppi, touchscreen, cpu_cores+cpu_threads as 'cpu', spec_score
+            SELECT gpu_vram, ram_capacity, hdd, ssd, ppi, touchscreen, cpu_cores+cpu_threads as 'cpu', spec_score, price
             FROM laptops
             WHERE brand = '{brand}'
              """
@@ -91,7 +91,7 @@ def prep_smartphones_brand():
     data = dbo.execute_query(f"""
             SELECT cpu_cores + cpu_speed as 'cpu', 5g, nfc, ir_blaster, ram, storage,
             battery, screen_size, refresh_rate, ppi, rear_cameras,
-            rear_primary, front_cameras, front_primary, expandable_upto, spec_score
+            rear_primary, front_cameras, front_primary, expandable_upto, spec_score, price
             FROM mobiles
             WHERE brand = '{brand}'
              """
@@ -106,7 +106,7 @@ def prep_tablets_brand():
             has_irblaster, ram, inbuilt_storage, battery_capacity,
             fast_charging, screen_size, screen_refresh_rate, ppi,
             rear_cameras, rear_primary, front_cameras, front_primary,
-            expandable, spec_score
+            expandable, spec_score, price
             FROM tablets
             WHERE brand = '{brand}'
              """

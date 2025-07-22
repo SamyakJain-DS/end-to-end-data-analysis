@@ -8,6 +8,7 @@ import streamlit as st
 import plotly.express as px
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
+import plotly.figure_factory as ff
 
 bar_color = '#bb3b3b'
 bg_color = '#262730'
@@ -106,7 +107,7 @@ def feature_imp(y,X):
     coefs = model.params.drop('const').abs().sort_values(ascending=False)
     return pd.DataFrame(np.round(coefs*100/coefs.sum(),2), columns=['Feature Importance (%)'])
 
-def preprocess_laptops_ols(brand=None):
+def preprocess_laptops_ols(on, brand=None):
     if brand is None:
         try:
             df = pd.DataFrame(hit_api('http://127.0.0.1:5000/prep-laptop'))
@@ -119,8 +120,14 @@ def preprocess_laptops_ols(brand=None):
             st.text('Server not responding. Please initiate the server before continuing.')
 
     # Extract X and y for OLS
-    y = df.copy()['spec_score']
-    X = sm.add_constant(df.copy().drop(columns=['spec_score']))
+    if on == 'specs':
+        df.drop(columns=['price'], inplace=True)
+        y = df.copy()['spec_score']
+        X = sm.add_constant(df.copy().drop(columns=['spec_score']))
+    elif on == 'price':
+        df.drop(columns=['spec_score'], inplace=True)
+        y = df.copy()['price']
+        X = sm.add_constant(df.copy().drop(columns=['price']))
 
     # Handle missing values
     X['gpu_vram'] = X['gpu_vram'].fillna(0)
@@ -152,7 +159,7 @@ def preprocess_laptops_ols(brand=None):
 
     return y, X
 
-def preprocess_mobiles_ols(brand=None):
+def preprocess_mobiles_ols(on, brand=None):
     if brand is None:
         try:
             df = pd.DataFrame(hit_api('http://127.0.0.1:5000/prep-smartphones'))
@@ -165,8 +172,14 @@ def preprocess_mobiles_ols(brand=None):
             st.text('Server not responding. Please initiate the server before continuing.')
 
     # Extract X and y for OLS
-    y = df.copy()['spec_score']
-    X = sm.add_constant(df.copy().drop(columns=['spec_score']))
+    if on == 'specs':
+        df.drop(columns=['price'], inplace=True)
+        y = df.copy()['spec_score']
+        X = sm.add_constant(df.copy().drop(columns=['spec_score']))
+    elif on == 'price':
+        df.drop(columns=['spec_score'], inplace=True)
+        y = df.copy()['price']
+        X = sm.add_constant(df.copy().drop(columns=['price']))
 
     # Handle missing values
     X['ram'] = X['ram'].fillna(X['ram'].median())
@@ -198,7 +211,7 @@ def preprocess_mobiles_ols(brand=None):
 
     return y, X
 
-def preprocess_tablets_ols(brand=None):
+def preprocess_tablets_ols(on, brand=None):
     if brand is None:
         try:
             df = pd.DataFrame(hit_api('http://127.0.0.1:5000/prep-tablets'))
@@ -211,8 +224,14 @@ def preprocess_tablets_ols(brand=None):
             st.text('Server not responding. Please initiate the server before continuing.')
 
     # Extract X and y for OLS
-    y = df.copy()['spec_score']
-    X = sm.add_constant(df.copy().drop(columns=['spec_score']))
+    if on == 'specs':
+        df.drop(columns=['price'], inplace=True)
+        y = df.copy()['spec_score']
+        X = sm.add_constant(df.copy().drop(columns=['spec_score']))
+    elif on == 'price':
+        df.drop(columns=['spec_score'], inplace=True)
+        y = df.copy()['price']
+        X = sm.add_constant(df.copy().drop(columns=['price']))
 
     # Handle missing values
     X['ram'] = X['ram'].fillna(X['ram'].median())
@@ -246,27 +265,27 @@ def preprocess_tablets_ols(brand=None):
 
     return y, X
 
-def ols_chart(category, brand=None):
+def ols_chart(category,on='specs', brand=None):
     if category == 'laptops':
         if brand is None:
-            y, X = preprocess_laptops_ols()
+            y, X = preprocess_laptops_ols(on=on)
         else:
-            y, X = preprocess_laptops_ols(brand.lower())
+            y, X = preprocess_laptops_ols(on=on, brand=brand.lower())
     elif category == 'smartphones':
         if brand is None:
-            y, X = preprocess_mobiles_ols()
+            y, X = preprocess_mobiles_ols(on=on)
         else:
-            y, X = preprocess_mobiles_ols(brand.lower())
+            y, X = preprocess_mobiles_ols(on=on, brand=brand.lower())
     else:
         if brand is None:
-            y, X = preprocess_tablets_ols()
+            y, X = preprocess_tablets_ols(on=on)
         else:
-            y, X = preprocess_tablets_ols(brand.lower())
+            y, X = preprocess_tablets_ols(on=on, brand=brand.lower())
 
     ft_imp = feature_imp(y, X)
     ols_ = px.bar(ft_imp, x=ft_imp.index.str.upper(), y=ft_imp.iloc[:, 0], text_auto=True, color_discrete_sequence=[bar_color])
 
-    update_layout(ols_, "Impact on Specs")
+    update_layout(ols_, f"Impact on {on.capitalize()}")
     st.plotly_chart(ols_)
 
     return ft_imp
@@ -300,6 +319,11 @@ def plot_box(data, title):
     update_layout(chart, title)
     st.plotly_chart(chart)
 
+def plot_hist(data, title):
+    chart = px.histogram(data,x=data.values, color_discrete_sequence=[bar_color], nbins=50)
+    update_layout(chart, title)
+    st.plotly_chart(chart)
+
 def plot_merged_hist(data, brand, metric, title):
     fig = go.Figure()
     brand_data = data[data['brand'] == brand.lower()]
@@ -320,7 +344,6 @@ def plot_merged_hist(data, brand, metric, title):
 
     fig.update_layout(
         barmode='overlay',
-        title=f"Price Distribution: {brand.capitalize()} vs All Brands",
         xaxis_title='Price',
         yaxis_title='Count',
         legend_title='Brand'
@@ -349,7 +372,38 @@ def plot_merged_box(data, brand, metric, title):
 
     fig.update_layout(
         barmode='overlay',
-        title=f"Price Distribution: {brand.capitalize()} vs All Brands",
+        xaxis_title='Price',
+        yaxis_title='Count',
+        legend_title='Brand'
+    )
+
+    update_layout(fig, title)
+    st.plotly_chart(fig)
+
+def plot_multiple_box(data, col, title, only=[]):
+    fig = go.Figure()
+    data = data.copy()
+    if 0 in data[col].dropna().unique():
+        data[col] = data[col].map({0: 'Does not have', 1:'Has'})
+    if only:
+        for value in only:
+            fig.add_trace(go.Box(
+                x=data[data[col] == value]['price'],
+                name=value.upper(),
+                opacity=0.7,
+                marker_color=bar_color
+            ))
+    else:
+        for value in data[col].dropna().unique():
+            fig.add_trace(go.Box(
+                x=data[data[col] == value]['price'],
+                name=value.upper(),
+                opacity=0.7,
+                marker_color=bar_color
+            ))
+
+    fig.update_layout(
+        barmode='overlay',
         xaxis_title='Price',
         yaxis_title='Count',
         legend_title='Brand'
@@ -420,3 +474,66 @@ def create_section_heading(heading):
     st.divider()
     st.header(heading)
     leave_lines(1)
+
+def get_top_items(df, n=5, ascending=False):
+    if ascending:
+        list_ = df.loc[:, ['name', 'price']].copy().sort_values(by='price', ascending=True).head(n)
+        list_.rename({'price': 'Price', 'name': 'Name'}, axis=1, inplace=True)
+        list_['Name'] = list_['Name'].str.title()
+        list_['Price'] = list_['Price'].apply(lambda x: f"{x:,}")
+    else:
+        list_ = df.loc[:,['name', 'price']].copy().sort_values(by = 'price', ascending = False).head(n)
+        list_.rename({'price': 'Price', 'name': 'Name'}, axis = 1, inplace = True)
+        list_['Name'] = list_['Name'].str.title()
+        list_['Price'] = list_['Price'].apply(lambda x: f"{x:,}")
+
+    return list_
+
+def f3_part1(category, df):
+    top_5 = get_top_items(df)
+    bottom_5 = get_top_items(df, ascending=True)
+
+    top, bottom = st.columns(2)
+    with top:
+        st.subheader("5 Most Expensive Products")
+        st.dataframe(top_5, hide_index=True)
+    with bottom:
+        st.subheader("5 Least Expensive Products")
+        st.dataframe(bottom_5, hide_index=True)
+
+    st.subheader("The range of price is quite big. Let's look at some basic stats.")
+
+    stats = pd.DataFrame(df.describe()['price'])
+    stats.reset_index(inplace=True)
+    stats['index'] = stats['index'].str.upper()
+    stats.rename({'Measure': 'Name', 'price': 'Price'}, axis=1, inplace=True)
+    stats['Price'] = stats['Price'].apply(lambda x: f"{np.round(x,2):,}")
+
+    stat, box = st.columns([1,2], gap='medium')
+    with stat:
+        st.dataframe(stats, hide_index=True)
+    with box:
+        plot_hist(df['price'], "Histogram for Price")
+
+    st.subheader("Let's analyze the impact of numerical features on price.")
+    chart, df_ = st.columns([1,2])
+    with chart:
+        st.plotly_chart(px.imshow(df.select_dtypes(['int', 'float64']).corr(), color_continuous_scale='Reds'))
+    with df_:
+        st.dataframe(df.select_dtypes(['int', 'float64']).corr())
+
+    leave_lines(2)
+    ols_col1, ols_col2 = st.columns([2,1], gap='large')
+    with ols_col1:
+        try:
+            ft_imp = ols_chart(category, on='price')
+        except:
+            st.text('Server not responding. Please initiate the server before continuing.')
+
+    with ols_col2:
+        st.text(f"""
+        This bar chart highlights the relative importance of various specifications in determining a {category}'s overall price.
+        '{ft_imp.sort_values(by = 'Feature Importance (%)', ascending=False).index[0].capitalize()}' functionality stands out as the most influential factor, contributing approximately {ft_imp.sort_values(by = 'Feature Importance (%)', ascending=False).values[0][0]}% to the price. In contrast, '{ft_imp.sort_values(by = 'Feature Importance (%)', ascending=False).index[-1].capitalize()}' has minimal impact, accounting for just {ft_imp.sort_values(by = 'Feature Importance (%)', ascending=False).values[-1][0]}% of the overall importance.
+        """)
+
+    st.subheader("Now, we may move to analyzing categorical features.")

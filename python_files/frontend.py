@@ -313,6 +313,62 @@ def laptops_f3():
     st.title(f"Laptops - :red[{f3}]")
     create_analysis_header("Laptops")
 
+    try:
+        laptops = pd.DataFrame(get_data('http://127.0.0.1:5000/data?category=laptops', group_by=False))
+    except:
+        st.text("Server not responding. Please initiate the server before continuing.")
+
+    f3_part1('laptops', laptops)
+
+    expensive = laptops.groupby('brand')['price'].median().sort_values(ascending=False)
+    cheap = laptops.groupby('brand')['price'].median().sort_values(ascending=True)
+
+    premium, budget = st.columns(2, gap='large')
+    with premium:
+        plot_bar(expensive.head(10), "Premium Brands")
+        st.caption('')
+        st.text('Alienware and Razer place themselves as a premium brand in the laptops segment, with more than double the median price of apple products.')
+    with budget:
+        plot_bar(cheap[cheap > 41000].head(10), "Budget Brands")
+        st.caption("Some brands have been filtered to show only the ones that are in production as of today.")
+
+    cpu_br_bar, cpu_br_box = st.columns([1.5,1])
+    with cpu_br_bar:
+        brands_median = laptops.groupby('cpu_brand')['price'].median().sort_values(ascending=False)
+        plot_bar(brands_median, "CPU Brands Median Price")
+    with cpu_br_box:
+        plot_multiple_box(laptops, 'cpu_brand', "Price Comparison for different CPU Brands", only=['amd','intel','apple'])
+
+    cpu_type_bar, cpu_type_box = st.columns([1,1.5])
+    with cpu_type_bar:
+        plot_multiple_box(laptops, 'cpu_type', "Price Comparison for different CPU Types", only=['hx','hk','h','u','hq','hs'])
+    with cpu_type_box:
+        brands_median = laptops.groupby('cpu_type')['price'].median().sort_values(ascending=False)
+        plot_bar(brands_median, "CPU Types Median Price")
+
+    leave_lines(2)
+    gpu_br_bar, gpu_br_box = st.columns([1.5, 1])
+    with gpu_br_bar:
+        brands_median = laptops.groupby('gpu_brand')['price'].median().sort_values(ascending=False)
+        plot_bar(brands_median, "GPU Brands Median Price")
+    with gpu_br_box:
+        plot_multiple_box(laptops, 'gpu_brand', "Price Comparison for different GPU Brands")
+
+    leave_lines(2)
+    ram_bar, ram_box = st.columns(2, gap='large')
+    with ram_bar:
+        plot_multiple_box(laptops, 'ram_ddr_type', "Price Comparison for different RAM DDR Types")
+    with ram_box:
+        ram_median = laptops.groupby('ram_ddr_type')['price'].median().sort_values(ascending=False)
+        plot_bar(ram_median, "RAM DDR Types Median Price")
+
+    screen_box, screen_bar = st.columns(2, gap='large')
+    with screen_box:
+        screen_median = laptops.groupby('screen_res')['price'].median().sort_values(ascending=False)
+        plot_bar(screen_median, "Screen Resolution Median Price")
+    with screen_bar:
+        plot_multiple_box(laptops, 'screen_res', "Price Comparison for different Screen Resolutions")
+
 def laptops_f4():
     st.title(f"Laptops - :red[{f4}]")
     create_analysis_header("Laptops")
@@ -607,6 +663,53 @@ def smartphones_f2():
 def smartphones_f3():
     st.title(f"Smartphones - :red[{f3}]")
     create_analysis_header("Smartphones")
+
+    try:
+        mobiles = pd.DataFrame(get_data('http://127.0.0.1:5000/data?category=mobiles', group_by=False))
+    except:
+        st.text("Server not responding. Please initiate the server before continuing.")
+
+    f3_part1('smartphones', mobiles)
+
+    expensive = mobiles.groupby('brand')['price'].median().sort_values(ascending=False)
+    cheap = mobiles.groupby('brand')['price'].median().sort_values(ascending=True)
+
+    premium, budget = st.columns(2, gap='large')
+    with premium:
+        plot_bar(expensive.head(10), "Premium Brands")
+        st.caption('')
+    with budget:
+        plot_bar(cheap[cheap > 15000].head(10), "Budget Brands")
+        st.caption("Some brands have been filtered to show only the ones that are in production as of today.")
+
+    leave_lines(1)
+    cpu_br_bar, cpu_br_box = st.columns([1.5,1])
+    with cpu_br_bar:
+        brands_median = mobiles.groupby('cpu_brand')['price'].median().sort_values(ascending=False)
+        plot_bar(brands_median, "CPU Brands Median Price")
+    with cpu_br_box:
+        plot_multiple_box(mobiles, 'cpu_brand', "Price Comparison for different CPU Brands", only=['apple','qualcomm','helio','mediatek','snapdragon','exynos'])
+
+    leave_lines(2)
+    fiveg, nfc, irb = st.columns(3, gap='small')
+    with fiveg:
+        plot_multiple_box(mobiles, '5g', "Price Comparison for 5G SIM Feature")
+    with nfc:
+        plot_multiple_box(mobiles, 'nfc', "Price Comparison for NFC Feature")
+    with irb:
+        plot_multiple_box(mobiles, 'ir_blaster', "Price Comparison for IR Blaster Feature")
+
+    leave_lines(2)
+    screen_box, screen_bar, refresh = st.columns(3, gap='small')
+    with screen_box:
+        screen_median = mobiles.groupby('screen_res')['price'].median().sort_values(ascending=False)
+        plot_bar(screen_median, "Screen Resolution Median Price")
+    with screen_bar:
+        plot_multiple_box(mobiles, 'screen_res', "Price Comparison for different Screen Resolutions")
+    with refresh:
+        mobiles['refresh_rate'] = mobiles['refresh_rate'].astype('str')
+        screen_median = mobiles.groupby('refresh_rate')['price'].median().sort_values(ascending=False)
+        plot_bar(screen_median, "Screen Refresh Rate Median Price")
 
 def smartphones_f4():
     st.title(f"Smartphones - :red[{f4}]")
@@ -926,6 +1029,56 @@ def tablets_f2():
 def tablets_f3():
     st.title(f"Tablets - :red[{f3}]")
     create_analysis_header("Tablets")
+
+    try:
+        tablets = pd.DataFrame(get_data('http://127.0.0.1:5000/data?category=tablets', group_by=False))
+    except:
+        st.text("Server not responding. Please initiate the server before continuing.")
+
+    f3_part1('tablets', tablets)
+
+    expensive = tablets.groupby('brand')['price'].median().sort_values(ascending=False)
+    cheap = tablets.groupby('brand')['price'].median().sort_values(ascending=True)
+
+    premium, budget = st.columns(2, gap='large')
+    with premium:
+        plot_bar(expensive.head(10), "Premium Brands")
+        st.caption('')
+    with budget:
+        plot_bar(cheap[cheap > 6000].head(10), "Budget Brands")
+        st.caption("Some brands have been filtered to show only the ones that are in production as of today.")
+
+    leave_lines(1)
+    cpu_br_bar, cpu_br_box = st.columns([1.5,1])
+    with cpu_br_bar:
+        brands_median = tablets.groupby('cpu_brand')['price'].median().sort_values(ascending=False)
+        plot_bar(brands_median, "CPU Brands Median Price")
+    with cpu_br_box:
+        plot_multiple_box(tablets, 'cpu_brand', "Price Comparison for different CPU Brands", only=['Bionic','Kirin','Helio','Dimensity','Exynos','Snapdragon'])
+
+    leave_lines(2)
+    sim, fiveg = st.columns(2, gap='large')
+    with sim:
+        plot_multiple_box(tablets, 'has_sim', "Price Comparison for SIM Feature")
+    with fiveg:
+        plot_multiple_box(tablets, 'has_5G', "Price Comparison for 5G SIM Feature")
+    nfc, irb = st.columns(2, gap='large')
+    with nfc:
+        plot_multiple_box(tablets, 'has_nfc', "Price Comparison for NFC Feature")
+    with irb:
+        plot_multiple_box(tablets, 'has_irblaster', "Price Comparison for IR Blaster Feature")
+
+    leave_lines(2)
+    screen_box, screen_bar, refresh = st.columns(3, gap='small')
+    with screen_box:
+        screen_median = tablets.groupby('screen_res')['price'].median().sort_values(ascending=False)
+        plot_bar(screen_median, "Screen Resolution Median Price")
+    with screen_bar:
+        plot_multiple_box(tablets, 'screen_res', "Price Comparison for different Screen Resolutions")
+    with refresh:
+        tablets['screen_refresh_rate'] = tablets['screen_refresh_rate'].astype('str')
+        screen_median = tablets.groupby('screen_refresh_rate')['price'].median().sort_values(ascending=False)
+        plot_bar(screen_median, "Screen Refresh Rate Median Price")
 
 def tablets_f4():
     st.title(f"Tablets - :red[{f4}]")
