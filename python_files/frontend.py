@@ -373,6 +373,13 @@ def laptops_f4():
     st.title(f"Laptops - :red[{f4}]")
     create_analysis_header("Laptops")
 
+    try:
+        laptops = pd.DataFrame(get_data('http://127.0.0.1:5000/data?category=laptops', group_by=False))
+    except:
+        st.text("Server not responding. Please initiate the server before continuing.")
+
+    f4_content(laptops,'Laptops')
+
 def smartphones():
     st.markdown(category_page_config, unsafe_allow_html=True)
     create_header("Smartphones")
@@ -714,6 +721,13 @@ def smartphones_f3():
 def smartphones_f4():
     st.title(f"Smartphones - :red[{f4}]")
     create_analysis_header("Smartphones")
+
+    try:
+        smartphones = pd.DataFrame(get_data('http://127.0.0.1:5000/data?category=mobiles', group_by=False))
+    except:
+        st.text("Server not responding. Please initiate the server before continuing.")
+
+    f4_content(smartphones,'Smartphones')
 
 def tablets():
     st.markdown(category_page_config, unsafe_allow_html=True)
@@ -1083,6 +1097,13 @@ def tablets_f3():
 def tablets_f4():
     st.title(f"Tablets - :red[{f4}]")
     create_analysis_header("Tablets")
+
+    try:
+        tablets = pd.DataFrame(get_data('http://127.0.0.1:5000/data?category=tablets', group_by=False))
+    except:
+        st.text("Server not responding. Please initiate the server before continuing.")
+
+    f4_content(tablets,'Tablets')
 
 def main_screen():
     st.markdown("<h1 style='text-align: center; color: white;'>Let's <span style='color: #FF4B4B;'>Analyze</span>!</h1>", unsafe_allow_html=True)

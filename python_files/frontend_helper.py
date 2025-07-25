@@ -537,3 +537,156 @@ def f3_part1(category, df):
         """)
 
     st.subheader("Now, we may move to analyzing categorical features.")
+
+def create_price_category(price):
+    if (price >= 0) and (price < 10000):
+        return '0-10,000'
+    elif (price >= 10000) and (price < 20000):
+        return '10,000-20,000'
+    elif (price >= 20000) and (price < 30000):
+        return '20,000-30,000'
+    elif (price >= 30000) and (price < 40000):
+        return '30,000-40,000'
+    elif (price >= 40000) and (price < 50000):
+        return '40,000-50,000'
+    elif (price >= 50000) and (price < 60000):
+        return '50,000-60,000'
+    elif (price >= 60000) and (price < 70000):
+        return '60,000-70,000'
+    elif (price >= 70000) and (price < 80000):
+        return '70,000-80,000'
+    elif (price >= 80000) and (price < 90000):
+        return '80,000-90,000'
+    elif (price >= 90000) and (price < 100000):
+        return '90,000-100,000'
+    elif price >= 100000:
+        return '100,000+'
+
+def f4_content(df, category):
+    scatter_chart = px.scatter(df,x='spec_score',y='price',color='brand')
+    update_layout(scatter_chart, "Spec Score vs Price (Brand Color Coded)")
+
+    chart, tbl = st.columns([1.25,1])
+    with chart:
+        st.plotly_chart(scatter_chart)
+    with tbl:
+        data = np.round(
+            df.groupby('brand').agg(
+                avg_price=('price', 'mean'),
+                median_price=('price', 'median'),
+                count=('price', 'count'),
+                avg_spec_score=('spec_score', 'mean')
+            ).reset_index(),2).sort_values(
+            by='avg_spec_score',ascending=False
+        ).rename({
+            'brand':'Brand',
+            'avg_price':'Average Price',
+            'median_price':'Median Price',
+            'count':f'Number of {category}',
+            'avg_spec_score':'Average Spec Score'
+        }, axis=1)
+        data['Brand'] = data['Brand'].str.capitalize()
+        data_formatted = data.copy()
+        data_formatted['Average Price'] = data['Average Price'].apply(lambda x: f"{np.round(x,2):,}")
+        data_formatted['Median Price'] = data['Median Price'].apply(lambda x: f"{np.round(x,2):,}")
+
+        st.dataframe(data_formatted, hide_index=True)
+
+    df['Score Per Thousand Rupees'] = np.round((df['spec_score'] / df['price']) * 1000,2)
+
+    leave_lines(2)
+    st.subheader(f'Most Underrated {category}')
+    st.text(f"A new metric 'Spec Per Thousand Rupees' is calculated here, which is just the Spec Score divided by Rupees (INR Thousand).")
+    table, best = st.columns([1,1.25])
+    best_products = df.copy().loc[:,['name','spec_score','price','Score Per Thousand Rupees']].sort_values(by='Score Per Thousand Rupees',ascending=False).head(10)
+    best_products = best_products.rename({'name':'Name','spec_score':'Spec Score','price':'Price'}, axis=1)
+    best_products['Price'] = best_products['Price'].apply(lambda x: f"{np.round(x,2):,}")
+    best_products['Name'] = best_products['Name'].str.capitalize()
+    with table:
+        st.dataframe(best_products, hide_index=True)
+        st.caption(f'While these might not be the most desired {category}, they do fill the criteria of being the most "valuable" in terms of the metric defined.')
+    with best:
+        chart = px.bar(
+            best_products, y=best_products.loc[:,['Name','Score Per Thousand Rupees']].set_index('Name').index,
+            x=best_products['Score Per Thousand Rupees'],
+            text_auto=True,
+            color_discrete_sequence=[bar_color])
+        update_layout(chart, title=f"Top 10 'Bang for Buck' {category}")
+        st.plotly_chart(chart)
+
+    leave_lines(2)
+    st.subheader(f'Most Overpriced {category}')
+    worst, table_ = st.columns([1.25,1])
+    worst_products = df.copy().loc[:,['name','spec_score','price','Score Per Thousand Rupees']].sort_values(by='Score Per Thousand Rupees',ascending=True).head(10)
+    worst_products = worst_products.rename({'name':'Name','spec_score':'Spec Score','price':'Price'}, axis=1)
+    worst_products['Price'] = worst_products['Price'].apply(lambda x: f"{np.round(x, 2):,}")
+    worst_products['Name'] = worst_products['Name'].str.capitalize()
+    with worst:
+        chart = px.bar(
+            worst_products, y=worst_products.loc[:,['Name','Score Per Thousand Rupees']].set_index('Name').index,
+            x=worst_products['Score Per Thousand Rupees'],
+            text_auto=True,
+            color_discrete_sequence=[bar_color])
+        update_layout(chart, title=f"Worst 10 'Bang for Buck' {category}")
+        st.plotly_chart(chart)
+    with table_:
+        st.dataframe(worst_products, hide_index=True)
+
+    df['Price Range (INR)'] = df['price'].apply(create_price_category)
+    best = df.sort_values('Score Per Thousand Rupees', ascending=False)
+    best_per_brand = best.drop_duplicates(subset='Price Range (INR)', keep='first')
+    result = best_per_brand[['Price Range (INR)', 'brand', 'name', 'Score Per Thousand Rupees', 'spec_score','price']].rename(
+        columns={
+            'brand': 'Brand', 'name': 'Name','spec_score': 'Spec Score', 'price': 'Price'})
+    result['Brand'] = result['Brand'].str.capitalize()
+    result['Name'] = result['Name'].str.capitalize()
+    result['Price'] = result['Price'].apply(lambda x: f"{np.round(x,2):,}")
+
+    leave_lines(2)
+    st.subheader(f'Best {category} In Each Price Range')
+    st.dataframe(result, hide_index=True, height=420)
+
+    worst = df.sort_values('Score Per Thousand Rupees', ascending=False)
+    worst_per_brand = worst.drop_duplicates(subset='Price Range (INR)', keep='last')
+    result = worst_per_brand[['Price Range (INR)', 'brand', 'name', 'Score Per Thousand Rupees', 'spec_score','price']].rename(
+        columns={
+            'brand': 'Brand', 'name': 'Name','spec_score': 'Spec Score', 'price': 'Price'})
+    result['Brand'] = result['Brand'].str.capitalize()
+    result['Name'] = result['Name'].str.capitalize()
+    result['Price'] = result['Price'].apply(lambda x: f"{np.round(x,2):,}")
+
+    leave_lines(2)
+    st.subheader(f'Worst {category} In Each Price Range')
+    st.dataframe(result, hide_index=True, height=420)
+
+    brands_data = np.round(df.groupby('brand')['Score Per Thousand Rupees'].mean(),2)
+    brands_data = brands_data.reset_index().rename(columns={'brand':'Brand'})
+    brands_data['Brand'] = brands_data['Brand'].str.capitalize()
+
+    leave_lines(2)
+    st.subheader('Brand Budget Friendlyness Analysis!')
+    st.text('These are the brands who offer the best specs according to their price range:')
+    df_, top_brands = st.columns(2)
+    top = brands_data.sort_values(by='Score Per Thousand Rupees',ascending=False).head(10)
+    with df_:
+        st.dataframe(
+            top,
+            hide_index=True
+        )
+    with top_brands:
+        chart = px.bar(top, x='Brand', y='Score Per Thousand Rupees', text_auto=True, color_discrete_sequence=[bar_color])
+        update_layout(chart, title="10 Brands with the best Spec Per Thousand Rupees Score")
+        st.plotly_chart(chart)
+
+    st.text('These are the brands who offer the worst specs to price ratio:')
+    worst_brands, df = st.columns(2)
+    worst = brands_data.sort_values(by='Score Per Thousand Rupees', ascending=True).head(10)
+    with worst_brands:
+        chart = px.bar(worst, x='Brand', y='Score Per Thousand Rupees', text_auto=True, color_discrete_sequence=[bar_color])
+        update_layout(chart, title="10 Brands with the worst Spec Per Thousand Rupees Score")
+        st.plotly_chart(chart)
+    with df:
+        st.dataframe(
+            worst,
+            hide_index=True
+        )
