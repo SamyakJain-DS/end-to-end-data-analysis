@@ -4,3 +4,4 @@ numpy
 pandas
 SQLAlchemy
 mysql-connector-python
+pymysql
