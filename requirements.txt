@@ -58,7 +58,7 @@ jupyterlab_widgets
 MarkupSafe
 matplotlib-inline
 mistune
-mkl-service==2.4.0
+mkl-service
 mkl_fft
 mkl_random
 mysql-connector-python
