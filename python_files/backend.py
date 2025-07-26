@@ -11,39 +11,43 @@ def index():
 
 @app.route('/data', methods=['GET'])
 def fetch_data():
-    category = request.args.get('category', default=None, type=str)
-    col = request.args.get('col', default=None, type=str)
-    brand = request.args.get('brand_', default=None, type=str)
+    try:
+        category = request.args.get('category', default=None, type=str)
+        col = request.args.get('col', default=None, type=str)
+        brand = request.args.get('brand_', default=None, type=str)
 
-    allowed_tables = ['laptops', 'mobiles', 'tablets']
-    if category not in allowed_tables:
-        return jsonify({"error": "Invalid category specified"}), 400
+        allowed_tables = ['laptops', 'mobiles', 'tablets']
+        if category not in allowed_tables:
+            return jsonify({"error": "Invalid category specified"}), 400
 
-    if col is None:
-        data = dbo.execute_query(
-            f'''
-            SELECT *
-            FROM {category}
-            '''
-        ).to_dict(orient='records')
-    else:
-        if brand is None:
+        if col is None:
             data = dbo.execute_query(
                 f'''
-                SELECT {col}
+                SELECT *
                 FROM {category}
                 '''
             ).to_dict(orient='records')
         else:
-            data = dbo.execute_query(
-                f'''
-                SELECT {col}
-                FROM {category}
-                WHERE brand = '{brand}'
-                '''
-            ).to_dict(orient='records')
+            if brand is None:
+                data = dbo.execute_query(
+                    f'''
+                    SELECT {col}
+                    FROM {category}
+                    '''
+                ).to_dict(orient='records')
+            else:
+                data = dbo.execute_query(
+                    f'''
+                    SELECT {col}
+                    FROM {category}
+                    WHERE brand = '{brand}'
+                    '''
+                ).to_dict(orient='records')
 
-    return jsonify(data)
+        return jsonify(data)
+
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
 
 @app.route('/prep-laptop')
 def prep_laptop():
