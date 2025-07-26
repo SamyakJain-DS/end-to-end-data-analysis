@@ -4,6 +4,7 @@ from sqlalchemy import create_engine, text
 import pandas as pd
 import numpy as np
 from config import un, pw, ht, pt, db, ca_path
+import os
 
 os.makedirs("logs", exist_ok=True)
 logging.basicConfig(
@@ -14,9 +15,9 @@ logging.basicConfig(
 )
 
 class Database:
-    """
+    '''
     This class will help us in communicating with our database.
-    """
+    '''
 
     def __init__(self, username=un, password=pw, host=ht, port=pt, database=db):
 
