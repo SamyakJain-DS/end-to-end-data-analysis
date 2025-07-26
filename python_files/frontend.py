@@ -91,6 +91,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 def laptops():
+
     st.markdown(category_page_config, unsafe_allow_html=True)
     create_header("Laptops")
     st.markdown("<div style='margin-bottom: 65px;'></div>", unsafe_allow_html=True)
@@ -104,6 +105,13 @@ def laptops():
     with col2:
         create_tile("category-button", "wide-long", "laptops-price", f"<span>{f3}</span>")
         create_tile("category-button", "wide-short", "laptops-spec", f"<span>{f4}</span>")
+
+    leave_lines(6)
+    cptn, plugins = st.columns(2)
+    with cptn:
+        st.caption('*Loading times might be a bit slow since this project is hosted for free. Please have patience while navigating.')
+    with plugins:
+        st.markdown(plugin_btns, unsafe_allow_html=True)
 
 def laptops_f1():
     st.title(f"Laptops - :red[{f1}]")
@@ -135,7 +143,7 @@ def laptops_f1():
     screen1, screen2, screen3 = st.columns(3, gap='small')
     with screen1:
         try:
-            data = get_data('http://127.0.0.1:5000/data?category=laptops&col=touchscreen')
+            data = get_data('https://gadgets-project-api.onrender.com/data?category=laptops&col=touchscreen')
             data.index = data.index.map({0:'Does not have', 1:'Has'})
             plot_bar(
                 data.sort_values(ascending=True),
@@ -145,12 +153,12 @@ def laptops_f1():
             st.text('Server not responding. Please initiate the server before continuing.')
     with screen2:
         try:
-            plot_box(get_data('http://127.0.0.1:5000/data?category=laptops&col=ppi', group_by=False), "PPI Distribution")
+            plot_box(get_data('https://gadgets-project-api.onrender.com/data?category=laptops&col=ppi', group_by=False), "PPI Distribution")
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     with screen3:
         try:
-            plot_box(get_data('http://127.0.0.1:5000/data?category=laptops&col=screen_size', group_by=False), "Distribution for Size of the Screen (Inches)")
+            plot_box(get_data('https://gadgets-project-api.onrender.com/data?category=laptops&col=screen_size', group_by=False), "Distribution for Size of the Screen (Inches)")
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
 
@@ -158,26 +166,26 @@ def laptops_f1():
     with brand1:
         try:
             st.text('Brands with the most laptops with their GPU in the market. "Intel" GPU are all integrated GPUs. Among Dedicated GPUs, "Nvidia" leads.')
-            plot_bar(get_data('http://127.0.0.1:5000/data?category=laptops&col=gpu_brand'), "Dominant GPU Brands")
+            plot_bar(get_data('https://gadgets-project-api.onrender.com/data?category=laptops&col=gpu_brand'), "Dominant GPU Brands")
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     with brand2:
         try:
             st.text('Brands with the most laptop models in the market. The top 5 brands cover about 70% laptops in the market according to our data.')
-            plot_bar(get_data('http://127.0.0.1:5000/data?category=laptops&col=brand',n=20), "Dominant Laptop Brands")
+            plot_bar(get_data('https://gadgets-project-api.onrender.com/data?category=laptops&col=brand',n=20), "Dominant Laptop Brands")
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
 
     cpu1, cpu2 = st.columns([1,1.25], gap='small')
     with cpu1:
         try:
-            plot_pie(get_data('http://127.0.0.1:5000/data?category=laptops&col=cpu_type',n=7), "CPU Types")
+            plot_pie(get_data('https://gadgets-project-api.onrender.com/data?category=laptops&col=cpu_type',n=7), "CPU Types")
             st.text('Distribution of CPU types in the market. The low-end "H" and "U" are more available in the market, whereas the high-end "HX" and "HS" make up for only 10% of the laptops.')
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     with cpu2:
         try:
-            plot_bar(get_data('http://127.0.0.1:5000/data?category=laptops&col=cpu_brand'), "Dominant CPU Brands")
+            plot_bar(get_data('https://gadgets-project-api.onrender.com/data?category=laptops&col=cpu_brand'), "Dominant CPU Brands")
             st.text('Brands with the most laptops with their CPU in the market. "Intel" is clearly the most dominant brand for CPUs.')
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
@@ -185,7 +193,7 @@ def laptops_f1():
     ram, _, mt1, mt2, mt3 = st.columns([3,0.2,0.8,0.8,1], gap='small')
     with ram:
         try:
-            plot_pie(get_data('http://127.0.0.1:5000/data?category=laptops&col=ram_ddr_type', n=7), "RAM DDR Types")
+            plot_pie(get_data('https://gadgets-project-api.onrender.com/data?category=laptops&col=ram_ddr_type', n=7), "RAM DDR Types")
             st.text('Distribution of RAM DDR types in the market. The newer version "DDR5" is still not much adapted, but slowly gaining pace. As of now, the old "DDR4" remains dominant with 65% laptops.')
 
         except:
@@ -194,30 +202,30 @@ def laptops_f1():
         leave_lines(3)
         try:
             st.metric(label="Average Number of CPU Cores",
-                      value=np.round(np.mean(get_data('http://127.0.0.1:5000/data?category=laptops&col=cpu_cores', False))))
+                      value=np.round(np.mean(get_data('https://gadgets-project-api.onrender.com/data?category=laptops&col=cpu_cores', False))))
             leave_lines(4)
             st.metric(label="Average RAM Capacity (GB)",
-                      value=np.round(np.mean(get_data('http://127.0.0.1:5000/data?category=laptops&col=ram_capacity', False))))
+                      value=np.round(np.mean(get_data('https://gadgets-project-api.onrender.com/data?category=laptops&col=ram_capacity', False))))
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     with mt2:
         leave_lines(3)
         try:
             st.metric(label="Average Number of CPU Threads",
-                      value=np.round(np.mean(get_data('http://127.0.0.1:5000/data?category=laptops&col=cpu_threads', False))))
+                      value=np.round(np.mean(get_data('https://gadgets-project-api.onrender.com/data?category=laptops&col=cpu_threads', False))))
             leave_lines(4)
             st.metric(label="Average Display Pixel Per Inch (PPI)",
-                      value=np.round(np.mean(get_data('http://127.0.0.1:5000/data?category=laptops&col=ppi', False))))
+                      value=np.round(np.mean(get_data('https://gadgets-project-api.onrender.com/data?category=laptops&col=ppi', False))))
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     with mt3:
         leave_lines(3)
         try:
             st.metric(label="Average GPU VRAM (GB)",
-                      value=np.round(np.mean(get_data('http://127.0.0.1:5000/data?category=laptops&col=gpu_vram', False))))
+                      value=np.round(np.mean(get_data('https://gadgets-project-api.onrender.com/data?category=laptops&col=gpu_vram', False))))
             leave_lines(4)
             st.metric(label="Most Common Aspect Ratio",
-                      value=get_data('http://127.0.0.1:5000/data?category=laptops&col=aspect_ratio_category').sort_values(ascending=False).index[0])
+                      value=get_data('https://gadgets-project-api.onrender.com/data?category=laptops&col=aspect_ratio_category').sort_values(ascending=False).index[0])
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
 
@@ -226,7 +234,7 @@ def laptops_f2():
     create_analysis_header("Laptops")
 
     try:
-        brands = get_data('http://127.0.0.1:5000/data?category=laptops&col=brand')
+        brands = get_data('https://gadgets-project-api.onrender.com/data?category=laptops&col=brand')
     except:
         st.text('Server not responding. Please initiate the server before continuing.')
 
@@ -257,7 +265,7 @@ def laptops_f2():
 
     leave_lines(1)
     try:
-        laptops = get_data(f'http://127.0.0.1:5000/data?category=laptops', group_by=False)
+        laptops = get_data(f'https://gadgets-project-api.onrender.com/data?category=laptops', group_by=False)
     except:
         st.text('Server not responding. Please initiate the server before continuing.')
 
@@ -314,7 +322,7 @@ def laptops_f3():
     create_analysis_header("Laptops")
 
     try:
-        laptops = pd.DataFrame(get_data('http://127.0.0.1:5000/data?category=laptops', group_by=False))
+        laptops = pd.DataFrame(get_data('https://gadgets-project-api.onrender.com/data?category=laptops', group_by=False))
     except:
         st.text("Server not responding. Please initiate the server before continuing.")
 
@@ -374,7 +382,7 @@ def laptops_f4():
     create_analysis_header("Laptops")
 
     try:
-        laptops = pd.DataFrame(get_data('http://127.0.0.1:5000/data?category=laptops', group_by=False))
+        laptops = pd.DataFrame(get_data('https://gadgets-project-api.onrender.com/data?category=laptops', group_by=False))
     except:
         st.text("Server not responding. Please initiate the server before continuing.")
 
@@ -394,6 +402,13 @@ def smartphones():
     with col2:
         create_tile("category-button", "wide-long", "smartphones-price", f"<span>{f3}</span>")
         create_tile("category-button", "wide-short", "smartphones-spec", f"<span>{f4}</span>")
+
+    leave_lines(6)
+    cptn, plugins = st.columns(2)
+    with cptn:
+        st.caption('*Loading times might be a bit slow since this project is hosted for free. Please have patience while navigating.')
+    with plugins:
+        st.markdown(plugin_btns, unsafe_allow_html=True)
 
 def smartphones_f1():
     st.title(f"Smartphones - :red[{f1}]")
@@ -418,7 +433,7 @@ def smartphones_f1():
     with sc1:
         try:
             st.text('Different Screen Resolutions. Majority phones have "HD+" or "FHD+" (60%+)')
-            plot_pie(get_data('http://127.0.0.1:5000/data?category=mobiles&col=screen_res'), "Screen Resolutions")
+            plot_pie(get_data('https://gadgets-project-api.onrender.com/data?category=mobiles&col=screen_res'), "Screen Resolutions")
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
 
@@ -426,16 +441,16 @@ def smartphones_f1():
         try:
             leave_lines(6)
             st.metric(label='Most Common Aspect Ratio',
-                      value=get_data('http://127.0.0.1:5000/data?category=mobiles&col=aspect_ratio_category').sort_values(ascending=False).index[0])
+                      value=get_data('https://gadgets-project-api.onrender.com/data?category=mobiles&col=aspect_ratio_category').sort_values(ascending=False).index[0])
             leave_lines(10)
             st.metric(label='Expected Front Cameras',
-                      value=np.round(np.mean(get_data('http://127.0.0.1:5000/data?category=mobiles&col=front_cameras', group_by=False))))
+                      value=np.round(np.mean(get_data('https://gadgets-project-api.onrender.com/data?category=mobiles&col=front_cameras', group_by=False))))
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     with sc2:
         try:
             st.text('Screen Size Distribution. Most phones have a screen of size between 5.5 and 7 inches.')
-            plot_box(get_data('http://127.0.0.1:5000/data?category=mobiles&col=screen_size', group_by=False), "Distribution for Screen Size (Inches)")
+            plot_box(get_data('https://gadgets-project-api.onrender.com/data?category=mobiles&col=screen_size', group_by=False), "Distribution for Screen Size (Inches)")
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
 
@@ -443,23 +458,23 @@ def smartphones_f1():
     with sc3:
         try:
             st.text('PPI Distribution. Most phones have PPI between 250 and 450.')
-            plot_box(get_data('http://127.0.0.1:5000/data?category=mobiles&col=ppi', group_by=False), "Distribution for Pixels Per Inch (PPI)")
+            plot_box(get_data('https://gadgets-project-api.onrender.com/data?category=mobiles&col=ppi', group_by=False), "Distribution for Pixels Per Inch (PPI)")
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     with card2:
         try:
             leave_lines(6)
             st.metric(label='Expected Rear Cameras',
-                      value=np.round(np.mean(get_data('http://127.0.0.1:5000/data?category=mobiles&col=rear_cameras', group_by=False))))
+                      value=np.round(np.mean(get_data('https://gadgets-project-api.onrender.com/data?category=mobiles&col=rear_cameras', group_by=False))))
             leave_lines(10)
             st.metric(label='Expected MP for Front Cameras',
-                      value=np.round(np.mean(get_data('http://127.0.0.1:5000/data?category=mobiles&col=front_primary', group_by=False))))
+                      value=np.round(np.mean(get_data('https://gadgets-project-api.onrender.com/data?category=mobiles&col=front_primary', group_by=False))))
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     with sc4:
         try:
             st.text('Screen Refresh Rates. Most phones still have a 60 Hz screen (60%).')
-            plot_pie(get_data('http://127.0.0.1:5000/data?category=mobiles&col=refresh_rate'), "Screen Refresh Rates")
+            plot_pie(get_data('https://gadgets-project-api.onrender.com/data?category=mobiles&col=refresh_rate'), "Screen Refresh Rates")
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
 
@@ -468,38 +483,38 @@ def smartphones_f1():
     with card1:
         try:
             st.metric(label='Expected MP for Rear Cameras',
-                    value=np.round(np.mean(get_data('http://127.0.0.1:5000/data?category=mobiles&col=front_primary', group_by=False))))
+                    value=np.round(np.mean(get_data('https://gadgets-project-api.onrender.com/data?category=mobiles&col=front_primary', group_by=False))))
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     with card2:
         try:
             st.metric(label='Expected CPU Cores',
-                      value=np.round(np.mean(get_data('http://127.0.0.1:5000/data?category=mobiles&col=cpu_cores', group_by=False))))
+                      value=np.round(np.mean(get_data('https://gadgets-project-api.onrender.com/data?category=mobiles&col=cpu_cores', group_by=False))))
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     with card3:
         try:
             st.metric(label='Expected CPU Speed (GHz)',
-                      value=np.round(np.mean(get_data('http://127.0.0.1:5000/data?category=mobiles&col=cpu_speed', group_by=False))))
+                      value=np.round(np.mean(get_data('https://gadgets-project-api.onrender.com/data?category=mobiles&col=cpu_speed', group_by=False))))
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     with card4:
         try:
             st.metric(label='Expected RAM (GB)',
-                      value=np.round(np.mean(get_data('http://127.0.0.1:5000/data?category=mobiles&col=ram', group_by=False))))
+                      value=np.round(np.mean(get_data('https://gadgets-project-api.onrender.com/data?category=mobiles&col=ram', group_by=False))))
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     with card5:
         try:
             st.metric(label='Expected Storage (GB)',
-                      value=np.round(np.mean(get_data('http://127.0.0.1:5000/data?category=mobiles&col=storage', group_by=False))))
+                      value=np.round(np.mean(get_data('https://gadgets-project-api.onrender.com/data?category=mobiles&col=storage', group_by=False))))
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
 
     horz1, horz2, horz3 = st.columns(3, gap='large')
     with horz1:
         try:
-            data = get_data('http://127.0.0.1:5000/data?category=mobiles&col=5g')
+            data = get_data('https://gadgets-project-api.onrender.com/data?category=mobiles&col=5g')
             data.index = data.index.map({0: 'Does not have', 1: 'Has'})
             plot_bar(
                 data.sort_values(ascending=True),
@@ -510,7 +525,7 @@ def smartphones_f1():
             st.text('Server not responding. Please initiate the server before continuing.')
     with horz2:
         try:
-            data = get_data('http://127.0.0.1:5000/data?category=mobiles&col=nfc')
+            data = get_data('https://gadgets-project-api.onrender.com/data?category=mobiles&col=nfc')
             data.index = data.index.map({0: 'Does not have', 1: 'Has'})
             plot_bar(
                 data.sort_values(ascending=True),
@@ -521,7 +536,7 @@ def smartphones_f1():
             st.text('Server not responding. Please initiate the server before continuing.')
     with horz3:
         try:
-            data = get_data('http://127.0.0.1:5000/data?category=mobiles&col=ir_blaster')
+            data = get_data('https://gadgets-project-api.onrender.com/data?category=mobiles&col=ir_blaster')
             data.index = data.index.map({0: 'Does not have', 1: 'Has'})
             plot_bar(
                 data.sort_values(ascending=True),
@@ -535,13 +550,13 @@ def smartphones_f1():
     with bar1:
         try:
             st.text('Mobile brands in the market. One-Third of the smartphones in the market belong the only the first seven brands.')
-            plot_bar(get_data('http://127.0.0.1:5000/data?category=mobiles&col=brand',n=20), "Dominant Mobiles Brands")
+            plot_bar(get_data('https://gadgets-project-api.onrender.com/data?category=mobiles&col=brand',n=20), "Dominant Mobiles Brands")
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     with bar2:
         try:
             st.text('Almost all mobiles in the data have android OS.')
-            plot_bar(get_data('http://127.0.0.1:5000/data?category=mobiles&col=os'), "Operating System")
+            plot_bar(get_data('https://gadgets-project-api.onrender.com/data?category=mobiles&col=os'), "Operating System")
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
 
@@ -550,13 +565,13 @@ def smartphones_f1():
     bar3, bar4 = st.columns([1,1.5])
     with bar3:
         try:
-            plot_box(get_data('http://127.0.0.1:5000/data?category=mobiles&col=battery', group_by=False), "Battery Capacity (mAh)")
+            plot_box(get_data('https://gadgets-project-api.onrender.com/data?category=mobiles&col=battery', group_by=False), "Battery Capacity (mAh)")
             st.text('There are extreme outliers. Usually, battery capacity lies between 2000 and 6000 mAh.')
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     with bar4:
         try:
-            plot_bar(get_data('http://127.0.0.1:5000/data?category=mobiles&col=cpu_brand'), "CPU Brands")
+            plot_bar(get_data('https://gadgets-project-api.onrender.com/data?category=mobiles&col=cpu_brand'), "CPU Brands")
             st.text('Dominant CPU brands in the market. Most phones have CPU of "Snapdragon", "Helio" or "Mediatek".')
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
@@ -566,7 +581,7 @@ def smartphones_f2():
     create_analysis_header("Smartphones")
 
     try:
-        brands = get_data('http://127.0.0.1:5000/data?category=mobiles&col=brand')
+        brands = get_data('https://gadgets-project-api.onrender.com/data?category=mobiles&col=brand')
     except:
         st.text('Server not responding. Please initiate the server before continuing.')
 
@@ -598,7 +613,7 @@ def smartphones_f2():
 
     leave_lines(1)
     try:
-        mobiles = get_data(f'http://127.0.0.1:5000/data?category=mobiles', group_by=False)
+        mobiles = get_data(f'https://gadgets-project-api.onrender.com/data?category=mobiles', group_by=False)
     except:
         st.text('Server not responding. Please initiate the server before continuing.')
 
@@ -672,7 +687,7 @@ def smartphones_f3():
     create_analysis_header("Smartphones")
 
     try:
-        mobiles = pd.DataFrame(get_data('http://127.0.0.1:5000/data?category=mobiles', group_by=False))
+        mobiles = pd.DataFrame(get_data('https://gadgets-project-api.onrender.com/data?category=mobiles', group_by=False))
     except:
         st.text("Server not responding. Please initiate the server before continuing.")
 
@@ -723,7 +738,7 @@ def smartphones_f4():
     create_analysis_header("Smartphones")
 
     try:
-        smartphones = pd.DataFrame(get_data('http://127.0.0.1:5000/data?category=mobiles', group_by=False))
+        smartphones = pd.DataFrame(get_data('https://gadgets-project-api.onrender.com/data?category=mobiles', group_by=False))
     except:
         st.text("Server not responding. Please initiate the server before continuing.")
 
@@ -743,6 +758,13 @@ def tablets():
     with col2:
         create_tile("category-button", "wide-long", "tablets-price", f"<span>{f3}</span>")
         create_tile("category-button", "wide-short", "tablets-spec", f"<span>{f4}</span>")
+
+    leave_lines(6)
+    cptn, plugins = st.columns(2)
+    with cptn:
+        st.caption('*Loading times might be a bit slow since this project is hosted for free. Please have patience while navigating.')
+    with plugins:
+        st.markdown(plugin_btns, unsafe_allow_html=True)
 
 def tablets_f1():
     st.title(f"Tablets - :red[{f1}]")
@@ -768,42 +790,42 @@ def tablets_f1():
         try:
             st.metric(label='Expected Front Cameras',
                       value=np.round(np.mean(
-                          get_data('http://127.0.0.1:5000/data?category=tablets&col=front_cameras', group_by=False))))
+                          get_data('https://gadgets-project-api.onrender.com/data?category=tablets&col=front_cameras', group_by=False))))
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     with card2:
         try:
             st.metric(label='Expected Rear Cameras',
                       value=np.round(
-                          np.mean(get_data('http://127.0.0.1:5000/data?category=tablets&col=rear_cameras', group_by=False))))
+                          np.mean(get_data('https://gadgets-project-api.onrender.com/data?category=tablets&col=rear_cameras', group_by=False))))
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     with card3:
         try:
             st.metric(label='Expected MP for Front Cameras',
                       value=np.round(
-                          np.mean(get_data('http://127.0.0.1:5000/data?category=tablets&col=front_primary', group_by=False))))
+                          np.mean(get_data('https://gadgets-project-api.onrender.com/data?category=tablets&col=front_primary', group_by=False))))
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     with card4:
         try:
             st.metric(label='Expected MP for Rear Cameras',
                       value=np.round(
-                          np.mean(get_data('http://127.0.0.1:5000/data?category=tablets&col=rear_primary', group_by=False))))
+                          np.mean(get_data('https://gadgets-project-api.onrender.com/data?category=tablets&col=rear_primary', group_by=False))))
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     with card5:
         try:
             st.metric(label='Expected CPU Cores',
                       value=np.round(
-                          np.mean(get_data('http://127.0.0.1:5000/data?category=tablets&col=cpu_cores', group_by=False))))
+                          np.mean(get_data('https://gadgets-project-api.onrender.com/data?category=tablets&col=cpu_cores', group_by=False))))
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
 
     hz1, _, txt, __, hz2 = st.columns([2, 0.1, 1, 0.1, 2], gap='small')
     with hz1:
         try:
-            data = get_data('http://127.0.0.1:5000/data?category=tablets&col=has_5g')
+            data = get_data('https://gadgets-project-api.onrender.com/data?category=tablets&col=has_5g')
             data.index = data.index.map({0: 'Does not have', 1: 'Has'})
             plot_bar(
                 data.sort_values(ascending=True),
@@ -818,7 +840,7 @@ def tablets_f1():
         st.text('A good 65% of the tablets have a Sim holder.')
     with hz2:
         try:
-            data = get_data('http://127.0.0.1:5000/data?category=tablets&col=has_sim')
+            data = get_data('https://gadgets-project-api.onrender.com/data?category=tablets&col=has_sim')
             data.index = data.index.map({0: 'Does not have', 1: 'Has'})
             plot_bar(
                 data.sort_values(ascending=True),
@@ -832,34 +854,34 @@ def tablets_f1():
         try:
             st.metric(label='Expected CPU Speed (GHz)',
                       value=np.round(
-                          np.mean(get_data('http://127.0.0.1:5000/data?category=tablets&col=cpu_speed', group_by=False))))
+                          np.mean(get_data('https://gadgets-project-api.onrender.com/data?category=tablets&col=cpu_speed', group_by=False))))
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     with card7:
         try:
             st.metric(label='Common Aspect Ratio',
-                      value=get_data('http://127.0.0.1:5000/data?category=mobiles&col=aspect_ratio_category').sort_values(ascending=False).index[0])
+                      value=get_data('https://gadgets-project-api.onrender.com/data?category=mobiles&col=aspect_ratio_category').sort_values(ascending=False).index[0])
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     with card8:
         try:
             st.metric(label='Expected RAM (GB)',
                       value=np.round(
-                          np.mean(get_data('http://127.0.0.1:5000/data?category=tablets&col=ram', group_by=False))))
+                          np.mean(get_data('https://gadgets-project-api.onrender.com/data?category=tablets&col=ram', group_by=False))))
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     with card9:
         try:
             st.metric(label='Expected Storage (GB)',
                       value=np.round(
-                          np.mean(get_data('http://127.0.0.1:5000/data?category=tablets&col=inbuilt_storage', group_by=False))))
+                          np.mean(get_data('https://gadgets-project-api.onrender.com/data?category=tablets&col=inbuilt_storage', group_by=False))))
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
 
     hz3, _, txt2, __, hz4 = st.columns([2, 0.1, 1, 0.1, 2], gap='small')
     with hz3:
         try:
-            data = get_data('http://127.0.0.1:5000/data?category=tablets&col=has_nfc')
+            data = get_data('https://gadgets-project-api.onrender.com/data?category=tablets&col=has_nfc')
             data.index = data.index.map({0: 'Does not have', 1: 'Has'})
             plot_bar(
                 data.sort_values(ascending=True),
@@ -874,7 +896,7 @@ def tablets_f1():
         st.text('Only 0.5% of tablets here have an IR Blaster.')
     with hz4:
         try:
-            data = get_data('http://127.0.0.1:5000/data?category=tablets&col=has_irblaster')
+            data = get_data('https://gadgets-project-api.onrender.com/data?category=tablets&col=has_irblaster')
             data.index = data.index.map({0: 'Does not have', 1: 'Has'})
             plot_bar(
                 data.sort_values(ascending=True),
@@ -894,17 +916,17 @@ def tablets_f1():
     cpu_b, box1, box2 = st.columns(3, gap='medium')
     with cpu_b:
         try:
-            plot_bar(get_data('http://127.0.0.1:5000/data?category=tablets&col=cpu_brand'), "CPU Brands")
+            plot_bar(get_data('https://gadgets-project-api.onrender.com/data?category=tablets&col=cpu_brand'), "CPU Brands")
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     with box1:
         try:
-            plot_box(get_data('http://127.0.0.1:5000/data?category=tablets&col=screen_size', group_by=False), "Distribution for Size of the Screen (Inches)")
+            plot_box(get_data('https://gadgets-project-api.onrender.com/data?category=tablets&col=screen_size', group_by=False), "Distribution for Size of the Screen (Inches)")
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     with box2:
         try:
-            plot_box(get_data('http://127.0.0.1:5000/data?category=tablets&col=ppi', group_by=False), "Distribution for Pixels Per Inch (PPI)")
+            plot_box(get_data('https://gadgets-project-api.onrender.com/data?category=tablets&col=ppi', group_by=False), "Distribution for Pixels Per Inch (PPI)")
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
 
@@ -912,13 +934,13 @@ def tablets_f1():
     with brd:
         try:
             st.text('Most devices have Android for Operating System.')
-            plot_bar(get_data('http://127.0.0.1:5000/data?category=tablets&col=os'), "Operating Systems")
+            plot_bar(get_data('https://gadgets-project-api.onrender.com/data?category=tablets&col=os'), "Operating Systems")
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     with os:
         try:
             st.text('About 45% of tablets in the market are from the first 4 brands: "Apple","Lenovo","Samsung","iBall"')
-            plot_bar(get_data('http://127.0.0.1:5000/data?category=tablets&col=brand', n=20), "Dominant Brands")
+            plot_bar(get_data('https://gadgets-project-api.onrender.com/data?category=tablets&col=brand', n=20), "Dominant Brands")
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
 
@@ -926,13 +948,13 @@ def tablets_f1():
     with btry:
         try:
             st.text('Distribution for Battery Capacity. Most tablets have capacity in the range of 3,000 mAh and 9,000 mAh. There are a couple of tablets with capacity more than 20,000 mAh.')
-            plot_box(get_data('http://127.0.0.1:5000/data?category=tablets&col=battery_capacity', group_by=False), "Battery Capacity (mAh)")
+            plot_box(get_data('https://gadgets-project-api.onrender.com/data?category=tablets&col=battery_capacity', group_by=False), "Battery Capacity (mAh)")
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     with chrg:
         try:
             st.text('Distribution for Fast Charging Capacity. Most tablets do not have fast charging. Usually within 10Ws of Fast Charging. A few models have extremely fast charging capacity.')
-            plot_box(get_data('http://127.0.0.1:5000/data?category=tablets&col=fast_charging', group_by=False), "Fast Charging (W)")
+            plot_box(get_data('https://gadgets-project-api.onrender.com/data?category=tablets&col=fast_charging', group_by=False), "Fast Charging (W)")
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
 
@@ -941,7 +963,7 @@ def tablets_f2():
     create_analysis_header("Tablets")
 
     try:
-        brands = get_data('http://127.0.0.1:5000/data?category=tablets&col=brand')
+        brands = get_data('https://gadgets-project-api.onrender.com/data?category=tablets&col=brand')
     except:
         st.text('Server not responding. Please initiate the server before continuing.')
 
@@ -973,7 +995,7 @@ def tablets_f2():
 
     leave_lines(1)
     try:
-        tablets = get_data(f'http://127.0.0.1:5000/data?category=tablets', group_by=False)
+        tablets = get_data(f'https://gadgets-project-api.onrender.com/data?category=tablets', group_by=False)
     except:
         st.text('Server not responding. Please initiate the server before continuing.')
 
@@ -1045,7 +1067,7 @@ def tablets_f3():
     create_analysis_header("Tablets")
 
     try:
-        tablets = pd.DataFrame(get_data('http://127.0.0.1:5000/data?category=tablets', group_by=False))
+        tablets = pd.DataFrame(get_data('https://gadgets-project-api.onrender.com/data?category=tablets', group_by=False))
     except:
         st.text("Server not responding. Please initiate the server before continuing.")
 
@@ -1099,13 +1121,19 @@ def tablets_f4():
     create_analysis_header("Tablets")
 
     try:
-        tablets = pd.DataFrame(get_data('http://127.0.0.1:5000/data?category=tablets', group_by=False))
+        tablets = pd.DataFrame(get_data('https://gadgets-project-api.onrender.com/data?category=tablets', group_by=False))
     except:
         st.text("Server not responding. Please initiate the server before continuing.")
 
     f4_content(tablets,'Tablets')
 
 def main_screen():
+    cptn, plugins = st.columns(2)
+    with cptn:
+        st.caption('*Loading times might be a bit slow since this project is hosted for free. Please have patience while navigating.')
+    with plugins:
+        st.markdown(plugin_btns, unsafe_allow_html=True)
+
     st.markdown("<h1 style='text-align: center; color: white;'>Let's <span style='color: #FF4B4B;'>Analyze</span>!</h1>", unsafe_allow_html=True)
     st.markdown("<h2 style='text-align: center; color: white;'><span style='color: #FF4B4B;'>Choose</span> A Category:</h2>", unsafe_allow_html=True)
     st.markdown("<div style='margin-bottom: 100px;'></div>", unsafe_allow_html=True)
@@ -1116,9 +1144,9 @@ def main_screen():
         padding-left: 30px !important;
         margin-left: 0px !important;
         margin-right: 0px !important;
-        padding-right: 0px !important;
+        padding-right: 10px !important;
         padding-top: 30px !important;
-        margin-top: 0px !important;
+        margin-top: 20px !important;
         padding-bottom: 0px !important;
         margin-bottom: 0px !important;
         max-width: 100% !important;

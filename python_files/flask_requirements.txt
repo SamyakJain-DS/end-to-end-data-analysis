@@ -1,0 +1,7 @@
+Flask
+gunicorn==23.0.0
+numpy
+pandas
+SQLAlchemy
+mysql-connector-python
+pymysql

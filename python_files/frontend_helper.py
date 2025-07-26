@@ -55,6 +55,41 @@ category_page_config = """
         </style>
         """
 
+plugin_btns = """
+        <style>
+            .plugins-btn {
+                border-radius: 5%;
+                font-size: 0.85vw;
+                font-weight: 200;
+                letter-spacing: 2px;
+                border: none;
+                background-color: #262730;
+                position: relative;
+                transition: background-color 400ms linear;
+                transition: transform 400ms linear;        
+            }
+
+            .plugins-btn:hover {
+                cursor: pointer;
+                color: white;
+                background-color: #bb3b3b;
+                transform: scale(0.975);
+            }
+        </style>
+        
+        <div style="display: flex; gap: 5px; justify-content: flex-end;">
+            <a href="https://github.com/SamyakJain-DS/end-to-end-data-analysis" target="_blank">
+                <button class="plugins-btn" style="padding: 6px 12px;">GitHub Repo</button>
+            </a>
+            <a href="https://www.linkedin.com/in/samyakjain-ds" target="_blank">
+                <button class="plugins-btn" style="padding: 6px 12px;">LinkedIn</button>
+            </a>
+            <a href="mailto:samyakjain2411@gmail.com">
+                <button class="plugins-btn" style="padding: 6px 12px;">Mail</button>
+            </a>
+        </div>
+        """
+
 f1 = "Market Analysis"
 f2 = "Know Your Brand"
 f3 = "Interesting Price Dynamics"
@@ -110,12 +145,12 @@ def feature_imp(y,X):
 def preprocess_laptops_ols(on, brand=None):
     if brand is None:
         try:
-            df = pd.DataFrame(hit_api('http://127.0.0.1:5000/prep-laptop'))
+            df = pd.DataFrame(hit_api('https://gadgets-project-api.onrender.com/prep-laptop'))
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     else:
         try:
-            df = pd.DataFrame(hit_api(f'http://127.0.0.1:5000/prep-laptop-brand?brand={brand}'))
+            df = pd.DataFrame(hit_api(f'https://gadgets-project-api.onrender.com/prep-laptop-brand?brand={brand}'))
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
 
@@ -162,12 +197,12 @@ def preprocess_laptops_ols(on, brand=None):
 def preprocess_mobiles_ols(on, brand=None):
     if brand is None:
         try:
-            df = pd.DataFrame(hit_api('http://127.0.0.1:5000/prep-smartphones'))
+            df = pd.DataFrame(hit_api('https://gadgets-project-api.onrender.com/prep-smartphones'))
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     else:
         try:
-            df = pd.DataFrame(hit_api(f'http://127.0.0.1:5000/prep-smartphones-brand?brand={brand}'))
+            df = pd.DataFrame(hit_api(f'https://gadgets-project-api.onrender.com/prep-smartphones-brand?brand={brand}'))
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
 
@@ -214,12 +249,12 @@ def preprocess_mobiles_ols(on, brand=None):
 def preprocess_tablets_ols(on, brand=None):
     if brand is None:
         try:
-            df = pd.DataFrame(hit_api('http://127.0.0.1:5000/prep-tablets'))
+            df = pd.DataFrame(hit_api('https://gadgets-project-api.onrender.com/prep-tablets'))
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
     else:
         try:
-            df = pd.DataFrame(hit_api(f'http://127.0.0.1:5000/prep-tablets-brand?brand={brand}'))
+            df = pd.DataFrame(hit_api(f'https://gadgets-project-api.onrender.com/prep-tablets-brand?brand={brand}'))
         except:
             st.text('Server not responding. Please initiate the server before continuing.')
 
