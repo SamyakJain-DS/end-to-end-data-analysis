@@ -184,7 +184,7 @@ dfs = create_dfs(htmls)
 
 # upload the created datasets to database
 password = os.environ['SQL_ROOT_PASSWORD']
-dbo = Database(database = 'project' )
+dbo = Database(database = 'defaultdb' )
 
 for category, df in dfs.items():
     dbo.create_table(df, table_name = category + '_uncleaned')

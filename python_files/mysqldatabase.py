@@ -13,19 +13,28 @@ logging.basicConfig(
     level=logging.INFO
 )
 
-un = "root"
-pw = os.environ["SQL_ROOT_PASSWORD"]
-ht = "localhost"
-db = "project_olap"
+un = "avnadmin"
+pw = os.environ["SQL_SERVER_PASSWORD"]
+ht = "mysql-31137613-samyakjain2411-931f.i.aivencloud.com"
+pt = 27328
+db = "OLAP"
+ca_path = "ca.pem"
 
 class Database:
     """
     This class will help us in communicating with our database.
     """
 
-    def __init__(self, username = un, password = pw, host = ht, database = db):
+    def __init__(self, username=un, password=pw, host=ht, port=pt, database=db):
+
+        # Define SSL arguments for the connection
+        ssl_args = {'ssl_ca': ca_path}
+
         try:
-            temp_engine = create_engine(f"mysql+pymysql://{username}:{password}@{host}")
+            temp_engine = create_engine(
+                f"mysql+pymysql://{username}:{password}@{host}:{port}",
+                connect_args=ssl_args
+            )
             with temp_engine.connect() as conn:
                 conn.execute(text(f"CREATE DATABASE IF NOT EXISTS {database}"))
                 logging.info(f"Database '{database}' ensured to exist.")
@@ -34,7 +43,10 @@ class Database:
             logging.error(f"Couldn't create temp_engine: {e}")
 
         try:
-            self.engine = create_engine(f"mysql+pymysql://{username}:{password}@{host}/{database}")
+            self.engine = create_engine(
+                f"mysql+pymysql://{username}:{password}@{host}:{port}/{database}",
+                connect_args=ssl_args
+            )
             logging.info("Successfully created an engine")
         except Exception as e:
             logging.error(f"Couldn't create the engine: {e}")
