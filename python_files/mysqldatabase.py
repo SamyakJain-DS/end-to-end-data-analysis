@@ -3,7 +3,7 @@ import sqlalchemy
 from sqlalchemy import create_engine, text
 import pandas as pd
 import numpy as np
-import os
+from config import un, pw, ht, pt, db, ca_path
 
 os.makedirs("logs", exist_ok=True)
 logging.basicConfig(
@@ -12,13 +12,6 @@ logging.basicConfig(
     format='%(asctime)s - %(levelname)s - %(message)s',
     level=logging.INFO
 )
-
-un = "avnadmin"
-pw = os.environ["SQL_SERVER_PASSWORD"]
-ht = "mysql-31137613-samyakjain2411-931f.i.aivencloud.com"
-pt = 27328
-db = "OLAP"
-ca_path = "ca.pem"
 
 class Database:
     """

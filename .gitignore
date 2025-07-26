@@ -3,3 +3,4 @@
 pts.txt
 python_files/logs/
 python_files/__pycache__/
+python_files/config.py
