@@ -15,6 +15,10 @@ def fetch_data():
     col = request.args.get('col', default=None, type=str)
     brand = request.args.get('brand_', default=None, type=str)
 
+    allowed_tables = ['laptops', 'mobiles', 'tablets']
+    if category not in allowed_tables:
+        return jsonify({"error": "Invalid category specified"}), 400
+
     if col is None:
         data = dbo.execute_query(
             f'''
