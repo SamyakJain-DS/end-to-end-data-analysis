@@ -91,6 +91,7 @@ class Database:
             return df
         except Exception as e:
             logging.error(f"Couldn't execute the query: {query} due to {e}")
+            raise e
 
     def close(self):
         """
