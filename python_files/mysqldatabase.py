@@ -49,6 +49,7 @@ class Database:
             logging.info("Successfully created an engine")
         except Exception as e:
             logging.error(f"Couldn't create the engine: {e}")
+            raise e
 
     def import_table(self, table_name):
         """
