@@ -1164,7 +1164,7 @@ def main_screen():
         st.markdown(btn_str.format(class_ = "hmpg-button", btn_name = 't', value = 'tablets', text = 'Tablets'), unsafe_allow_html=True)
 
 if st.query_params:
-    selected = st.query_params['button']
+    selected = st.query_params.get('button')
 
     if selected == "laptops":
         laptops()
