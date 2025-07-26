@@ -16,8 +16,8 @@ pt = 27328
 db = "OLAP"
 ca_path = "ca.pem"
 un = "avnadmin"
-pw = os.environ.get("SQL_SERVER_PASSWORD")
-ht = os.environ.get("SQL_SERVER_HOST")
+pw = os.environ["SQL_SERVER_PASSWORD"]
+ht = os.environ["SQL_SERVER_HOST"]
 
 class Database:
     '''
@@ -91,7 +91,6 @@ class Database:
             return df
         except Exception as e:
             logging.error(f"Couldn't execute the query: {query} due to {e}")
-            return e
 
     def close(self):
         """
