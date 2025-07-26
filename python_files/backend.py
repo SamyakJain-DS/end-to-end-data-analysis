@@ -117,5 +117,4 @@ def prep_tablets_brand():
     ).to_dict(orient='records')
     return jsonify(data)
 
-app.run(debug=True)
 dbo.close()
