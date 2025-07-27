@@ -1,4 +1,4 @@
-##📥 Data Gathering
+📥 ### Data Gathering
 We began by setting up a dedicated Python environment (`venv/conda`) and Git for version control to ensure a clean, reproducible workflow.
 
 The core data was collected by scraping a retail and review website for electronic devices. Many of these sites relied on dynamic JavaScript rendering and anti-bot protections, which made scraping a significant challenge.
