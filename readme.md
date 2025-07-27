@@ -4,8 +4,7 @@ This project simulates a complete, professional data science workflow, from init
 
 ## Live Demo & System Architecture
 
-*   **Live Application:** ``
-*   **Live API Documentation:** ``
+*   **Live Application:** `https://samyak-jain-analysis-project.streamlit.app/`
 
 ### Architectural Overview
 
