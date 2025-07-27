@@ -183,8 +183,7 @@ with open("pickle_objects/final_htmls.pkl", "rb") as h:
 dfs = create_dfs(htmls)
 
 # upload the created datasets to database
-password = os.environ['SQL_ROOT_PASSWORD']
-dbo = Database(database = 'defaultdb' )
+dbo = Database(database = 'defaultdb')
 
 for category, df in dfs.items():
     dbo.create_table(df, table_name = category + '_uncleaned')
