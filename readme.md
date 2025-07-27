@@ -10,7 +10,7 @@ This project simulates a complete, professional data science workflow, from init
 
 The platform is built on a modern, decoupled, three-tier architecture. This design choice enhances scalability, maintainability, and reusability by separating concerns. The API is not tied to a specific front end; it functions as a standalone analytics service that could serve other clients in the future (e.g., a mobile app or another dashboard).
 
-1.  **Data Layer:** A managed PostgreSQL database hosted on Aiven, logically partitioned into an OLTP schema for data ingestion and an OLAP schema for analytics.
+1.  **Data Layer:** A managed MySQL database hosted on Aiven, logically partitioned into an OLTP schema for data ingestion and an OLAP schema for analytics.
 2.  **Service/Logic Layer:** A Python Flask REST API deployed on Render. This service queries the OLAP data warehouse and exposes a series of analytical endpoints.
 3.  **Presentation Layer:** An interactive Streamlit web application deployed on Streamlit Cloud. This front-end client consumes data from the Flask API to provide visualizations and user controls.
 
@@ -22,7 +22,7 @@ The following table provides a comprehensive overview of the technologies used a
 | :--- | :--- | :--- |
 | **Data Acquisition** | `Python (Selenium, BeautifulSoup4)` | Automated web scraping of dynamic and static e-commerce sites to gather product data (specifications, pricing, reviews).[1] |
 | **Data Processing** | `Python (Pandas)` | Cleaning, transformation, and validation of raw scraped data. Feature engineering to derive analytical variables. |
-| **Data Storage** | `PostgreSQL (on Aiven)` | **OLTP Schema:** Staging area for normalized, cleaned transactional data. **OLAP Schema:** Data warehouse with denormalized, aggregated tables optimized for complex analytical queries.[1] |
+| **Data Storage** | `MySQL (on Aiven)` | Deployed an OLTP (Online Transaction Processing) database and an OLAP (Online Analytical Processing) warehouse to separate transactional loads from analytics.[1] |
 | **Backend API** | `Python (Flask)` | Development of a RESTful API with endpoints for market overview, brand-specific analysis, and price-based filtering.[1] |
 | **Frontend UI** | `Streamlit` | Rapid development of a user-friendly, interactive web application for data visualization and insight generation. |
 | **Deployment** | `Aiven, Render, Streamlit Cloud` | Multi-platform cloud deployment: Managed database on Aiven, containerized API service on Render (PaaS), and application hosting on Streamlit Cloud.[1] |
