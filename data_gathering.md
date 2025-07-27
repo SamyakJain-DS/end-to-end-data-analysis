@@ -5,25 +5,25 @@ The core data was collected by scraping a retail and review website for electron
 
 To overcome this, we used:
 
--`undetected-chromedriver` with Selenium for stealth automation
+- `undetected-chromedriver` with Selenium for stealth automation
 
--`BeautifulSoup` for HTML parsing
+- `BeautifulSoup` for HTML parsing
 
--Browser fingerprint customization (e.g., `user-agent`, disabling `headless flags`)
+- Browser fingerprint customization (e.g., `user-agent`, disabling `headless flags`)
 
--Randomized mouse movements, scrolls, and delays to simulate human interaction
+- Randomized mouse movements, scrolls, and delays to simulate human interaction
 
 We also implemented robust logging to track scraper behavior and detect blocking events early.
 
 ## 🛠️ Technologies Used 
 
--Python
+- Python
 
--Selenium (undetected-chromedriver)
+- Selenium (undetected-chromedriver)
 
--BeautifulSoup4
+- BeautifulSoup4
 
--Python’s built-in logging module
+- Python’s built-in logging module
 
 ## ⚔️ Challenge & How We Solved It 
 
@@ -31,13 +31,13 @@ We also implemented robust logging to track scraper behavior and detect blocking
 
 `Solution`:
 
--Used `selenium-stealth` and `undetected-chromedriver` to mask bot behavior
+- Used `selenium-stealth` and `undetected-chromedriver` to mask bot behavior
 
--Removed JavaScript flags like `navigator.webdriver`
+- Removed JavaScript flags like `navigator.webdriver`
 
--Employed real Chrome `user-agent` strings
+- Employed real Chrome `user-agent` strings
 
--Evaded detection by avoiding patterns like `$cdc_` typically used by headless automation tools.
+- Evaded detection by avoiding patterns like `$cdc_` typically used by headless automation tools.
 
 ## 📂 Relevant Files <br>
 [Selenium Code To Extract A Static HTML Page](./python_files/scraping_htmls.py) <br>
