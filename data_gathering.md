@@ -1,4 +1,4 @@
-## Data Gathering 📥
+# 📥 Data Gathering 
 We began by setting up a dedicated Python environment (`venv/conda`) and Git for version control to ensure a clean, reproducible workflow.
 
 The core data was collected by scraping a retail and review website for electronic devices. Many of these sites relied on dynamic JavaScript rendering and anti-bot protections, which made scraping a significant challenge.
@@ -15,7 +15,7 @@ To overcome this, we used:
 
 We also implemented robust logging to track scraper behavior and detect blocking events early.
 
-### Technologies Used 🛠️
+## 🛠️ Technologies Used 
 
 -Python
 
@@ -25,7 +25,7 @@ We also implemented robust logging to track scraper behavior and detect blocking
 
 -Python’s built-in logging module
 
-### Challenge & How We Solved It ⚔️
+## ⚔️ Challenge & How We Solved It 
 
 `Challenge`: Target websites actively blocked bots via automation detection and fingerprinting.
 
@@ -39,6 +39,6 @@ We also implemented robust logging to track scraper behavior and detect blocking
 
 -Evaded detection by avoiding patterns like `$cdc_` typically used by headless automation tools.
 
-### Relevant Files 📂: <br>
+## 📂 Relevant Files <br>
 [Selenium Code To Extract A Static HTML Page.](./python_files/scraping_htmls.py) <br>
 [Scraping The HTMLs to Create Datasets.](./python_files/creating_datasets.py)
