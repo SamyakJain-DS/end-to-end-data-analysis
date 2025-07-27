@@ -20,3 +20,7 @@ To transform it into an analysis-ready format, we followed a multi-step cleaning
 
 ✅ **Result**: A clean, consistent dataset — ready for reliable analysis, EDA, and modeling.
 
+## 📂 Relevant Files <br>
+[Cleaning Laptops Dataset](./python_files/cleaning_laptops_df.py) <br>
+[Cleaning Smartphohes Dataset](./python_files/cleaning_mobiles_df.py) <br>
+[Cleaning Tablets Dataset](./python_files/cleaning_tablets_df.py) <br>
