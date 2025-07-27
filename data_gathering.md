@@ -40,5 +40,5 @@ We also implemented robust logging to track scraper behavior and detect blocking
 -Evaded detection by avoiding patterns like `$cdc_` typically used by headless automation tools.
 
 ## 📂 Relevant Files <br>
-[Selenium Code To Extract A Static HTML Page.](./python_files/scraping_htmls.py) <br>
-[Scraping The HTMLs to Create Datasets.](./python_files/creating_datasets.py)
+[Selenium Code To Extract A Static HTML Page](./python_files/scraping_htmls.py) <br>
+[Scraping The HTMLs to Create Datasets](./python_files/creating_datasets.py)
