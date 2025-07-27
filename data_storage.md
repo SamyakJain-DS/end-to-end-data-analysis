@@ -18,3 +18,5 @@ To support robust querying and efficient analytics, we implemented both **OLTP**
 
 > 💡 By separating OLTP and OLAP responsibilities, we ensured performance, scalability, and analytical flexibility for all components downstream.
 
+## 📂 Relevant Files <br>
+[SQL Helper Code](./python_files/mysqldatabase.py) <br>
