@@ -21,7 +21,7 @@ The following table provides a comprehensive overview of the technologies used a
 | Component | Technology | Role & Purpose |
 | :--- | :--- | :--- |
 | [**Data Acquisition**](./data_gathering.md) | `Python (Selenium, BeautifulSoup4)` | Automated web scraping of dynamic and static e-commerce sites to gather product data (specifications, pricing, reviews).[1] | 
-| **Data Processing** | `Python (Pandas)` | Cleaning, transformation, and validation of raw scraped data. Feature engineering to derive analytical variables. |
+| [**Data Processing**](./data_cleaning_preprocessing.md) | `Python (Pandas)` | Cleaning, transformation, and validation of raw scraped data. Feature engineering to derive analytical variables. |
 | **Data Storage** | `MySQL (on Aiven)` | Deployed an OLTP (Online Transaction Processing) database and an OLAP (Online Analytical Processing) warehouse to separate transactional loads from analytics.[1] |
 | **Backend API** | `Python (Flask)` | Development of a RESTful API with endpoints for market overview, brand-specific analysis, and price-based filtering.[1] |
 | **Frontend UI** | `Streamlit` | Rapid development of a user-friendly, interactive web application for data visualization and insight generation. |
