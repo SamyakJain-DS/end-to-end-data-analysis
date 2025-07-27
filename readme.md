@@ -30,3 +30,15 @@ The following table provides a comprehensive overview of the technologies used a
 | **Operations** | `Python (logging module)` | Implementation of structured logging for monitoring application health, debugging errors, and tracking data pipeline execution.[1] |
 
 ---
+I have separated the documentation of each step for better clarity. Please refer to theese links for each step's detailed documentation.
+
+| Step | Documentation |
+| :--- | :--- |
+| **Data Acquisition** | `Python (Selenium, BeautifulSoup4)` |
+| **Data Processing** | `Python (Pandas)` |
+| **Data Storage** | `MySQL (on Aiven)` |
+| **Backend API** | `Python (Flask)` |
+| **Frontend UI** | `Streamlit` |
+| **Deployment** | `Aiven, Render, Streamlit Cloud` |
+| **Development** | `Git, Conda` |
+| **Operations** | `Python (logging module)` |
