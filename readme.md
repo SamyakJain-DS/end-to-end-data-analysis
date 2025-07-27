@@ -16,11 +16,11 @@ The platform is built on a modern, decoupled, three-tier architecture. This desi
 
 ### Technology Stack & Architecture
 
-The following table provides a comprehensive overview of the technologies used and their roles within the project's architecture.
+The following table provides a comprehensive overview of the technologies used and their roles within the project's architecture. I have separated the documentation of each step for better clarity. Please refer to the  `Component` hyperlinks for each step's documentation.
 
 | Component | Technology | Role & Purpose |
 | :--- | :--- | :--- |
-| **Data Acquisition** | `Python (Selenium, BeautifulSoup4)` | Automated web scraping of dynamic and static e-commerce sites to gather product data (specifications, pricing, reviews).[1] |
+| **Data Acquisition** | `Python (Selenium, BeautifulSoup4)` | Automated web scraping of dynamic and static e-commerce sites to gather product data (specifications, pricing, reviews).[1] | 
 | **Data Processing** | `Python (Pandas)` | Cleaning, transformation, and validation of raw scraped data. Feature engineering to derive analytical variables. |
 | **Data Storage** | `MySQL (on Aiven)` | Deployed an OLTP (Online Transaction Processing) database and an OLAP (Online Analytical Processing) warehouse to separate transactional loads from analytics.[1] |
 | **Backend API** | `Python (Flask)` | Development of a RESTful API with endpoints for market overview, brand-specific analysis, and price-based filtering.[1] |
@@ -30,15 +30,3 @@ The following table provides a comprehensive overview of the technologies used a
 | **Operations** | `Python (logging module)` | Implementation of structured logging for monitoring application health, debugging errors, and tracking data pipeline execution.[1] |
 
 ---
-I have separated the documentation of each step for better clarity. Please refer to theese links for each step's detailed documentation.
-
-| Step | Documentation |
-| :--- | :--- |
-| **Data Acquisition** | `Python (Selenium, BeautifulSoup4)` |
-| **Data Processing** | `Python (Pandas)` |
-| **Data Storage** | `MySQL (on Aiven)` |
-| **Backend API** | `Python (Flask)` |
-| **Frontend UI** | `Streamlit` |
-| **Deployment** | `Aiven, Render, Streamlit Cloud` |
-| **Development** | `Git, Conda` |
-| **Operations** | `Python (logging module)` |
