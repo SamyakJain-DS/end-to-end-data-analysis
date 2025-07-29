@@ -4,7 +4,8 @@ This project simulates a complete, professional data science workflow, from init
 
 ## Live Demo & System Architecture
 
-* **Live Application:** <a href="https://samyak-jain-analysis-project.streamlit.app/" target="_blank" rel="noopener noreferrer">https://samyak-jain-analysis-project.streamlit.app</a>
+- **Live Application:** <a href="https://samyak-jain-analysis-project.streamlit.app/" target="_blank" rel="noopener noreferrer">https://samyak-jain-analysis-project.streamlit.app</a>
+<img width="1920" height="968" alt="image" src="https://github.com/user-attachments/assets/ed7f2a9c-39be-4d54-805e-9af62717b1e7" />
 
 ## Architectural Overview
 
@@ -73,6 +74,11 @@ To run this project locally, follow these steps:
 - End-to-End Project Ownership
 
 ---
+
+## 📷 Some More Screenshots
+<img width="1920" height="969" alt="image" src="https://github.com/user-attachments/assets/8dfbd876-aee7-4bde-9c44-2dbeaa6af8b9" />
+<img width="1920" height="969" alt="image" src="https://github.com/user-attachments/assets/aa20e258-b3a3-481c-9785-3de000784c22" />
+<img width="1920" height="969" alt="image" src="https://github.com/user-attachments/assets/dc3f4976-e517-4dea-a9e7-ec6578e80fb5" />
 
 ## 📫 Contact
 
