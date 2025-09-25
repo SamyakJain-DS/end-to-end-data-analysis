@@ -69,7 +69,7 @@ To run this project locally, follow these steps:
 - Database Design (OLTP/OLAP)
 - Flask API Development
 - Streamlit Dashboard Creation
-- Cloud Deployment & CI/CD
+- Cloud Deployment
 - Modular Codebase & Logging
 - End-to-End Project Ownership
 
