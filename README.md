@@ -1,6 +1,6 @@
 # End-to-End Electronics Market Analysis Platform
 
-This project simulates a complete, professional data science workflow, from initial data acquisition to the deployment of a live, interactive web application. The platform gathers data on electronic devices (laptops and smartphones), processes it through a robust data engineering pipeline, and allows users to perform custom market analysis through a user-friendly interface.[1] It showcases a full-stack skill set encompassing data engineering, data analysis, API development, and cloud deployment.
+This project simulates a complete, professional data science workflow, from initial data acquisition to the deployment of a live, interactive web application. The platform gathers data on electronic devices (laptops and smartphones), processes it through a robust data engineering pipeline, and allows users to perform custom market analysis through a user-friendly interface. It showcases a full-stack skill set encompassing data engineering, data analysis, API development, and cloud deployment.
 
 ## Live Demo & System Architecture
 
