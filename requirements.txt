@@ -1,4 +1,4 @@
-altair
+altair==5.5.0
 anyio
 argon2-cffi
 argon2-cffi-bindings
