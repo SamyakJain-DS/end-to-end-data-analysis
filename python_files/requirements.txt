@@ -1,7 +1,7 @@
 pandas
 numpy
 requests
-streamlit
+streamlit==1.45.1
 plotly
 statsmodels
 scikit-learn
